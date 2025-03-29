@@ -21,7 +21,7 @@ export default function Home() {
             Começar Agora
           </button>
         </div>
-        <Link href="/" className="">
+        <Link href="/config" className="">
           <div className="absolute right-0 bottom-0 p-6">
             <div className="hover:bg-blue-200 ease-in duration-300 bg-white shadow-md p-4 rounded-xl flex items-center space-x-4">
               <div>
