@@ -12,7 +12,7 @@ export default function Home() {
     <div className="min-h-screen text-black">
       <Navbar/>
       <div className="pt-[6rem]">
-      <section className="text-center py-16">
+      <section className="text-center py-14">
         <h1 className="text-4xl font-bold">Seu Guia de Carreira em Computação</h1>
         <p className="text-lg text-gray-600 mt-4 px-6">
           Descubra caminhos para diferentes áreas da computação e comece sua jornada de aprendizado.

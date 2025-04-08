@@ -6,6 +6,7 @@ export interface UserData {
   experience: number;
   area: string;
   achievements: number[];
+  roadmap: string[];
 }
 
 class UserDataStore {
@@ -34,7 +35,7 @@ class UserDataStore {
   }
 
   async getUserData(): Promise<UserData | null> {
-    console.log("Buscando dados do usuário...");
+    // console.log("Buscando dados do usuário...");
     const db = await this.openDatabase();
     return new Promise((resolve, reject) => {
       const transaction = db.transaction(this.storeName, "readonly");
@@ -42,19 +43,19 @@ class UserDataStore {
       const request = store.get("user1"); // ID fixo 'user1'
 
       request.onsuccess = () => {
-        console.log("Dados encontrados:", request.result);
+        // console.log("Dados encontrados:", request.result);
         resolve(request.result || null);
       };
 
       request.onerror = () => {
-        console.error("Erro ao buscar os dados no IndexedDB");
+        // console.error("Erro ao buscar os dados no IndexedDB");
         reject("Failed to fetch user data");
       };
     });
   }
 
   async saveUserData(userData: UserData): Promise<void> {
-    console.log("Salvando dados no IndexedDB:", userData);
+    // console.log("Salvando dados no IndexedDB:", userData);
     if (userData.experience){
       userData.level = Math.trunc(userData.experience/100);
       
@@ -66,7 +67,7 @@ class UserDataStore {
       const request = store.put(userData);
 
       request.onsuccess = () => {
-        console.log("Dados salvos com sucesso!");
+        // console.log("Dados salvos com sucesso!");
         resolve();
       };
 
@@ -79,15 +80,20 @@ class UserDataStore {
 
   /** 🔹 Função para salvar um atributo individualmente */
   async saveUserAttribute<T extends keyof UserData>(attribute: T, value: UserData[T]): Promise<void> {
+    
     const userData = await this.getUserData(); // Pega os dados atuais do usuário
-    this.saveUserData({ id: "user1", name: "", photo: "", level: 0, experience: 0, area: "", achievements:[] });
+    
     if (!userData) {
       console.warn("Nenhum dado encontrado, criando novo usuário...");
-      return this.saveUserData({ id: "user1", name: "", photo: "", level: 0, experience: 0, area: "", achievements:[], [attribute]: value });
+      return this.saveUserData({ id: "user1", name: "", photo: "", level: 0, experience: 0, area: "", achievements:[],roadmap:[], [attribute]: value });
     }
-
+    
     userData[attribute] = value; // Atualiza apenas o atributo específico
+    // this.saveUserData({ id: "user1", name: "a" , photo: "a", level: 0, experience: 0, area: "a", achievements:[] });
     return this.saveUserData(userData); // Salva os dados atualizados
+    // this.saveUserData({ id: "user1", name: "a", photo: "", level: 0, experience: 0, area: "QA", achievements:[],roadmap:[], [attribute]: value });
+
+
   }
 }
 

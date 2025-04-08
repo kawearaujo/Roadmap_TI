@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Conq from "@/app/components/conquistas"
+import RoadMap from "@/app/components/road"
 import {userDataStore,UserData} from "@/app/utils/indexedDB"
 
 // Função que abre a tela de seleção de imagens
@@ -14,7 +15,7 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
   ];
 
   return (
-    <div className="fixed inset-0 bg-black/90 flex items-center justify-center">
+    <div className="fixed inset-0 bg-black/90 z-1001 flex items-center justify-center">
       <div className="bg-white p-4 rounded-lg space-y-4">
         <h2 className="text-xl font-semibold">Selecione uma imagem</h2>
         <div className="grid grid-cols-3 gap-4">
@@ -48,9 +49,9 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
     );
     
     // Componente para o RoadMap
-    const RoadMap = () => (
+    const RM = () => (
       <div className='pl-64'>
-        <Conq/>
+        <RoadMap />
       </div>
     );
     
@@ -97,6 +98,8 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
       const [experience, setExperience] = useState(0);
       const [area, setArea] = useState("N/A");
       const [achiev, setAchiev] = useState<number []>();
+      const [qConquistas, setQConquistas] = useState<number []>();
+      const [roadmap, setRoadmap] = useState<string []>();
     
     
       useEffect(() => {
@@ -108,6 +111,11 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
             setLevel(userData.level);
             setExperience(userData.experience);
             setArea(userData.area);
+            setQConquistas(userData.achievements);
+            setRoadmap(userData.roadmap);
+            if (userData.achievements !== qConquistas) {
+              setQConquistas(userData.achievements);
+            }
           }
         };
       
@@ -123,6 +131,8 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
             experience: updatedUserData?.experience ?? experience,
             area: updatedUserData?.area ?? area,
             achievements: updatedUserData?.achievements ?? (achiev || []),
+            roadmap: updatedUserData?.roadmap ?? ([])
+
           };
         
           await userDataStore.saveUserData(userData);
@@ -149,9 +159,9 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
       const renderActivePage = () => {
         switch (activePage) {
           case "dashboard":
-            return <RoadMap />;
+            return <RM />;
           case "roadmap":
-            return <RoadMap />;
+            return <RM />;
           case "conquistas":
             return <Conquistas />;
           case "delete":
@@ -177,22 +187,23 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
     
     
       return (
-        <div className="flex min-h-screen">
+        <div className="flex min-h-screen ">
           {/* Menu Lateral Esquerdo */}
-          <div className="w-64 h-full bg-gray-800 text-white p-6 space-y-6 fixed">
-            <div className="flex flex-col items-center space-y-4">
+          <div className="w-64 h-full bg-gray-800 text-white p-0 space-y-6 fixed z-50">
+            <div className="flex flex-col items-center space-y-4 p-6">
               <img
                 src={selectedImage || "/person.png"}
                 alt="User"
                 className="w-24 h-24 rounded-full border-4 border-blue-500 cursor-pointer"
                 onClick={() => setShowImagePicker(true)}
               />
-              <div className="text-center">
+              <div className="text-center ">
               
                 {editingName ? (
                   <input
+                    placeholder={userName}
                     type="text"
-                    value={newUserName}
+                    // value={newUserName}
                     onChange={(e) => setNewUserName(e.target.value)}
                     onBlur={handleNameChange}
                     onKeyPress={(e) => e.key === "Enter" && handleNameChange()}
@@ -209,36 +220,41 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
                 
               </div>
               <h2 className="text-md font-semibold border-b-1" > {area} </h2>
-              <p className="text-gray-400">Nível: {level}</p>
-              <div className="w-full bg-gray-700 h-2 rounded-full">
-                <div className="bg-blue-500 h-2 rounded-full" style={{ width: `${Math.trunc(experience%100)}%` }}></div>
+              <p className="text-gray-400">Nível: {Math.trunc((((qConquistas?.length??0 )*25)+((roadmap?.length??0 )*10))/100)}</p>
+              <div className="w-full bg-gray-700 h-2 rounded-full ">
+                <div className="duration-300 easy-in transition-all bg-blue-500 h-2 rounded-full" 
+                style={{ width: `${(((qConquistas?.length??0 )*25)+((roadmap?.length??0 )*10))%100}%` }}>
+
+                  
+                </div>
               </div>
-              <p className="text-gray-400 text-xs">{Math.trunc(experience%100)} / 100 XP</p>
+              <p className="duration-300 easy-in transition-all text-gray-400 text-xs">{(((qConquistas?.length??0 )*25)+((roadmap?.length??0 )*10))%100} / 100 XP</p>
             </div>
     
             {/* Botões do Menu Lateral */}
-            <div className="space-y-4">
+            <div className="space-y-0">
               <button 
-                className="cursor-pointer w-full bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700"
+                className={`cursor-pointer w-full p-2 text-white hover:bg-blue-500 ${activePage ?activePage :"" }`}
                 onClick={() => setActivePage("dashboard")}
                 // onClick={() => setActivePage("dashboard")}
               >
                 Dashboard
               </button>
               <button
-                className="cursor-pointer w-full bg-purple-600 p-2 rounded-md text-white hover:bg-purple-700"
+                className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
+
                 onClick={() => setActivePage("roadmap")}
               >
                 RoadMap - Trajetoria
               </button>
               <button
-                className="cursor-pointer w-full bg-green-600 p-2 rounded-md text-white hover:bg-green-700"
+                className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
                 onClick={() => setActivePage("conquistas")}
               >
                 Conquistas
               </button>
               <button
-                className="cursor-pointer w-full bg-green-600 p-2 rounded-md text-white hover:bg-green-700"
+                className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
                 onClick={() => setActivePage("delete")}
               >
                 Apagar Progresso

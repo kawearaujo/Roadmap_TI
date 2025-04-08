@@ -5,49 +5,10 @@ import Navbar from "../components/nav"
 import Footer from "../components/footer";
 import { useState } from "react";
 import {userDataStore,UserData} from "@/app/utils/indexedDB"
-
 const areas:any = {
+  
   Software: {
-    "Front-end": 
-    <div className="">
-      <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
-      <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
-      <p>Exemplos de Frameworks e Biblioteca:</p>
-      <div className="flex py-6 gap-4 justify-center">
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Next Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">React Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Vue Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Angular</p>
-        </div>
-      </div>
-    </div>,
-    "Back-end": 
-    <div className="">
-      <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
-      <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
-      <p>Exemplos de Frameworks e Biblioteca:</p>
-      <div className="flex py-6 gap-4 justify-center">
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Next Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">React Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Vue Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Angular</p>
-        </div>
-      </div>
-    </div>,
+    
     "FullStack": 
     <div className="">
       <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
@@ -67,33 +28,58 @@ const areas:any = {
           <p className="text-blue-500">Angular</p>
         </div>
       </div>
-    </div>,
-    "Gamedev": 
+    </div>
+    ,
+    "GameDev": 
     <div className="">
-      <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
-      <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
-      <p>Exemplos de Frameworks e Biblioteca:</p>
+      <p className="pb-1"><p>
+  O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
+</p></p>
+      <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
+      <p>Exemplos de Games Engines:</p>
       <div className="flex py-6 gap-4 justify-center">
         <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Next Js</p>
+          <p className="text-blue-500">Unity</p>
         </div>
         <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">React Js</p>
+          <p className="text-blue-500">GameMaker</p>
         </div>
         <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Vue Js</p>
+          <p className="text-blue-500">Unreal</p>
         </div>
         <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Angular</p>
+          <p className="text-blue-500">Godot</p>
         </div>
       </div>
-    </div>
+    </div>,
+    "QA": 
+    <div className="">
+      <p className="pb-1"><p>
+  O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
+</p></p>
+      <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
+      <p>Exemplos de Games Engines:</p>
+      <div className="flex py-6 gap-4 justify-center">
+        <div className="border border-blue-500 border-1 p-1">
+          <p className="text-blue-500">Unity</p>
+        </div>
+        <div className="border border-blue-500 border-1 p-1">
+          <p className="text-blue-500">GameMaker</p>
+        </div>
+        <div className="border border-blue-500 border-1 p-1">
+          <p className="text-blue-500">Unreal</p>
+        </div>
+        <div className="border border-blue-500 border-1 p-1">
+          <p className="text-blue-500">Godot</p>
+        </div>
+      </div>
+    </div>,
+    
   },
   Hardware: {
     "IoT": "Desenvolvimento de dispositivos conectados à internet para coletar e trocar dados.",
     "Embarcados": "Sistemas de computação dedicados a funções específicas dentro de um dispositivo maior.",
-    "Circuitos": "Projeto e análise de circuitos eletrônicos que compõem dispositivos e sistemas.",
-    "Redes": "Estudo e implementação de sistemas de comunicação entre computadores e dispositivos."
+    "Pesquisa": "Projeto e análise de circuitos eletrônicos que compõem dispositivos e sistemas.",
   },
   "Ciência": {
     "Data Science": "Análise e interpretação de grandes volumes de dados para extrair insights valiosos.",
@@ -101,12 +87,12 @@ const areas:any = {
     "Pesquisa": "Investigação sistemática para estabelecer fatos e chegar a novas conclusões.",
     "Bioinformática": "Aplicação de técnicas computacionais para entender e organizar informações biológicas."
   },
-  Gestão: {
+  "Garantia de Qualidade": {
     "Scrum": "Metodologia ágil para gestão e planejamento de projetos de software.",
     "PM": "Planejamento, execução e finalização de projetos, garantindo que os objetivos sejam alcançados.",
     "Liderança": "Habilidade de guiar e motivar equipes para alcançar metas organizacionais.",
-    "Empreendedorismo": "Processo de iniciar e gerir novos negócios, assumindo riscos financeiros na esperança de lucro."
-  }
+  },
+  
 };
 
 export default function Config1() {
