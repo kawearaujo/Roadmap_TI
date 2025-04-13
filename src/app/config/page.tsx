@@ -3,8 +3,12 @@
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
 import Footer from "../components/footer";
-import { useState } from "react";
+import { useState  } from "react";
 import {userDataStore,UserData} from "@/app/utils/indexedDB"
+import Link from "next/link";
+// import router from "next/navigation ";
+// import { redirect } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 const areas:any = {
   
   Software: {
@@ -98,7 +102,48 @@ const areas:any = {
 export default function Config1() {
   const [selectedArea, setSelectedArea] = useState("Software");
   const [selectedBranch, setSelectedBranch] = useState(null);
+  const [pendingBranch, setPendingBranch] = useState<string | null>(null);
+  const [showModal, setShowModal] = useState(false);
 
+  const router = useRouter();
+
+  const handleClick = async (selectedBranch : string) => {
+    const userData = await userDataStore.getUserData();
+    if (selectedBranch == userData?.area){
+      setSelectedBranch(null);
+    
+    router.push('/user');
+    }else{
+      setPendingBranch(selectedBranch);
+      setShowModal(true); // Exibe o modal
+
+    // let arrayNumberEmpty: number[] = [];
+    // let arrayStringEmpty: string[] = [];
+  
+    // await userDataStore.saveUserAttribute("area", selectedBranch);
+    // await userDataStore.saveUserAttribute("roadmap", arrayStringEmpty);
+    // await userDataStore.saveUserAttribute("achievements", arrayNumberEmpty);
+  
+    // setSelectedBranch(null);
+    
+    // router.push('/user');
+  }
+  };
+  const confirmChange = async () => {
+    if (!pendingBranch) return;
+
+    await userDataStore.saveUserAttribute("area", pendingBranch);
+    await userDataStore.saveUserAttribute("roadmap", []);
+    await userDataStore.saveUserAttribute("achievements", []);
+
+    setSelectedBranch(null);
+    setShowModal(false);
+    router.push('/user');
+  };
+  const cancelChange = () => {
+    setPendingBranch(null);
+    setShowModal(false);
+  };
   // const saveBranch = async (area: string) => {
   //   const db: any = await openDatabase();
   //   const transaction = db.transaction("userData", "readwrite");
@@ -153,7 +198,34 @@ export default function Config1() {
             >
               {area}
             </button>
+
+            
           ))}
+          {/* Modal de confirmação */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/80 bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl p-6 max-w-sm text-center shadow-lg">
+            <h2 className="text-lg font-semibold mb-4">Tem certeza?</h2>
+            <p className="mb-6 text-gray-700">
+              Você já escolheu uma área. Deseja substituir por <strong>{pendingBranch}</strong>? (isso apagará seu progresso)
+            </p>
+            <div className="flex justify-between gap-4">
+              <button
+                onClick={cancelChange}
+                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={confirmChange}
+                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+              >
+                Confirmar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
         </div>
 
         <div className="mt-6 p-4 border border-blue-400 rounded-lg flex justify-center space-x-4">
@@ -184,7 +256,21 @@ export default function Config1() {
               {/* </p> */}
             <div className="absolute bottom-2 flex gap-6 w-[92%] md:w-[95%] justify-center">
               <button className="px-4 py-2 bg-gray-300 rounded" onClick={() => setSelectedBranch(null)}>Fechar</button>
-              <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={() => { userDataStore.saveUserAttribute("area",selectedBranch); setSelectedBranch(null); }}>Escolher</button>
+              {/* <Link className="px-4 py-2 bg-blue-500 text-white rounded" href="/user" onClick={() => 
+                { 
+                  userDataStore.saveUserAttribute("area",selectedBranch); 
+                  userDataStore.saveUserAttribute("achievements",[] );
+                  userDataStore.saveUserAttribute("roadmap",[]);
+                  setSelectedBranch(null); }}>
+              Escolher
+              </Link> */}
+              <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={() => 
+                { 
+                  handleClick(selectedBranch)
+
+                }}
+                  
+                >Escolher</button>
             </div>
           </div>
         </div>
