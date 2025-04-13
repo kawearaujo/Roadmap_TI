@@ -32,9 +32,9 @@ const areas:any = {
     ,
     "GameDev": 
     <div className="">
-      <p className="pb-1"><p>
+      <p className="pb-1">
   O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
-</p></p>
+      </p>
       <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
       <p>Exemplos de Games Engines:</p>
       <div className="flex py-6 gap-4 justify-center">
@@ -54,9 +54,9 @@ const areas:any = {
     </div>,
     "QA": 
     <div className="">
-      <p className="pb-1"><p>
+      <p className="pb-1">
   O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
-</p></p>
+</p>
       <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
       <p>Exemplos de Games Engines:</p>
       <div className="flex py-6 gap-4 justify-center">
