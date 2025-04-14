@@ -3,100 +3,97 @@
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
 import Footer from "../components/footer";
-import { useState  } from "react";
-import {userDataStore,UserData} from "@/app/utils/indexedDB"
+import { useState } from "react";
+import { userDataStore, UserData } from "@/app/utils/indexedDB"
 import Link from "next/link";
 // import router from "next/navigation ";
 // import { redirect } from 'next/navigation'
 import { useRouter } from 'next/navigation'
-const areas:any = {
-  
+const areas: any = {
+
   Software: {
-    
-    "FullStack": 
-    <div className="">
-      <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
-      <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
-      <p>Exemplos de Frameworks e Biblioteca:</p>
-      <div className="flex py-6 gap-4 justify-center">
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Next Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">React Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Vue Js</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Angular</p>
+
+    "FullStack":
+      <div className="">
+        <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
+        <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
+        <p>Exemplos de Frameworks e Biblioteca:</p>
+        <div className="flex py-6 gap-4 justify-center">
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Next Js</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">React Js</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Vue Js</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Angular</p>
+          </div>
         </div>
       </div>
-    </div>
     ,
-    "GameDev": 
-    <div className="">
-      <p className="pb-1">
-  O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
-      </p>
-      <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
-      <p>Exemplos de Games Engines:</p>
-      <div className="flex py-6 gap-4 justify-center">
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Unity</p>
+    "QA":
+      <div className="">
+        <p className="pb-1">
+          O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
+        </p>
+        <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
+        <p>Exemplos de Games Engines:</p>
+        <div className="flex py-6 gap-4 justify-center">
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Unity</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">GameMaker</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Unreal</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Godot</p>
+          </div>
         </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">GameMaker</p>
+      </div>,
+
+    "GameDev":
+      <div className="">
+        <p className="pb-1">
+          O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
+        </p>
+        <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
+        <p>Exemplos de Games Engines:</p>
+        <div className="flex py-6 gap-4 justify-center">
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Unity</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">GameMaker</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Unreal</p>
+          </div>
+          <div className="border border-blue-500 border-1 p-1">
+            <p className="text-blue-500">Godot</p>
+          </div>
         </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Unreal</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Godot</p>
-        </div>
-      </div>
-    </div>,
-    "QA": 
-    <div className="">
-      <p className="pb-1">
-  O desenvolvimento de <span className="font-bold">jogos digitais</span> envolve a criação de elementos visuais, lógicos e interativos com os quais os jogadores interagem diretamente. Ele combina <span className="font-bold">design, programação e narrativa</span>, utilizando tecnologias como <span className="font-bold">C#, Unity, Godot ou Unreal Engine</span>, onde a lógica de jogo é implementada via código, os gráficos e animações são definidos por assets e engines, e a interatividade é construída com sistemas de entrada, física e eventos do jogo.
-</p>
-      <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
-      <p>Exemplos de Games Engines:</p>
-      <div className="flex py-6 gap-4 justify-center">
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Unity</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">GameMaker</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Unreal</p>
-        </div>
-        <div className="border border-blue-500 border-1 p-1">
-          <p className="text-blue-500">Godot</p>
-        </div>
-      </div>
-    </div>,
-    
+      </div>,
+
   },
   Hardware: {
-    "IoT": "Desenvolvimento de dispositivos conectados à internet para coletar e trocar dados.",
-    "Embarcados": "Sistemas de computação dedicados a funções específicas dentro de um dispositivo maior.",
-    "Pesquisa": "Projeto e análise de circuitos eletrônicos que compõem dispositivos e sistemas.",
+    "Sistemas Embarcados": "Sistemas de computação dedicados a funções específicas dentro de um dispositivo maior.",
+    "Robótica e Automação": "Projeto e análise de circuitos eletrônicos que compõem dispositivos e sistemas.",
   },
   "Ciência": {
     "Data Science": "Análise e interpretação de grandes volumes de dados para extrair insights valiosos.",
-    "IA": "Desenvolvimento de sistemas que simulam a inteligência humana para realizar tarefas.",
-    "Pesquisa": "Investigação sistemática para estabelecer fatos e chegar a novas conclusões.",
-    "Bioinformática": "Aplicação de técnicas computacionais para entender e organizar informações biológicas."
+    "IA": "Desenvolvimento de sistemas que simulam a inteligência humana para realizar tarefas."
   },
-  "Garantia de Qualidade": {
+  "Gestão": {
     "Scrum": "Metodologia ágil para gestão e planejamento de projetos de software.",
     "PM": "Planejamento, execução e finalização de projetos, garantindo que os objetivos sejam alcançados.",
-    "Liderança": "Habilidade de guiar e motivar equipes para alcançar metas organizacionais.",
   },
-  
+
 };
 
 export default function Config1() {
@@ -107,27 +104,27 @@ export default function Config1() {
 
   const router = useRouter();
 
-  const handleClick = async (selectedBranch : string) => {
+  const handleClick = async (selectedBranch: string) => {
     const userData = await userDataStore.getUserData();
-    if (selectedBranch == userData?.area){
+    if (selectedBranch == userData?.area) {
       setSelectedBranch(null);
-    
-    router.push('/user');
-    }else{
+
+      router.push('/user');
+    } else {
       setPendingBranch(selectedBranch);
       setShowModal(true); // Exibe o modal
 
-    // let arrayNumberEmpty: number[] = [];
-    // let arrayStringEmpty: string[] = [];
-  
-    // await userDataStore.saveUserAttribute("area", selectedBranch);
-    // await userDataStore.saveUserAttribute("roadmap", arrayStringEmpty);
-    // await userDataStore.saveUserAttribute("achievements", arrayNumberEmpty);
-  
-    // setSelectedBranch(null);
-    
-    // router.push('/user');
-  }
+      // let arrayNumberEmpty: number[] = [];
+      // let arrayStringEmpty: string[] = [];
+
+      // await userDataStore.saveUserAttribute("area", selectedBranch);
+      // await userDataStore.saveUserAttribute("roadmap", arrayStringEmpty);
+      // await userDataStore.saveUserAttribute("achievements", arrayNumberEmpty);
+
+      // setSelectedBranch(null);
+
+      // router.push('/user');
+    }
   };
   const confirmChange = async () => {
     if (!pendingBranch) return;
@@ -160,7 +157,7 @@ export default function Config1() {
   //         experience: updatedUserData?.experience ?? experience,
   //         area: updatedUserData?.area ?? area,
   //       };
-      
+
   //       await userDataStore.saveUserData(userData);
   //     };
 
@@ -181,7 +178,7 @@ export default function Config1() {
 
   return (
     <div className="min-h-screen text-black">
-      <Navbar/>
+      <Navbar />
       <div className="relative flex min-h-screen flex-col justify-center items-center gap-10">
         <div className="absolute inset-0 -z-10 ">
           <div className="w-full h-[95vh] flex justify-center">
@@ -199,37 +196,37 @@ export default function Config1() {
               {area}
             </button>
 
-            
+
           ))}
           {/* Modal de confirmação */}
-      {showModal && (
-        <div className="fixed inset-0 bg-black/80 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-xl p-6 max-w-sm text-center shadow-lg">
-            <h2 className="text-lg font-semibold mb-4">Tem certeza?</h2>
-            <p className="mb-6 text-gray-700">
-              Você já escolheu uma área. Deseja substituir por <strong>{pendingBranch}</strong>? (isso apagará seu progresso)
-            </p>
-            <div className="flex justify-between gap-4">
-              <button
-                onClick={cancelChange}
-                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={confirmChange}
-                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-              >
-                Confirmar
-              </button>
+          {showModal && (
+            <div className="fixed inset-0 bg-black/80 bg-opacity-50 flex items-center justify-center z-50">
+              <div className="bg-white rounded-xl p-6 max-w-sm text-center shadow-lg">
+                <h2 className="text-lg font-semibold mb-4">Tem certeza?</h2>
+                <p className="mb-6 text-gray-700">
+                  Você já escolheu uma área. Deseja substituir por <strong>{pendingBranch}</strong>? (isso apagará seu progresso)
+                </p>
+                <div className="flex justify-between gap-4">
+                  <button
+                    onClick={cancelChange}
+                    className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    onClick={confirmChange}
+                    className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                  >
+                    Confirmar
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          )}
         </div>
 
         <div className="mt-6 p-4 border border-blue-400 rounded-lg flex justify-center space-x-4">
-          {Object.keys(areas[selectedArea]).map((branch:any) => (
+          {Object.keys(areas[selectedArea]).map((branch: any) => (
             <button
               key={branch}
               className="px-4 py-2 border border-gray-400 rounded"
@@ -252,8 +249,8 @@ export default function Config1() {
             </button>
             <h2 className="text-xl font-bold text-center">{selectedBranch}</h2>
             {/* <p className="mt-4"> */}
-              {areas[selectedArea][selectedBranch]}
-              {/* </p> */}
+            {areas[selectedArea][selectedBranch]}
+            {/* </p> */}
             <div className="absolute bottom-2 flex gap-6 w-[92%] md:w-[95%] justify-center">
               <button className="px-4 py-2 bg-gray-300 rounded" onClick={() => setSelectedBranch(null)}>Fechar</button>
               {/* <Link className="px-4 py-2 bg-blue-500 text-white rounded" href="/user" onClick={() => 
@@ -264,18 +261,17 @@ export default function Config1() {
                   setSelectedBranch(null); }}>
               Escolher
               </Link> */}
-              <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={() => 
-                { 
-                  handleClick(selectedBranch)
+              <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={() => {
+                handleClick(selectedBranch)
 
-                }}
-                  
-                >Escolher</button>
+              }}
+
+              >Escolher</button>
             </div>
           </div>
         </div>
       )}
-      <Footer/>
+      <Footer />
     </div>
   );
 }
