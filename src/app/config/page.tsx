@@ -90,8 +90,8 @@ const areas: any = {
     "IA": "Desenvolvimento de sistemas que simulam a inteligência humana para realizar tarefas."
   },
   "Gestão": {
-    "Scrum": "Metodologia ágil para gestão e planejamento de projetos de software.",
-    "PM": "Planejamento, execução e finalização de projetos, garantindo que os objetivos sejam alcançados.",
+    "Scrum Master": "Metodologia ágil para gestão e planejamento de projetos de software.",
+    "Product Manager": "Planejamento, execução e finalização de projetos, garantindo que os objetivos sejam alcançados.",
   },
 
 };
