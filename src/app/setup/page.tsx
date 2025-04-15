@@ -1,17 +1,43 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { userDataStore, UserData } from "@/app/utils/indexedDB"
+import { useRouter } from 'next/navigation'
+
 
 export default function SetupPage() {
+
     const [selected, setSelected] = useState<string | null>(null);
     const [name, setName] = useState("");
+    const router = useRouter();
+
+    useEffect(() => {
+        const loadUserData = async () => {
+            const userData = await userDataStore.getUserData();
+            if (userData)
+                setName(userData.name);
+        }
+    }, [])
+
+    const changeName = async (nome: string) => {
+        await userDataStore.saveUserAttribute("name", nome);
+    }
+    const changeArea = async (area: string) => {
+        // if (!selected) return;
+
+        await userDataStore.saveUserAttribute("area", area);
+        await userDataStore.saveUserAttribute("roadmap", []);
+        await userDataStore.saveUserAttribute("achievements", []);
+
+    };
+
 
     const options = [
         "FullStack",
         "QA",
         "GameDev",
         "Sistemas Embarcados",
-        "Robótica e Automação",
+        "Robótica",
         "Data Science",
         "IA",
         "Scrum Master",
@@ -33,16 +59,23 @@ export default function SetupPage() {
                     type="text"
                     placeholder="Digite seu nome"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => {
+                        setName(e.target.value);
+                        changeName(e.target.value);
+                    }}
                     className="border border-gray-300 rounded px-4 py-2 w-full max-w-sm mb-6 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 {/* Button Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-3xl">
-                    {options.map((option) => (
+                    {options.map((option, index) => (
                         <button
-                            key={option}
-                            onClick={() => setSelected(option)}
+                            key={index}
+                            onClick={() => {
+                                setSelected(option);
+                                changeArea(option);
+
+                            }}
                             className={`px-4 py-2 rounded-lg shadow text-white font-semibold transition ${selected === option
                                 ? "bg-blue-600"
                                 : "bg-gray-400 hover:bg-gray-500"

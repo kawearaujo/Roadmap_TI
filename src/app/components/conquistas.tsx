@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import {userDataStore, UserData } from "../utils/indexedDB"; // Ajuste o caminho conforme necessário
+import { userDataStore, UserData } from "../utils/indexedDB"; // Ajuste o caminho conforme necessário
 
 const achievements = [
   { id: 1, title: "Primeiro Deploy", description: "Realize o primeiro deploy de um projeto.", xp: 25 },
@@ -64,26 +64,26 @@ export default function AchievementsPage() {
     <div className="pb-8">
       <div className="sticky w-full bg-white top-0 p-6 z-1000">
         <h1 className="text-3xl font-bold text-center mb-6">Conquistas</h1>
-        
+
         {/* Barra de progresso */}
         <div className="w-full bg-gray-700 rounded-full h-6 mb-6">
           <div
             className="duration-300 easy-in transition-all  bg-blue-500 h-6 rounded-full text-center text-xs font-bold flex items-center justify-center"
             style={{ width: `${(completed.length / totalAchievements) * 100}%` }}
           >
-            {completed.length !=0?
-            <>{completed.length} / {totalAchievements}</>
-            :
-            <></>
+            {completed.length != 0 ?
+              <>{completed.length} / {totalAchievements}</>
+              :
+              <></>
             }
-            
+
           </div>
         </div>
       </div>
       {/* Lista de conquistas */}
       <div className="px-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {achievements.map(({ id, title, description, xp }) => (
-          <div key={id} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
+        {achievements.map(({ id, title, description, xp }, index) => (
+          <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
             <label className="absolute top-2 right-2 cursor-pointer">
               <input
                 type="checkbox"

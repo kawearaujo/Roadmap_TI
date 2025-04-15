@@ -77,8 +77,8 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
         <>
           <Arrow />
           <div className="flex items-center space-x-6">
-            {node.children.map((child) => (
-              <RoadmapNode key={child.id} node={child} />
+            {node.children.map((child, index) => (
+              <RoadmapNode key={index} node={child} />
             ))}
           </div>
         </>
@@ -114,8 +114,8 @@ export default function RoadmapPage() {
     <main className="min-h-screen bg-white p-8">
       <h1 className="text-3xl font-bold mb-6">Roadmap por Área</h1>
       <div className="flex flex-col gap-8">
-        {roadmapData.map((node) => (
-          <RoadmapNode key={node.id} node={node} />
+        {roadmapData.map((node, index) => (
+          <RoadmapNode key={index} node={node} />
         ))}
       </div>
     </main>

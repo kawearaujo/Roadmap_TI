@@ -130,7 +130,7 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg> : ""}
-                  <RoadmapNode key={child.id} node={child} />
+                  <RoadmapNode key={index} node={child} />
                 </div>
               ))}
           </div>
@@ -191,8 +191,8 @@ export default function RoadmapPage() {
         ))} */}
         {Road
           .filter((node) => (node.title == area))
-          .map((node) => (
-            <RoadmapNode key={node.id} node={node} />
+          .map((node, index) => (
+            <RoadmapNode key={index} node={node} />
           ))}
       </div>
     </main>
