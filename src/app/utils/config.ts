@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {userDataStore,UserData} from "@/app/utils/indexedDB"
 
 
@@ -7,8 +7,8 @@ import {userDataStore,UserData} from "@/app/utils/indexedDB"
   
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [userName, setUserName] = useState("Nome do Usuário");
-  const [newUserName, setNewUserName] = useState(userName);
-  const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false);
+  // const [newUserName, setNewUserName] = useState(userName);
+  // const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false);
   const [level, setLevel] = useState(5);
   const [experience, setExperience] = useState(50);
   const [area, setArea] = useState<string | null>(null);
@@ -24,22 +24,24 @@ import {userDataStore,UserData} from "@/app/utils/indexedDB"
         level: updatedUserData?.level ?? level,
         experience: updatedUserData?.experience ?? experience,
         area: updatedUserData?.area ?? (area || "N/A"),
+        achievements: [],
+        roadmap: []
       };
     
       await userDataStore.saveUserData(userData);
     };
 
-    const  handleImageSelect = (image: string) => {
-      if (image) {
-        setSelectedImage(image);
-        saveUserData({ photo: image }); // Salva no IndexedDB
-      }
-    };
+    // const  handleImageSelect = (image: string) => {
+    //   if (image) {
+    //     setSelectedImage(image);
+    //     saveUserData({ photo: image }); // Salva no IndexedDB
+    //   }
+    // };
   
-    const handleNameChange = () => {
-      setUserName(newUserName);
-      saveUserData({ name: newUserName }); // Salva no IndexedDB
-    };
+    // const handleNameChange = () => {
+    //   setUserName(newUserName);
+    //   saveUserData({ name: newUserName }); // Salva no IndexedDB
+    // };
     
    export const handleAreaChange = (newArea: string) => {
       setArea(newArea);
@@ -47,10 +49,10 @@ import {userDataStore,UserData} from "@/app/utils/indexedDB"
     };
 
 
-  const handleDeleteProgress = () => {
-    console.log("Progresso apagado.");
-    setShowDeleteConfirmation(false);
-  };
+  // const handleDeleteProgress = () => {
+  //   console.log("Progresso apagado.");
+  //   setShowDeleteConfirmation(false);
+  // };
 
 
   export default function UserPage() {

@@ -483,7 +483,7 @@ export default function IA() {
                                     <p>KiCad é uma suíte de software open source para design de placas de circuito impresso (PCB). Utilizado para projetar hardware personalizado para sistemas embarcados, o KiCad oferece ferramentas para desenho de esquemáticos, layout de placas, visualização 3D e geração de arquivos de fabricação. O domínio desta ferramenta permite criar circuitos otimizados, reduzir interferências, melhorar desempenho térmico e preparar projetos para produção industrial.</p>
                                     <ul className="list-disc list-inside">
                                         <li><a className="text-blue-600 underline" href="https://kicad.org/help/documentation/" target="_blank">Documentação Oficial do KiCad</a></li>
-                                        <li><a className="text-blue-600 underline" href="https://contextualelectronics.com/courses/getting-to-blinky-4-0/" target="_blank">Curso "Getting to Blinky" para Iniciantes</a></li>
+                                        <li><a className="text-blue-600 underline" href="https://contextualelectronics.com/courses/getting-to-blinky-4-0/" target="_blank">Curso &quot;Getting to Blinky&quot; para Iniciantes</a></li>
                                         <li><a className="text-blue-600 underline" href="https://hackaday.io/projects?tag=kicad" target="_blank">Projetos com KiCad no Hackaday</a></li>
                                     </ul>
                                 </div>
@@ -497,7 +497,7 @@ export default function IA() {
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Programação Bare-Metal refere-se ao desenvolvimento de software que interage diretamente com o hardware, sem camadas intermediárias como sistemas operacionais. Esta abordagem proporciona controle total sobre o dispositivo, melhor desempenho e previsibilidade temporal, sendo crucial para sistemas críticos e de tempo real. Envolve configuração direta de registradores, gerenciamento manual de memória e implementação de rotinas de inicialização e tratamento de interrupções.</p>
                                     <ul className="list-disc list-inside">
-                                        <li><a className="text-blue-600 underline" href="https://interrupt.memfault.com/blog/zero-to-main-1" target="_blank">Série "Zero to Main" de Programação Bare-Metal</a></li>
+                                        <li><a className="text-blue-600 underline" href="https://interrupt.memfault.com/blog/zero-to-main-1" target="_blank">Série &quot;Zero to Main&quot; de Programação Bare-Metal</a></li>
                                         <li><a className="text-blue-600 underline" href="https://www.embedded.com/bare-metal-programming-cc-on-the-metal-part-1/" target="_blank">Programação C/C++ Bare-Metal</a></li>
                                         <li><a className="text-blue-600 underline" href="https://embeddedinventor.com/a-beginners-guide-to-arm-cortex-m-bare-metal-development/" target="_blank">Guia para Iniciantes em ARM Cortex-M Bare-Metal</a></li>
                                     </ul>

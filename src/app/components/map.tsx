@@ -93,7 +93,7 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
                 <span className="h-5 w-5 text-gray-500 hover:text-red-500">✕</span>
               </button>
             </div>
-            <p className="mb-4 text-sm text-gray-600">Aqui vai o conteúdo da etapa "{node.title}".</p>
+            <p className="mb-4 text-sm text-gray-600">Aqui vai o conteúdo da etapa '{node.title}'.</p>
             <label className="flex items-center gap-2">
               <input
                 type="checkbox"

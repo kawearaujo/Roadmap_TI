@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+// import Image from "next/image";
 import bg from "@/img/bg1.jpg"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -7,7 +7,7 @@ import Navbar from "@/app/components/nav"
 import Footer from "./components/footer";
 
 export default function Home() {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   return (
     <div className="min-h-screen text-black">
 

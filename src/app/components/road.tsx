@@ -19,28 +19,28 @@ type NodeType = {
 const RoadmapNode = ({ node }: { node: NodeType }) => {
   const Road = useUserStore((state) => state.roadmap);
   const setRoad = useUserStore((state) => state.setR);
-  const addR = useUserStore((state) => state.addR);
-  const delR = useUserStore((state) => state.delR);
+  // const addR = useUserStore((state) => state.addR);
+  // const delR = useUserStore((state) => state.delR);
   // const [selected, setSelected] = useState(false);
   const [showModal, setShowModal] = useState(false);
   // const isLeaf = node.children.length === 0;
-  const level = node.id.split('-').length;
+  // const level = node.id.split('-').length;
   const isThirdLevelParent = node.
     children.every(child => child.id.split('-').length === 3);
   const isSecLevelParent = node.
     children.every(child => child.id.split('-').length === 2);
-  const isFirsLevelParent = node.
-    children.every(child => child.id.split('-').length === 1);
+  // const isFirsLevelParent = node.
+  //   children.every(child => child.id.split('-').length === 1);
 
   const handleClick = () => {
     setShowModal(true);
   };
   const [completed, setCompleted] = useState<string[]>([]);
-  const totalAchievements = roadmapData.length;
+  // const totalAchievements = roadmapData.length;
 
-  const save = async () => {
-    await userDataStore.saveUserAttribute("roadmap", Road);
-  }
+  // const save = async () => {
+  //   await userDataStore.saveUserAttribute("roadmap", Road);
+  // }
   useEffect(() => {
     const loadUserData = async () => {
       const userData = await userDataStore.getUserData();
@@ -129,7 +129,7 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
 
             {node.
               children.map((child, index) => (
-                <div className="relative flex items-center">
+                <div key={index} className="relative flex items-center">
                   <svg
                     className="absolute -top-8 left-0 z-0"
                     width="40"

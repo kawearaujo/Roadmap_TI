@@ -9,7 +9,7 @@ import {
 } from "recharts";
 import Link from "next/link";
 import { useUserStore } from "@/app/store/useUserStore"
-import { userDataStore, UserData } from "@/app/utils/indexedDB"
+import { userDataStore } from "@/app/utils/indexedDB"
 import { useEffect, useState } from "react";
 
 // const data = [

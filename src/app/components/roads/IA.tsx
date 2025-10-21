@@ -310,7 +310,7 @@ export default function IA() {
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Redes Neurais Recorrentes são projetadas para trabalhar com dados sequenciais. LSTMs (Long Short-Term Memory) e GRUs (Gated Recurrent Units) são variantes que lidam melhor com dependências de longo prazo em sequências.</p>
                                     <ul className="list-disc list-inside">
-                                        <li><a className="text-blue-600 underline" href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank">Colah's Blog - Entendendo LSTMs</a></li>
+                                        <li><a className="text-blue-600 underline" href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank">Colah&apos;s Blog - Entendendo LSTMs</a></li>
                                         <li><a className="text-blue-600 underline" href="https://www.tensorflow.org/tutorials/text/text_classification_rnn" target="_blank">TensorFlow - Classificação de Texto com RNN</a></li>
                                         <li><a className="text-blue-600 underline" href="https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/" target="_blank">ML Mastery - Introdução a LSTMs</a></li>
                                         <li><a className="text-blue-600 underline" href="https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html" target="_blank">PyTorch - RNN para Classificação</a></li>

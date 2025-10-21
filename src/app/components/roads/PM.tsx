@@ -157,7 +157,7 @@ export default function PM() {
                             title: 'Job To Be Done (JTBD)',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
-                                    <p>Jobs To Be Done é um framework que foca no "trabalho" que os usuários estão tentando realizar, não nas características demográficas. Ajuda a entender o que motiva as pessoas a adotar novos produtos.</p>
+                                    <p>Jobs To Be Done é um framework que foca no &quot;trabalho&quot; que os usuários estão tentando realizar, não nas características demográficas. Ajuda a entender o que motiva as pessoas a adotar novos produtos.</p>
                                     <ul className="list-disc list-inside">
                                         <li><a className="text-blue-600 underline" href="https://jtbd.info/2-what-is-jobs-to-be-done-jtbd-796b82081cca" target="_blank">O que é JTBD</a></li>
                                         <li><a className="text-blue-600 underline" href="https://www.intercom.com/resources/books/intercom-jobs-to-be-done" target="_blank">Intercom - JTBD Framework</a></li>
@@ -545,7 +545,7 @@ export default function PM() {
                                     <p>A carreira em produto geralmente evolui de Product Manager para Senior PM, Group PM/PM Lead, Director of Product, até Head of Product ou CPO (Chief Product Officer). Cada nível exige diferentes habilidades e responsabilidades.</p>
                                     <ul className="list-disc list-inside">
                                         <li><a className="text-blue-600 underline" href="https://www.productplan.com/learn/product-manager-career-path/" target="_blank">Trilha de carreira de PMs</a></li>
-                                        <li><a className="text-blue-600 underline" href="https://www.lennysnewsletter.com/p/product-manager-career-ladder" target="_blank">Lenny's Newsletter - Progressão de carreira</a></li>
+                                        <li><a className="text-blue-600 underline" href="https://www.lennysnewsletter.com/p/product-manager-career-ladder" target="_blank">Lenny&apos;s Newsletter - Progressão de carreira</a></li>
                                         <li><a className="text-blue-600 underline" href="https://www.reforge.com/blog/crossing-the-canyon-product-leader" target="_blank">Reforge - Transição para liderança de produto</a></li>
                                     </ul>
                                 </div>

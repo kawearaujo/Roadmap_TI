@@ -78,7 +78,7 @@ export default function IA() {
                     title: 'Eletrônica',
 
                     content: <div className="space-y-2 text-sm text-gray-700">
-                        <p>A eletrônica na robótica trata dos componentes e circuitos que dão "vida" aos robôs. Inclui o estudo de componentes eletrônicos básicos, circuitos integrados, placas de desenvolvimento e interfaces que permitem que o robô interaja com o ambiente através de sensores e atuadores.</p>
+                        <p>A eletrônica na robótica trata dos componentes e circuitos que dão &quot;vida&quot; aos robôs. Inclui o estudo de componentes eletrônicos básicos, circuitos integrados, placas de desenvolvimento e interfaces que permitem que o robô interaja com o ambiente através de sensores e atuadores.</p>
                         <ul className="list-disc list-inside">
                             <li><a className="text-blue-600 underline" href="https://learn.sparkfun.com/tutorials" target="_blank">SparkFun - Tutoriais de Eletrônica</a></li>
                             <li><a className="text-blue-600 underline" href="https://www.adafruit.com/category/17" target="_blank">Adafruit - Componentes e Tutoriais</a></li>
@@ -130,7 +130,7 @@ export default function IA() {
                         {
                             id: '3-2-4', title: 'Microcontroladores (Arduino, ESP32)',
                             content: <div className="space-y-2 text-sm text-gray-700">
-                                <p>Microcontroladores são os "cérebros" dos robôs simples e médios. Plataformas como Arduino e ESP32 oferecem processamento, entradas/saídas digitais e analógicas, comunicação e facilidade de programação, tornando-se elementos centrais para protótipos e projetos robóticos educacionais e amadores.</p>
+                                <p>Microcontroladores são os &quot;cérebros&quot; dos robôs simples e médios. Plataformas como Arduino e ESP32 oferecem processamento, entradas/saídas digitais e analógicas, comunicação e facilidade de programação, tornando-se elementos centrais para protótipos e projetos robóticos educacionais e amadores.</p>
                                 <ul className="list-disc list-inside">
                                     <li><a className="text-blue-600 underline" href="https://www.arduino.cc/en/Guide" target="_blank">Guia Oficial Arduino</a></li>
                                     <li><a className="text-blue-600 underline" href="https://randomnerdtutorials.com/getting-started-with-esp32/" target="_blank">Primeiros Passos com ESP32</a></li>
@@ -329,7 +329,7 @@ export default function IA() {
                         {
                             id: '3-6-1', title: 'Visão Computacional com OpenCV',
                             content: <div className="space-y-2 text-sm text-gray-700">
-                                <p>A visão computacional permite que robôs "enxerguem" e interpretem o ambiente visual. Com a biblioteca OpenCV, é possível implementar detecção de objetos, rastreamento de movimento, reconhecimento facial e análise de imagens, adicionando capacidades perceptivas sofisticadas aos sistemas robóticos.</p>
+                                <p>A visão computacional permite que robôs &quot;enxerguem&quot; e interpretem o ambiente visual. Com a biblioteca OpenCV, é possível implementar detecção de objetos, rastreamento de movimento, reconhecimento facial e análise de imagens, adicionando capacidades perceptivas sofisticadas aos sistemas robóticos.</p>
                                 <ul className="list-disc list-inside">
                                     <li><a className="text-blue-600 underline" href="https://docs.opencv.org/master/d9/df8/tutorial_root.html" target="_blank">Tutoriais Oficiais OpenCV</a></li>
                                     <li><a className="text-blue-600 underline" href="https://www.pyimagesearch.com/category/raspberry-pi/" target="_blank">Visão Computacional no Raspberry Pi</a></li>

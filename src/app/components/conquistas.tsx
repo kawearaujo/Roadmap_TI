@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import { userDataStore, UserData } from "../utils/indexedDB"; // Ajuste o caminho conforme necessário
+import { userDataStore } from "../utils/indexedDB"; // Ajuste o caminho conforme necessário
 import { useUserStore } from "@/app/store/useUserStore"
 
 
@@ -31,9 +31,9 @@ const achievements = [
 
 export default function AchievementsPage() {
   const setQConquistas = useUserStore((state) => state.set);
-  const [completedAchievements, setCompletedAchievements] = useState<number>(0);
+  // const [completedAchievements, setCompletedAchievements] = useState<number>(0);
   const [completed, setCompleted] = useState<number[]>([]);
-  const [experience, setExperience] = useState<number>(0);
+  // const [experience, setExperience] = useState<number>(0);
   const totalAchievements = achievements.length;
 
   useEffect(() => {

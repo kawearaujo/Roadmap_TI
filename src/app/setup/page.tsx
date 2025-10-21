@@ -1,23 +1,23 @@
 "use client"
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { userDataStore, UserData } from "@/app/utils/indexedDB"
-import { useRouter } from 'next/navigation'
+import { userDataStore } from "@/app/utils/indexedDB"
+// import { useRouter } from 'next/navigation'
 
 
 export default function SetupPage() {
 
     const [selected, setSelected] = useState<string | null>(null);
     const [name, setName] = useState("");
-    const router = useRouter();
+    // const router = useRouter();
 
-    useEffect(() => {
-        const loadUserData = async () => {
-            const userData = await userDataStore.getUserData();
-            if (userData)
-                setName(userData.name);
-        }
-    }, [])
+    // useEffect(() => {
+    //     const loadUserData = async () => {
+    //         const userData = await userDataStore.getUserData();
+    //         if (userData)
+    //             setName(userData.name);
+    //     }
+    // }, [])
 
     const changeName = async (nome: string) => {
         await userDataStore.saveUserAttribute("name", nome);

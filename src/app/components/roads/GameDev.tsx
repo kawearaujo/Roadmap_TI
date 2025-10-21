@@ -273,10 +273,10 @@ export default function IA() {
                         <div className="space-y-2 text-sm text-gray-700">
                             <p>Design de jogo é a disciplina de criar regras, mecânicas, narrativas e experiências que tornam um jogo divertido e envolvente. Envolve a concepção de sistemas de gameplay, balanceamento, level design, feedback ao jogador e fluxo de jogo para criar experiências significativas.</p>
                             <ul className="list-disc list-inside">
-                                <li><a className="text-blue-600 underline" href="https://www.gamasutra.com/view/feature/131474/the_designers_notebook_.php" target="_blank">Gamasutra - Designer's Notebook</a></li>
+                                <li><a className="text-blue-600 underline" href="https://www.gamasutra.com/view/feature/131474/the_designers_notebook_.php" target="_blank">Gamasutra - Designer&apos;s Notebook</a></li>
                                 <li><a className="text-blue-600 underline" href="https://www.coursera.org/learn/game-design" target="_blank">Coursera - Introdução ao Design de Jogos</a></li>
                                 <li><a className="text-blue-600 underline" href="https://www.amazon.com.br/Art-Game-Design-Book-Lenses/dp/0123694965" target="_blank">Livro: The Art of Game Design</a></li>
-                                <li><a className="text-blue-600 underline" href="https://www.youtube.com/c/GameMakersToolkit/videos" target="_blank">Game Maker's Toolkit - Análises de Design</a></li>
+                                <li><a className="text-blue-600 underline" href="https://www.youtube.com/c/GameMakersToolkit/videos" target="_blank">Game Maker&apos;s Toolkit - Análises de Design</a></li>
                             </ul>
                         </div>
                     ,

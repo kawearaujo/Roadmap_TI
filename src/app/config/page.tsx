@@ -3,13 +3,15 @@
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
 import Footer from "../components/footer";
-import { useState } from "react";
-import { userDataStore, UserData } from "@/app/utils/indexedDB"
-import Link from "next/link";
+import { JSX, useState } from "react";
+import { userDataStore } from "@/app/utils/indexedDB"
+// import Link from "next/link";
 // import router from "next/navigation ";
 // import { redirect } from 'next/navigation'
 import { useRouter } from 'next/navigation'
-const areas: any = {
+type AreaCategory = Record<string, JSX.Element>;
+type Areas = Record<string, AreaCategory>;
+const areas: Areas = {
   Software: {
 
     "FullStack":
@@ -228,28 +230,29 @@ export default function Config1() {
 
   const router = useRouter();
 
-  const handleClick = async (selectedBranch: string) => {
-    const userData = await userDataStore.getUserData();
-    if (selectedBranch == userData?.area) {
-      setSelectedBranch(null);
+  // const handleClick = async (selectedBranch: string) => {
+  //   const userData = await userDataStore.getUserData();
+  //   if (selectedBranch == userData?.area) {
+  //     setSelectedBranch(null);
 
-      router.push('/user');
-    } else {
-      setPendingBranch(selectedBranch);
-      setShowModal(true); // Exibe o modal
+  //     router.push('/user');
+  //   } else {
+  //     setPendingBranch(selectedBranch);
+  //     setShowModal(true); // Exibe o modal
 
-      // let arrayNumberEmpty: number[] = [];
-      // let arrayStringEmpty: string[] = [];
+  //     // let arrayNumberEmpty: number[] = [];
+  //     // let arrayStringEmpty: string[] = [];
 
-      // await userDataStore.saveUserAttribute("area", selectedBranch);
-      // await userDataStore.saveUserAttribute("roadmap", arrayStringEmpty);
-      // await userDataStore.saveUserAttribute("achievements", arrayNumberEmpty);
+  //     // await userDataStore.saveUserAttribute("area", selectedBranch);
+  //     // await userDataStore.saveUserAttribute("roadmap", arrayStringEmpty);
+  //     // await userDataStore.saveUserAttribute("achievements", arrayNumberEmpty);
 
-      // setSelectedBranch(null);
+  //     // setSelectedBranch(null);
 
-      // router.push('/user');
-    }
-  };
+  //     // router.push('/user');
+  //   }
+  // };
+
   const confirmChange = async () => {
     if (!pendingBranch) return;
 

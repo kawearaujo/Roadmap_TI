@@ -46,11 +46,11 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
 };
 
 // Componente para o Dashboard
-const Dashboard = () => (
-  <div className='pl-64'>
-    <Conq />
-  </div>
-);
+// const Dashboard = () => (
+//   <div className='pl-64'>
+//     <Conq />
+//   </div>
+// );
 
 // Componente para o RoadMap
 const RM = () => (
@@ -91,7 +91,7 @@ const DeleteConfirmation = ({ onConfirm, onCancel }: { onConfirm: () => void; on
 
 export default function UserPage() {
 
-  const [verify, setVerify] = useState(false);
+  // const [verify, setVerify] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showImagePicker, setShowImagePicker] = useState(false);
   const [userName, setUserName] = useState("N/A");
@@ -102,7 +102,7 @@ export default function UserPage() {
   const [level, setLevel] = useState(0);
   const [experience, setExperience] = useState(0);
   const [area, setArea] = useState("");
-  const [achiev, setAchiev] = useState<number[]>();
+  // const [achiev, setAchiev] = useState<number[]>();
   const [qConquistas, setQConquistas] = useState<number[]>();
   const [roadmap, setRoadmap] = useState<string[]>();
   const setQConq = useUserStore((state) => state.set);
@@ -145,21 +145,21 @@ export default function UserPage() {
     loadUserData();
   }, []);
 
-  const saveUserData = async (updatedUserData?: Partial<UserData>) => {
-    const userData: UserData = {
-      id: 'user1',
-      name: updatedUserData?.name ?? userName,
-      photo: updatedUserData?.photo ?? (selectedImage || ""),
-      level: updatedUserData?.level ?? level,
-      experience: updatedUserData?.experience ?? experience,
-      area: updatedUserData?.area ?? area,
-      achievements: updatedUserData?.achievements ?? (achiev || []),
-      roadmap: updatedUserData?.roadmap ?? ([])
+  // const saveUserData = async (updatedUserData?: Partial<UserData>) => {
+  //   const userData: UserData = {
+  //     id: 'user1',
+  //     name: updatedUserData?.name ?? userName,
+  //     photo: updatedUserData?.photo ?? (selectedImage || ""),
+  //     level: updatedUserData?.level ?? level,
+  //     experience: updatedUserData?.experience ?? experience,
+  //     area: updatedUserData?.area ?? area,
+  //     achievements: updatedUserData?.achievements ?? (achiev || []),
+  //     roadmap: updatedUserData?.roadmap ?? ([])
 
-    };
+  //   };
 
-    await userDataStore.saveUserData(userData);
-  };
+  //   await userDataStore.saveUserData(userData);
+  // };
 
   const handleImageSelect = (image: string) => {
     if (image) {
@@ -204,7 +204,7 @@ export default function UserPage() {
     await userDataStore.saveUserAttribute("roadmap", [])
     await userDataStore.saveUserAttribute("achievements", [])
     // Lógica para apagar os dados do usuário
-    console.log("Progresso apagado.");
+    console.log("Progresso apagado." + showDeleteConfirmation + "; Level:" + level + "; Exp:" + experience);
     setShowDeleteConfirmation(false);
     // Voltar para o Dashboard após confirmar a exclusão
     setActivePage("dashboard");

@@ -114,7 +114,7 @@ export default function IA() {
                                         <li>Feedback contínuo e melhoria iterativa</li>
                                         <li>Autorganização e empoderamento</li>
                                         <li>Experimentação e aprendizado com falhas</li>
-                                        <li>"Fail fast" - falhar rápido para aprender rápido</li>
+                                        <li>&quot;Fail fast&quot; - falhar rápido para aprender rápido</li>
                                         <li>Orientação a valor para o cliente</li>
                                     </ul>
                                     <ul className="list-disc list-inside mt-2">
@@ -154,7 +154,7 @@ export default function IA() {
                                         <li><strong>Product Owner (PO):</strong> Responsável por maximizar o valor do produto, gerenciar o Product Backlog e garantir visão clara do produto</li>
                                         <li><strong>Developers (Time de Desenvolvimento):</strong> Profissionais que transformam itens do Product Backlog em incrementos de produto utilizáveis a cada Sprint</li>
                                     </ul>
-                                    <p className="mt-2">No Scrum Guide 2020, houve uma mudança de nomenclatura - agora temos apenas "Developers" ao invés de "Development Team".</p>
+                                    <p className="mt-2">No Scrum Guide 2020, houve uma mudança de nomenclatura - agora temos apenas &quot;Developers&quot; ao invés de &quot;Development Team&quot;.</p>
                                     <ul className="list-disc list-inside mt-2">
                                         <li><a className="text-blue-600 underline" href="https://www.scrum.org/resources/blog/scrum-team-roles-responsibilities" target="_blank">Papéis e Responsabilidades no Scrum</a></li>
                                         <li><a className="text-blue-600 underline" href="https://www.mountaingoatsoftware.com/agile/scrum/roles" target="_blank">Papéis do Scrum (Mountain Goat Software)</a></li>
@@ -197,7 +197,7 @@ export default function IA() {
                                         <li><strong>Sprint Backlog:</strong> Conjunto de itens do Product Backlog selecionados para a Sprint, mais um plano para entregá-los</li>
                                         <li><strong>Increment:</strong> Soma de todos os itens do Product Backlog concluídos durante uma Sprint e o valor dos incrementos anteriores</li>
                                     </ul>
-                                    <p className="mt-2">Cada artefato tem um "compromisso" associado para garantir transparência e foco:</p>
+                                    <p className="mt-2">Cada artefato tem um &quot;compromisso&quot; associado para garantir transparência e foco:</p>
                                     <ul className="list-disc list-inside">
                                         <li>Product Backlog → Product Goal (Meta do Produto)</li>
                                         <li>Sprint Backlog → Sprint Goal (Meta da Sprint)</li>
@@ -217,10 +217,10 @@ export default function IA() {
                             title: 'Definition of Done & Definition of Ready',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
-                                    <p>Definições claras de "pronto" e "preparado" são essenciais para garantir qualidade e clareza no Scrum:</p>
+                                    <p>Definições claras de &quot;pronto&quot; e &quot;preparado&quot; são essenciais para garantir qualidade e clareza no Scrum:</p>
                                     <ul className="list-disc list-inside">
                                         <li><strong>Definition of Done (DoD):</strong> Acordo formal sobre as condições que um incremento deve atender para ser considerado completo - é um compromisso oficial do framework Scrum</li>
-                                        <li><strong>Definition of Ready (DoR):</strong> Conjunto de critérios que um item do Product Backlog deve atender antes de ser considerado "pronto para entrar numa Sprint" - é uma prática comum mas não faz parte do framework oficial</li>
+                                        <li><strong>Definition of Ready (DoR):</strong> Conjunto de critérios que um item do Product Backlog deve atender antes de ser considerado &quot;pronto para entrar numa Sprint&quot; - é uma prática comum mas não faz parte do framework oficial</li>
                                     </ul>
                                     <p className="mt-2">Exemplos de critérios para DoD:</p>
                                     <ul className="list-disc list-inside">
@@ -596,7 +596,7 @@ export default function IA() {
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Large-Scale Scrum (LeSS) é um framework para escalar Scrum que mantém o máximo possível da simplicidade e princípios originais do Scrum:</p>
                                     <ul className="list-disc list-inside">
-                                        <li><strong>Filosofia:</strong> "LeSS é mais" - manter-se o mais próximo possível do Scrum original</li>
+                                        <li><strong>Filosofia:</strong> &quot;LeSS é mais&quot; - manter-se o mais próximo possível do Scrum original</li>
                                         <li><strong>Variantes:</strong> LeSS Básico (2-8 times) e LeSS Huge (8+ times)</li>
                                         <li><strong>Princípios:</strong> Transparência, empirismo, melhoria contínua, one Product Backlog para todos os times</li>
                                     </ul>
@@ -694,7 +694,7 @@ export default function IA() {
                                     <ul className="list-disc list-inside">
                                         <li>Scrum Guide (documento fundamental)</li>
                                         <li>Open Assessments gratuitos na Scrum.org</li>
-                                        <li>Livro "Scrum: A Arte de Fazer o Dobro do Trabalho na Metade do Tempo" de Jeff Sutherland</li>
+                                        <li>Livro &quot;Scrum: A Arte de Fazer o Dobro do Trabalho na Metade do Tempo&quot; de Jeff Sutherland</li>
                                         <li>Simulados online de terceiros</li>
                                     </ul>
                                     <ul className="list-disc list-inside mt-2">
@@ -807,7 +807,7 @@ export default function IA() {
                                         <li>Grupos LinkedIn de Agilidade e Scrum</li>
                                         <li>Comunidades Discord e Slack para Scrum Masters</li>
                                         <li>Fóruns da Scrum.org e Scrum Alliance</li>
-                                        <li>Podcasts como "Agile for Humans" e "Scrum Master Toolbox"</li>
+                                        <li>Podcasts como &quot;Agile for Humans&quot; e &quot;Scrum Master Toolbox&quot;</li>
                                         <li>Blogs e newsletters de especialistas em agilidade</li>
                                     </ul>
                                     <ul className="list-disc list-inside mt-2">
