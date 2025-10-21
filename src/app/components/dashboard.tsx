@@ -28,7 +28,7 @@ export default function Dashboard() {
     const QConq = useUserStore((state) => state.conquistas);
     const setRoad = useUserStore((state) => state.setR);
     const Road = useUserStore((state) => state.roadmap);
-    const [area, useArea] = useState("");
+    const [area, UseArea] = useState("");
 
     const roadTotal = [
         { area: "FullStack", qtd: 21 },
@@ -49,7 +49,7 @@ export default function Dashboard() {
         if (userData) {
             setQConq(userData.achievements);
             setRoad(userData.roadmap);
-            useArea(userData.area);
+            UseArea(userData.area);
 
         }
     }
