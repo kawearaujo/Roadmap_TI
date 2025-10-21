@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { userDataStore } from "@/app/utils/indexedDB"
 // import { useRouter } from 'next/navigation'

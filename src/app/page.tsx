@@ -2,7 +2,7 @@
 // import Image from "next/image";
 import bg from "@/img/bg1.jpg"
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Navbar from "@/app/components/nav"
 import Footer from "./components/footer";
 

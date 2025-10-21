@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Conq from "@/app/components/conquistas"
 import RoadMap from "@/app/components/road"
 import Db from "@/app/components/dashboard"
-import { userDataStore, UserData } from "@/app/utils/indexedDB"
+import { userDataStore } from "@/app/utils/indexedDB"
 import Link from 'next/link';
 import { useUserStore } from "@/app/store/useUserStore"
 

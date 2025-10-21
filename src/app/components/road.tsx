@@ -55,7 +55,7 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
   const handleCheckboxChange = async (id: string) => {
     let newCompleted = [...Road];
     if (newCompleted.includes(id)) {
-      console.log("apagando");
+      console.log("apagando" + completed);
       newCompleted = newCompleted.filter(achId => achId !== id);
       // delR(id);
     } else {

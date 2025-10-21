@@ -56,6 +56,8 @@ import {userDataStore,UserData} from "@/app/utils/indexedDB"
 
 
   export default function UserPage() {
+
+    
     useEffect(() => {
       const loadUserData = async () => {
         const userData = await userDataStore.getUserData();
