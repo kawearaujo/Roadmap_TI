@@ -1,31 +1,36 @@
 "use client"
 import { useState, useEffect } from "react";
 import { userDataStore, UserData } from "../utils/indexedDB"; // Ajuste o caminho conforme necessário
+import { useUserStore } from "@/app/store/useUserStore"
+
+
+
 
 const achievements = [
-  { id: 1, title: "Primeiro Deploy", description: "Realize o primeiro deploy de um projeto.", xp: 25 },
-  { id: 2, title: "Criar Portfolio", description: "Crie um portfólio online para exibir seus projetos.", xp: 25 },
-  { id: 3, title: "Primeiro Curso Finalizado", description: "Conclua um curso sobre desenvolvimento.", xp: 25 },
-  { id: 4, title: "Criar Conta no LinkedIn", description: "Crie um perfil profissional no LinkedIn.", xp: 25 },
-  { id: 5, title: "Primeiro Projeto Finalizado", description: "Finalize um projeto do início ao fim.", xp: 25 },
-  { id: 6, title: "Publicar um Repositório no GitHub", description: "Publique seu primeiro repositório no GitHub.", xp: 25 },
-  { id: 7, title: "Criar um Blog Técnico", description: "Escreva um artigo sobre tecnologia.", xp: 25 },
-  { id: 8, title: "Fazer um Pull Request", description: "Contribua com um projeto open-source.", xp: 25 },
-  { id: 9, title: "Primeira Certificação", description: "Obtenha uma certificação na área.", xp: 25 },
-  { id: 10, title: "Participar de um Hackathon", description: "Envolva-se em uma competição de programação.", xp: 25 },
-  { id: 11, title: "Criar uma API", description: "Desenvolva e documente uma API.", xp: 25 },
-  { id: 12, title: "Automatizar uma Tarefa", description: "Use scripts para facilitar seu trabalho.", xp: 25 },
-  { id: 13, title: "Participar de uma Comunidade Tech", description: "Interaja com desenvolvedores em eventos ou fóruns.", xp: 25 },
-  { id: 14, title: "Conseguir um Estágio ou Primeiro Job", description: "Entre no mercado de trabalho na área tech.", xp: 25 },
-  { id: 15, title: "Construir um Projeto FullStack", description: "Crie um projeto completo com backend e frontend.", xp: 25 },
-  { id: 16, title: "Aprender um Novo Framework", description: "Estude e implemente um framework novo.", xp: 25 },
-  { id: 17, title: "Fazer uma Palestra ou Live Code", description: "Compartilhe conhecimento publicamente.", xp: 25 },
-  { id: 18, title: "Criar um Projeto com Inteligência Artificial", description: "Implemente um modelo de IA no seu código.", xp: 25 },
-  { id: 19, title: "Montar um Roadmap de Estudos", description: "Planeje seu aprendizado com um roadmap.", xp: 25 },
-  { id: 20, title: "Finalizar um Curso de Algoritmos", description: "Aprofunde-se em lógica e estrutura de dados.", xp: 25 },
+  { id: 1, title: "Explorar a Área", description: "Pesquise sobre as possíveis áreas na tecnologia que mais combinam com você.", xp: 25 },
+  { id: 2, title: "Montar um Roadmap", description: "Organize seu plano de estudos para começar sua jornada.", xp: 25 },
+  { id: 3, title: "Criar Conta em Plataforma de Cursos", description: "Cadastre-se em uma plataforma de aprendizado (como Alura, Udemy, Coursera, etc).", xp: 25 },
+  { id: 4, title: "Finalizar Primeiro Curso", description: "Conclua seu primeiro curso introdutório.", xp: 25 },
+  { id: 5, title: "Instalar Ferramentas Básicas", description: "Configure seu ambiente de trabalho (IDE, terminal, extensões, etc).", xp: 25 },
+  { id: 6, title: "Fazer um Projeto Prático", description: "Implemente algo simples, baseado em um tutorial ou curso.", xp: 25 },
+  { id: 7, title: "Criar Conta no GitHub", description: "Cadastre-se no GitHub e explore repositórios públicos.", xp: 25 },
+  { id: 8, title: "Publicar seu Primeiro Projeto", description: "Suba seu primeiro repositório no GitHub.", xp: 25 },
+  { id: 9, title: "Criar um Portfólio Pessoal", description: "Monte um site ou espaço online para exibir seus projetos.", xp: 25 },
+  { id: 10, title: "Finalizar um Projeto Autoral", description: "Desenvolva e conclua um projeto seu, mesmo que simples.", xp: 25 },
+  { id: 11, title: "Fazer Networking", description: "Participe de uma comunidade ou evento tech (online ou presencial).", xp: 25 },
+  { id: 12, title: "Criar Perfil Profissional", description: "Monte um perfil no LinkedIn ou similar com foco profissional.", xp: 25 },
+  { id: 13, title: "Aprender Sobre Versionamento", description: "Estude o básico de Git e versionamento de código.", xp: 25 },
+  { id: 14, title: "Contribuir com um Projeto", description: "Colabore com alguma melhoria ou correção em um projeto aberto.", xp: 25 },
+  { id: 15, title: "Criar um Conteúdo", description: "Compartilhe conhecimento com um post, artigo ou vídeo.", xp: 25 },
+  { id: 16, title: "Automatizar uma Tarefa", description: "Use scripts ou ferramentas para facilitar algum processo.", xp: 25 },
+  { id: 17, title: "Aprender um Novo Ferramental", description: "Explore uma nova tecnologia, biblioteca ou ferramenta.", xp: 25 },
+  { id: 18, title: "Concluir um Curso Intermediário", description: "Aprofunde-se em uma trilha de conhecimento.", xp: 25 },
+  { id: 19, title: "Desenvolver um Projeto Mais Robusto", description: "Inicie um projeto mais complexo e bem estruturado.", xp: 25 },
+  { id: 20, title: "Conquistar uma Oportunidade Profissional", description: "Consiga seu primeiro estágio, bolsa ou trabalho na área.", xp: 25 },
 ];
 
 export default function AchievementsPage() {
+  const setQConquistas = useUserStore((state) => state.set);
   const [completedAchievements, setCompletedAchievements] = useState<number>(0);
   const [completed, setCompleted] = useState<number[]>([]);
   const [experience, setExperience] = useState<number>(0);
@@ -37,6 +42,7 @@ export default function AchievementsPage() {
       // setExperience( totalAchievements*25 || 0);
       // if (userData?.achievements.length == undefined)
       setCompleted(userData?.achievements || []);
+      setQConquistas(userData?.achievements || []);
     }
     fetchUserData();
     // userDataStore.saveUserData({ id: "user1", name: "a", photo: "", level: 0, experience: 0, area: "a", achievements:[] });
@@ -55,8 +61,11 @@ export default function AchievementsPage() {
     }
     // setExperience( totalAchievements*25 || 0);
     setCompleted(newCompleted);
+    setQConquistas(newCompleted);
     // setExperience();
+
     await userDataStore.saveUserAttribute("achievements", newCompleted);
+
     // await userDataStore.saveUserAttribute("experience", newExperience);
   };
 
@@ -82,7 +91,8 @@ export default function AchievementsPage() {
       </div>
       {/* Lista de conquistas */}
       <div className="px-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {achievements.map(({ id, title, description, xp }, index) => (
+        {achievements.map(({ id, title, description,
+          xp }, index) => (
           <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
             <label className="absolute top-2 right-2 cursor-pointer">
               <input

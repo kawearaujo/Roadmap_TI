@@ -2,13 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import Conq from "@/app/components/conquistas"
 import RoadMap from "@/app/components/road"
-import Db from "@/app/components/dashboard"
 import { userDataStore, UserData } from "@/app/utils/indexedDB"
 import Link from 'next/link';
 import { useUserStore } from "@/app/store/useUserStore"
 
 // Função que abre a tela de seleção de imagens
-
 const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void }) => {
   const images = [
     "/images/Avatar-1.png",
@@ -105,18 +103,10 @@ export default function UserPage() {
   const [achiev, setAchiev] = useState<number[]>();
   const [qConquistas, setQConquistas] = useState<number[]>();
   const [roadmap, setRoadmap] = useState<string[]>();
-  const setQConq = useUserStore((state) => state.set);
-  const QConq = useUserStore((state) => state.conquistas);
-
-  const setRoad = useUserStore((state) => state.setR);
-  const Road = useUserStore((state) => state.roadmap);
-
 
   const loadUserData = async () => {
     const userData = await userDataStore.getUserData();
     if (userData) {
-      setQConq(userData.achievements);
-      setRoad(userData.roadmap);
       if (area == "") {
         setUserName(userData.name);
         setSelectedImage(userData.photo);
@@ -130,12 +120,10 @@ export default function UserPage() {
         }
       }
       else {
-        // const QConq = useUserStore((state) => state.conquistas);
         if (userData.roadmap != roadmap)
           setRoadmap(userData.roadmap);
         if (userData.achievements != qConquistas)
           setQConquistas(userData.achievements);
-
       }
     }
   }
@@ -182,7 +170,7 @@ export default function UserPage() {
   const renderActivePage = () => {
     switch (activePage) {
       case "dashboard":
-        return <Db />;
+        return <RM />;
       case "roadmap":
         return <RM />;
       case "conquistas":
@@ -244,16 +232,16 @@ export default function UserPage() {
             )}
 
           </div>
-          <h2 className="text-md font-semibold border-b-1" > {area}</h2>
-          <p className="text-gray-400">Nível: {Math.trunc((((QConq.length ?? 0) * 25) + ((Road.length ?? 0) * 10)) / 100)}</p>
+          <h2 className="text-md font-semibold border-b-1" > {area} </h2>
+          <p className="text-gray-400">Nível: {Math.trunc((((qConquistas?.length ?? 0) * 25) + ((roadmap?.length ?? 0) * 10)) / 100)}</p>
           <div className="w-full bg-gray-700 h-2 rounded-full ">
             <div className="duration-300 easy-in transition-all bg-blue-500 h-2 rounded-full"
-              style={{ width: `${(((QConq.length ?? 0) * 25) + ((Road.length ?? 0) * 10)) % 100}%` }}>
+              style={{ width: `${(((qConquistas?.length ?? 0) * 25) + ((roadmap?.length ?? 0) * 10)) % 100}%` }}>
 
 
             </div>
           </div>
-          <p className="duration-300 easy-in transition-all text-gray-400 text-xs">{(((QConq.length ?? 0) * 25) + ((Road.length ?? 0) * 10)) % 100} / 100 XP</p>
+          <p className="duration-300 easy-in transition-all text-gray-400 text-xs">{(((qConquistas?.length ?? 0) * 25) + ((roadmap?.length ?? 0) * 10)) % 100} / 100 XP</p>
         </div>
 
         {/* Botões do Menu Lateral */}

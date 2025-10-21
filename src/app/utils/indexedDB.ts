@@ -1,3 +1,5 @@
+import { useUserStore } from "@/app/store/useUserStore"
+
 export interface UserData {
   id: string;
   name: string;
@@ -90,6 +92,7 @@ class UserDataStore {
     
     userData[attribute] = value; // Atualiza apenas o atributo específico
     // this.saveUserData({ id: "user1", name: "a" , photo: "a", level: 0, experience: 0, area: "a", achievements:[] });
+    // console.log("Foi atualizado ",value)
     return this.saveUserData(userData); // Salva os dados atualizados
     // this.saveUserData({ id: "user1", name: "a", photo: "", level: 0, experience: 0, area: "QA", achievements:[],roadmap:[], [attribute]: value });
 

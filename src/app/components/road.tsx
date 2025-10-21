@@ -2,6 +2,8 @@
 import { JSX, useEffect, useState } from 'react';
 import { userDataStore } from '../utils/indexedDB';
 import roadmapData from '@/app/components/roadmapData'
+import { useUserStore } from "@/app/store/useUserStore"
+
 
 const Road = roadmapData();
 
@@ -15,6 +17,10 @@ type NodeType = {
 };
 
 const RoadmapNode = ({ node }: { node: NodeType }) => {
+  const Road = useUserStore((state) => state.roadmap);
+  const setRoad = useUserStore((state) => state.setR);
+  const addR = useUserStore((state) => state.addR);
+  const delR = useUserStore((state) => state.delR);
   // const [selected, setSelected] = useState(false);
   const [showModal, setShowModal] = useState(false);
   // const isLeaf = node.children.length === 0;
@@ -31,11 +37,15 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
   };
   const [completed, setCompleted] = useState<string[]>([]);
   const totalAchievements = roadmapData.length;
+
+  const save = async () => {
+    await userDataStore.saveUserAttribute("roadmap", Road);
+  }
   useEffect(() => {
     const loadUserData = async () => {
       const userData = await userDataStore.getUserData();
       if (userData) {
-
+        setRoad(userData?.roadmap || []);
         setCompleted(userData?.roadmap || []);
       }
     };
@@ -43,14 +53,29 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
   }, []);
 
   const handleCheckboxChange = async (id: string) => {
-
-    let newCompleted = [...completed];
+    let newCompleted = [...Road];
     if (newCompleted.includes(id)) {
+      console.log("apagando");
       newCompleted = newCompleted.filter(achId => achId !== id);
+      // delR(id);
     } else {
+      console.log("adicionando");
       newCompleted.push(id);
+      // addR(id);
     }
+    // console.log(Road)
+    setRoad(newCompleted);
     setCompleted(newCompleted);
+    console.log(Road)
+
+    // let newCompleted = [...completed];
+    // if (newCompleted.includes(id)) {
+    //   newCompleted = newCompleted.filter(achId => achId !== id);
+    // } else {
+    //   newCompleted.push(id);
+    // }
+    // setCompleted(newCompleted);
+    // setRoad(newCompleted);
     await userDataStore.saveUserAttribute("roadmap", newCompleted);
   };
 
@@ -59,7 +84,7 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
     <div className={`flex items-start relative ml-4  ${isThirdLevelParent ? '' : 'flex-col '}`}>
       <div
         onClick={handleClick}
-        className={`cursor-pointer rounded  ${completed.includes(node.id) ? 'bg-green-100' : 'bg-blue-100'} px-4 py-2 hover:bg-slate-200 transition-all duration-300 whitespace-nowrap z-10`}
+        className={`cursor-pointer rounded  ${Road.includes(node.id) ? 'bg-green-100' : 'bg-blue-100'} px-4 py-2 hover:bg-slate-200 transition-all duration-300 whitespace-nowrap z-10`}
       >
         {node.title}
       </div>
@@ -153,7 +178,7 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
               <input
                 type="checkbox"
                 // checked={selected}
-                checked={completed.includes(node.id)}
+                checked={Road.includes(node.id)}
                 // onChange={(e) => setSelected(e.target.checked)}
                 onChange={() => handleCheckboxChange(node.id)}
               />
@@ -165,6 +190,9 @@ const RoadmapNode = ({ node }: { node: NodeType }) => {
     </div>
   );
 };
+
+
+
 
 export default function RoadmapPage() {
   const [area, setArea] = useState("N/A");
