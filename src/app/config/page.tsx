@@ -1,5 +1,5 @@
 "use client"
-
+/* eslint-disable no-use-before-define */
 // import Image from "next/image";
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
