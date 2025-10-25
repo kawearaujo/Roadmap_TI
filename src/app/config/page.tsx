@@ -1,4 +1,5 @@
 "use client"
+
 // import Image from "next/image";
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
@@ -352,10 +353,13 @@ export default function Config1() {
           )}
         </div>
 
-        /* eslint-disable @typescript-eslint/no-explicit-any */
+
+
+
 
         <div className="mt-6 p-4 border border-blue-400 rounded-lg flex justify-center space-x-4">
-          {Object.keys(areas[selectedArea]).map((branch: any) => (
+
+          {Object.keys(areas[selectedArea]).map((branch: any) => (// eslint-disable-line @typescript-eslint/no-explicit-any
             <button
               key={branch}
               className="px-4 py-2 border border-gray-400 rounded"
