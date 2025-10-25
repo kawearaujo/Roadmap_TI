@@ -352,6 +352,8 @@ export default function Config1() {
           )}
         </div>
 
+        /* eslint-disable @typescript-eslint/no-explicit-any */
+
         <div className="mt-6 p-4 border border-blue-400 rounded-lg flex justify-center space-x-4">
           {Object.keys(areas[selectedArea]).map((branch: any) => (
             <button
