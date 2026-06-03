@@ -266,12 +266,12 @@ export default function Config1() {
   };
 
   return (
-    <div className="min-h-screen text-black">
+    <div className="min-h-screen h-full text-black bg-[#F7F6F2]">
       <Navbar />
       <div className="flex pb-20 flex-col justify-start items-center  relative pt-[2rem]">
         <div className="absolute inset-0 -z-10 ">
-          <div className="w-full h-[95vh] flex justify-center">
-            <img src={bg.src} alt="" className="w-full object-none" />
+          <div className="w-[100vw] h-[100vh] flex justify-center object-fill">
+            {/* <img src={bg.src} alt="" className="md:w-full object-fill object-none" /> */}
           </div>
         </div>
         <section className="max-w-4xl mx-auto px-6 py-16 text-center">
@@ -285,7 +285,7 @@ export default function Config1() {
           {Object.keys(areas).map((area) => (
             <button
               key={area}
-              className={`m-2 px-4 py-2 border transition duration-300 ${selectedArea === area ? "border-blue-500 border-3 shadow-md shadow-blue-500/50 " : "border-gray-400"}`}
+              className={`bg-white m-2 px-4 py-2 border transition duration-300 ${selectedArea === area ? "border-blue-500 border-3 shadow-md shadow-blue-500/50 " : "border-gray-400"}`}
               onClick={() => setSelectedArea(area)}
             >
               {area}
@@ -328,7 +328,7 @@ export default function Config1() {
         </div>
 
         <div >
-          <p className="md:text-xl text-lg text-black-500 leading-relaxed m-10 md:mx-90 justify-center ">
+          <p className="bg-white p-5 rounded-lg shadow-md md:text-xl text-lg text-black-500 leading-relaxed m-10 md:mx-90 justify-center ">
             {resumo[selectedArea as keyof typeof resumo]}
           </p>
         </div>
@@ -338,7 +338,7 @@ export default function Config1() {
           {Object.keys(areas[selectedArea]).map((branch: any) => (// eslint-disable-line @typescript-eslint/no-explicit-any
             <button
               key={branch}
-              className="px-4 py-2 border border-gray-400 rounded"
+              className="bg-white px-4 py-2 border border-gray-400 rounded"
               onClick={() => setSelectedBranch(branch)}
             >
               {branch}
