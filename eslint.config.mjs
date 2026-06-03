@@ -1,8 +1,8 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
-import { defineConfig, globalIgnores } from 'eslint/config'
-import nextVitals from 'eslint-config-next/core-web-vitals.js'
+// import { defineConfig, globalIgnores } from 'eslint/config'
+// import nextVitals from 'eslint-config-next/core-web-vitals.js'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -12,23 +12,23 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // ...nextVitals,
+  // ...compat.extends("next/core-web-vitals", "next/typescript"),
   ...compat.config({
-    extends: ['next'],
+    extends: ['next/core-web-vitals', 'next/typescript'],
     rules: {
       'react/no-unescaped-entities': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@next/next/no-page-custom-font': 'off',
     },
   }),
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    '.next/**',
-    'out/**',
-    'build/**',
-    'next-env.d.ts',
-  ]),
+  // globalIgnores([
+  //   // Default ignores of eslint-config-next:
+  //   '.next/**',
+  //   'out/**',
+  //   'build/**',
+  //   'next-env.d.ts',
+  // ]),
 ]);
 
 export default eslintConfig;
