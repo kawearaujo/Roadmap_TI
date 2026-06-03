@@ -295,7 +295,7 @@ export default function Config1() {
           ))}
           {/* Modal de confirmação */}
           {showModal && (
-            <div className="fixed inset-0 bg-black/80 bg-opacity-50 flex items-center justify-center z-50">
+            <div className=" fixed inset-0 bg-black/80 bg-opacity-50 flex items-center justify-center z-50">
               <div className="bg-white rounded-xl p-6 max-w-sm text-center shadow-lg">
                 <h2 className="text-lg font-semibold mb-4">Tem certeza?</h2>
                 {areaAtual == "" ? (
@@ -349,7 +349,7 @@ export default function Config1() {
 
       {selectedBranch && (
         <div className="fixed inset-0 bg-gray-800/80 flex justify-center items-center">
-          <div className="bg-white p-6 rounded-lg relative w-[90vw] md:w-[70vw]  pb-10">
+          <div className="h-[70vh]  bg-white p-6 rounded-lg relative w-[90vw] md:w-[70vw]  pb-10">
             <button
               className="absolute top-2 right-2 text-red-500"
               onClick={() => setSelectedBranch(null)}
@@ -358,7 +358,9 @@ export default function Config1() {
             </button>
             <h2 className="text-xl font-bold text-center">{selectedBranch}</h2>
             {/* <p className="mt-4"> */}
-            {areas[selectedArea][selectedBranch]}
+            <div className="overflow-y-auto">
+              {areas[selectedArea][selectedBranch]}
+            </div>
             {/* </p> */}
             <div className="absolute bottom-2 flex gap-6 w-[92%] md:w-[95%] justify-center">
               <button className="px-4 py-2 bg-green-300 hover:bg-green-400 rounded" onClick={() => {
