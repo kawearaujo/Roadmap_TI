@@ -268,7 +268,7 @@ export default function Config1() {
   return (
     <div className="min-h-screen text-black">
       <Navbar />
-      <div className="flex min-h-screen flex-col justify-start items-center md:gap-10 py-10 relative pt-[2rem]">
+      <div className="flex min-h-screen flex-col justify-start items-center  relative pt-[2rem]">
         <div className="absolute inset-0 -z-10 ">
           <div className="w-full h-[95vh] flex justify-center">
             <img src={bg.src} alt="" className="w-full object-none" />
@@ -281,11 +281,11 @@ export default function Config1() {
           </h1>
         </section>
 
-        <div className="flex justify-center space-x-4">
+        <div className="md:flex grid grid-flow-col grid-rows-2 items-center justify-center ">
           {Object.keys(areas).map((area) => (
             <button
               key={area}
-              className={`px-4 py-2 border transition duration-300 ${selectedArea === area ? "border-blue-500 border-3 shadow-md shadow-blue-500/50 " : "border-gray-400"}`}
+              className={`m-2 px-4 py-2 border transition duration-300 ${selectedArea === area ? "border-blue-500 border-3 shadow-md shadow-blue-500/50 " : "border-gray-400"}`}
               onClick={() => setSelectedArea(area)}
             >
               {area}
@@ -328,7 +328,7 @@ export default function Config1() {
         </div>
 
         <div >
-          <p className="text-lg text-black-500 leading-relaxed m-10 flex justify-center space-x-4">
+          <p className="md:text-xl text-lg text-black-500 leading-relaxed m-10 md:mx-90 justify-center ">
             {resumo[selectedArea as keyof typeof resumo]}
           </p>
         </div>
