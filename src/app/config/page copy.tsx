@@ -1,10 +1,14 @@
 "use client"
+/* eslint-disable no-use-before-define */
+// import Image from "next/image";
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
 import Footer from "../components/footer";
 import { JSX, useEffect, useState } from "react";
 import { userDataStore } from "@/app/utils/indexedDB"
-
+// import Link from "next/link";
+// import router from "next/navigation ";
+// import { redirect } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 type AreaCategory = Record<string, JSX.Element>;
 type Areas = Record<string, AreaCategory>;
@@ -226,15 +230,11 @@ export default function Config1() {
   const [selectedBranch, setSelectedBranch] = useState(null);
   const [pendingBranch, setPendingBranch] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
-  const resumo = {
-    'Software': "O desenvolvimento de software é a criação de aplicativos, sistemas e programas usando linguagens de programação e ferramentas de desenvolvimento, abrangendo desde o design até a implementação e manutenção.",
-    'Hardware': "O desenvolvimento de hardware envolve a criação de componentes físicos, como circuitos, dispositivos e sistemas eletrônicos, utilizando conhecimentos de engenharia elétrica, mecânica e design para construir produtos tangíveis.",
-    'Ciência': "A ciência de dados é uma disciplina que utiliza técnicas estatísticas, matemáticas e computacionais para extrair insights e conhecimento a partir de dados, aplicando-se em diversas áreas para tomada de decisões informadas.",
-    'Gestão': "A gestão de projetos é a aplicação de conhecimentos, habilidades e técnicas para planejar, executar e controlar projetos, garantindo que sejam concluídos dentro do prazo, orçamento e escopo definidos."
-  }
+
   const router = useRouter();
 
   const loadUserData = async () => {
+    // const clear = await userDataStore.clearUserData();
     const userData = await userDataStore.getUserData();
     if (userData) {
       if (areaAtual == "") {
@@ -248,8 +248,33 @@ export default function Config1() {
     loadUserData();
   }, []);
 
-  const confirmChange = async () => {
+  // const handleClick = async (selectedBranch: string) => {
+  //   const userData = await userDataStore.getUserData();
+  //   if (selectedBranch == userData?.area) {
+  //     setSelectedBranch(null);
 
+  //     router.push('/user');
+  //   } else {
+  //     setPendingBranch(selectedBranch);
+  //     setShowModal(true); // Exibe o modal
+
+  //     // let arrayNumberEmpty: number[] = [];
+  //     // let arrayStringEmpty: string[] = [];
+
+  //     // await userDataStore.saveUserAttribute("area", selectedBranch);
+  //     // await userDataStore.saveUserAttribute("roadmap", arrayStringEmpty);
+  //     // await userDataStore.saveUserAttribute("achievements", arrayNumberEmpty);
+
+  //     // setSelectedBranch(null);
+
+  //     // router.push('/user');
+  //   }
+  // };
+
+  const confirmChange = async () => {
+    // if (areaAtual) {
+    //   setAreaAtual
+    // if (!pendingBranch) return;
 
     await userDataStore.saveUserAttribute("area", selectedBranch!);
     await userDataStore.saveUserAttribute("roadmap", []);
@@ -264,23 +289,51 @@ export default function Config1() {
     setSelectedBranch(null);
     setShowModal(false);
   };
+  // const saveBranch = async (area: string) => {
+  //   const db: any = await openDatabase();
+  //   const transaction = db.transaction("userData", "readwrite");
+  //   const store = transaction.objectStore("userData");
+  //   store.put({ id: "user1", area });
+  // };
+
+  // const saveUserData = async (updatedUserData?: Partial<UserData>) => {
+  //       const userData: UserData = {
+  //         id: 'user1',
+  //         name: updatedUserData?.name ?? userName,
+  //         photo: updatedUserData?.photo ?? (selectedImage || "/images/Avatar-2.png"),
+  //         level: updatedUserData?.level ?? level,
+  //         experience: updatedUserData?.experience ?? experience,
+  //         area: updatedUserData?.area ?? area,
+  //       };
+
+  //       await userDataStore.saveUserData(userData);
+  //     };
+
+  // const openDatabase = () => {
+  //   return new Promise((resolve, reject) => {
+  //     const request = indexedDB.open("userDatabase", 1);
+  //     request.onupgradeneeded = () => {
+  //       const db = request.result;
+  //       if (!db.objectStoreNames.contains("userData")) {
+  //         db.createObjectStore("userData", { keyPath: "id" });
+  //       }
+  //     };
+  //     request.onsuccess = () => resolve(request.result);
+  //     request.onerror = () => reject("Erro ao abrir o banco");
+  //   });
+  // };
+
 
   return (
     <div className="min-h-screen text-black">
       <Navbar />
-      <div className="flex min-h-screen flex-col justify-start items-center md:gap-10 py-10 relative pt-[2rem]">
+      <div className="relative flex min-h-screen flex-col justify-center items-center gap-10">
         <div className="absolute inset-0 -z-10 ">
           <div className="w-full h-[95vh] flex justify-center">
             <img src={bg.src} alt="" className="w-full object-none" />
           </div>
         </div>
-        <section className="max-w-4xl mx-auto px-6 py-16 text-center">
-
-          <h1 className="text-4xl md:text-5xl sm:text-4xl font-extrabold leading-tight text-[#0F0F0F] mt-2">
-            Encontre a área com maior compatibilidade<br />
-          </h1>
-        </section>
-
+        <h1 className="text-3xl font-bold text-center mb-4">Encontre a área com maior compatibilidade</h1>
         <div className="flex justify-center space-x-4">
           {Object.keys(areas).map((area) => (
             <button
@@ -324,14 +377,11 @@ export default function Config1() {
               </div>
             </div>
           )}
-
         </div>
 
-        <div >
-          <p className="text-lg text-black-500 leading-relaxed m-10 flex justify-center space-x-4">
-            {resumo[selectedArea as keyof typeof resumo]}
-          </p>
-        </div>
+
+
+
 
         <div className="mt-6 p-4 border border-blue-400 rounded-lg flex justify-center space-x-4">
 
@@ -366,7 +416,20 @@ export default function Config1() {
                 // setSelectedBranch(null)
               }
               }>Continuar</button>
+              {/* <Link className="px-4 py-2 bg-blue-500 text-white rounded" href="/user" onClick={() => 
+                { 
+                  userDataStore.saveUserAttribute("area",selectedBranch); 
+                  userDataStore.saveUserAttribute("achievements",[] );
+                  userDataStore.saveUserAttribute("roadmap",[]);
+                  setSelectedBranch(null); }}>
+              Escolher
+              </Link> */}
+              {/* <button className="px-4 py-2 bg-blue-500 text-white rounded" onClick={() => {
+                handleClick(selectedBranch)
 
+              }}
+
+              >Escolher</button> */}
             </div>
           </div>
         </div>

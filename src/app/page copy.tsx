@@ -16,19 +16,8 @@ export default function Home() {
       <div className="">
         <section className="relative text-center py-20 h-[100vh] flex justify-center items-center">
           <div className="">
-            {/* <h1 className="text-5xl font-bold mt-2 ">Encontre uma nova carreira no mundo da tecnológica!</h1>
-            <h2 className="text-lg text-gray-500 uppercase pt-5">Se prepare para aumentar sua performance e ter uma experiência guiada para o sucesso profissional </h2> */}
-
-            <section className="max-w-4xl mx-auto px-6 py-16 text-center">
-
-              <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-[#0F0F0F] mt-2">
-                Do Zero à Carreira em <br />
-                <span className="text-[#4A6CF7]">Tecnologia da Informação</span>
-              </h1>
-              <p className="text-lg text-gray-500 mt-6 max-w-2xl mx-auto leading-relaxed">
-                Uma plataforma visual e interativa que orienta estudantes e profissionais nos principais caminhos de formação na área de TI.
-              </p>
-            </section>
+            <h1 className="text-5xl font-bold mt-2 ">Encontre uma nova carreira no mundo da tecnológica!</h1>
+            <h2 className="text-lg text-gray-500 uppercase pt-5">Se prepare para aumentar sua performance e ter uma experiência guiada para o sucesso profissional </h2>
 
             <button className="hover:bg-blue-600 transition ease-in duration-300 mt-6 bg-blue-400 text-white px-6 py-3 rounded-full" >
               <Link href={"/config"}>

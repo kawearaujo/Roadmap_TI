@@ -35,7 +35,7 @@ export default function IA() {
                     children: [
                         {
                             id: '3-1-1',
-                            title: 'Tipos de Testes (Unitário, Integração, Funcional, etc.)',
+                            title: 'Tipos de Testes',
 
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
@@ -51,7 +51,7 @@ export default function IA() {
                         },
                         {
                             id: '3-1-2',
-                            title: 'Ciclo de Vida de Testes (SDLC/STLC)',
+                            title: 'Ciclo de Vida de Testes',
 
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
@@ -67,7 +67,7 @@ export default function IA() {
                         },
                         {
                             id: '3-1-3',
-                            title: 'Testes Manuais vs Automatizados',
+                            title: 'Manuais vs Automatizados',
 
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
@@ -83,7 +83,7 @@ export default function IA() {
                         },
                         {
                             id: '3-1-4',
-                            title: 'Técnicas de Teste (Caixa-preta, Caixa-branca, Exploratório)',
+                            title: 'Técnicas de Teste',
 
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
@@ -101,7 +101,7 @@ export default function IA() {
                 },
                 {
                     id: '4-2',
-                    title: 'Ferramentas de Teste Manual',
+                    title: 'Teste Manual',
 
                     content:
                         <div className="space-y-2 text-sm text-gray-700">
@@ -264,7 +264,7 @@ export default function IA() {
                             children: []
                         },
                         {
-                            id: '4-4-2', title: 'Linguagens comuns (JavaScript, Python, Java)',
+                            id: '4-4-2', title: 'Linguagens comuns',
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>JavaScript, Python e Java são linguagens essenciais para QAs. JavaScript é vital para testes web, suportando frameworks como Cypress e Playwright. Python é valorizada por sua simplicidade e bibliotecas para automação e análise de dados. Java permanece relevante para testes corporativos com ecossistema maduro (Selenium, TestNG). A escolha depende do projeto, tecnologias e preferências da equipe, mas aprender múltiplas linguagens amplia oportunidades e flexibilidade.</p>
@@ -278,7 +278,7 @@ export default function IA() {
                             children: []
                         },
                         {
-                            id: '4-4-3', title: 'Versionamento com Git/GitHub',
+                            id: '4-4-3', title: 'Versionamento',
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Git é um sistema de controle de versão essencial para QAs que trabalham com automação de testes. Permite gerenciar mudanças em scripts de teste, colaborar com a equipe, manter histórico de alterações e reverter a versões anteriores quando necessário. GitHub, GitLab e Bitbucket são plataformas que hospedam repositórios Git e adicionam funcionalidades como pull requests, code reviews e integração com ferramentas de CI/CD.</p>

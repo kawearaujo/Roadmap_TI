@@ -244,7 +244,7 @@ export default function IA() {
                 },
                 {
                     id: '5-4',
-                    title: 'Sistemas Operacionais de Tempo Real (RTOS)',
+                    title: 'Sistemas Operacionais de Tempo Real',
                     content:
                         <div className="space-y-2 text-sm text-gray-700">
                             <p>Sistemas Operacionais de Tempo Real (RTOS) permitem o gerenciamento eficiente de recursos e tarefas em sistemas embarcados, garantindo que operações críticas sejam executadas dentro de prazos determinísticos. O uso de RTOS facilita o desenvolvimento de aplicações complexas, melhorando a modularidade, manutenibilidade e reuso de código.</p>
@@ -431,7 +431,7 @@ export default function IA() {
                         },
                         {
                             id: '5-6-4',
-                            title: 'Integração com Apps e APIs',
+                            title: 'Integrações',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>A integração de sistemas embarcados com aplicativos móveis e APIs web expande suas funcionalidades, permitindo controle remoto, monitoramento em tempo real e análise de dados em nuvem. Esta conexão geralmente utiliza comunicação HTTP/HTTPS, MQTT ou WebSockets, com implementação de autenticação, criptografia e serialização de dados. O desenvolvimento pode envolver serviços como Firebase, AWS IoT, Blynk ou plataformas customizadas para IoT.</p>

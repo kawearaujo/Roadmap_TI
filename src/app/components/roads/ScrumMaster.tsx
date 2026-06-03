@@ -54,7 +54,7 @@ export default function IA() {
                         },
                         {
                             id: '8-1-2',
-                            title: 'Princípios e Valores Ágeis',
+                            title: 'Princípios Ágeis',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Além dos 4 valores, o Manifesto Ágil é complementado por 12 princípios que guiam as práticas ágeis no dia a dia. Estes princípios enfatizam:</p>
@@ -82,7 +82,7 @@ export default function IA() {
                         },
                         {
                             id: '8-1-3',
-                            title: 'Frameworks Ágeis (Scrum, Kanban, XP)',
+                            title: 'Frameworks Ágeis',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Existem diversos frameworks que implementam os valores e princípios ágeis, cada um com seu foco e características:</p>
@@ -145,7 +145,7 @@ export default function IA() {
                     children: [
                         {
                             id: '8-2-1',
-                            title: 'Papéis (Scrum Master, PO, Dev Team)',
+                            title: 'Papéis',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>O Scrum define três papéis principais que formam o Scrum Team:</p>
@@ -166,7 +166,7 @@ export default function IA() {
                         },
                         {
                             id: '8-2-2',
-                            title: 'Eventos Scrum (Sprint, Planning, Review, Retro)',
+                            title: 'Eventos Scrum',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>O Scrum define eventos específicos para criar regularidade e minimizar reuniões não previstas:</p>
@@ -188,7 +188,7 @@ export default function IA() {
                         },
                         {
                             id: '8-2-3',
-                            title: 'Artefatos (Product Backlog, Sprint Backlog, Increment)',
+                            title: 'Artefatos',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Os artefatos do Scrum representam trabalho ou valor e são projetados para maximizar a transparência:</p>
@@ -214,7 +214,7 @@ export default function IA() {
                         },
                         {
                             id: '8-2-4',
-                            title: 'Definition of Done & Definition of Ready',
+                            title: 'Definição do Pronto & Preparado',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Definições claras de &quot;pronto&quot; e &quot;preparado&quot; são essenciais para garantir qualidade e clareza no Scrum:</p>
@@ -349,7 +349,7 @@ export default function IA() {
                         },
                         {
                             id: '8-3-4',
-                            title: 'Servant Leadership (Liderança Servidora)',
+                            title: 'Liderança Servidora',
                             content:
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>A liderança servidora é um estilo de liderança fundamental para Scrum Masters, enfatizando o serviço aos outros acima da auto-promoção:</p>
@@ -421,7 +421,7 @@ export default function IA() {
                         },
                         {
                             id: '8-4-2',
-                            title: 'Cumulative Flow Diagram (CFD)',
+                            title: 'Diagrama de Fluxo Cumulativo',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>O Diagrama de Fluxo Cumulativo (CFD) é uma ferramenta visual poderosa que mostra o status de itens de trabalho ao longo do tempo:</p>
@@ -449,7 +449,7 @@ export default function IA() {
                         },
                         {
                             id: '8-4-3',
-                            title: 'Ferramentas Ágeis (Jira, Trello, Azure DevOps)',
+                            title: 'Ferramentas Ágeis',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Diversas ferramentas auxiliam na implementação de práticas ágeis e Scrum. Scrum Masters precisam conhecer as principais:</p>
@@ -482,7 +482,7 @@ export default function IA() {
                         },
                         {
                             id: '8-4-4',
-                            title: 'Métricas de Time (Cycle Time, Lead Time)',
+                            title: 'Métricas de Time de Fluxo',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Estas métricas ajudam a entender a eficiência do fluxo de trabalho e identificar oportunidades de melhoria:</p>
@@ -529,7 +529,7 @@ export default function IA() {
                     children: [
                         {
                             id: '8-5-1',
-                            title: 'Scrum of Scrums',
+                            title: 'Escalabilidade',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Scrum of Scrums (SoS) é uma técnica de escalabilidade relativamente simples para coordenar múltiplos times Scrum:</p>
@@ -561,7 +561,7 @@ export default function IA() {
                         },
                         {
                             id: '8-5-2',
-                            title: 'SAFe (Scaled Agile Framework)',
+                            title: 'Scaled Agile Framework',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>O Scaled Agile Framework (SAFe) é uma das abordagens mais detalhadas e amplamente adotadas para escalar práticas ágeis em grandes organizações:</p>
@@ -745,7 +745,7 @@ export default function IA() {
                         // Agile Coach e Product Owner (níveis avançados)
                         {
                             id: '8-6-3',
-                            title: 'Agile Coach e Product Owner (níveis avançados)',
+                            title: 'Níveis Avançados',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>Para Scrum Masters experientes, existem caminhos naturais de evolução para papéis como Agile Coach e Product Owner, ou aprofundamento em áreas de especialização:</p>
@@ -784,7 +784,7 @@ export default function IA() {
                         // Comunidades, Eventos e Networking
                         {
                             id: '8-6-4',
-                            title: 'Comunidades, Eventos e Networking',
+                            title: 'Networking',
                             content: (
                                 <div className="space-y-2 text-sm text-gray-700">
                                     <p>O desenvolvimento contínuo como Scrum Master se beneficia significativamente da participação em comunidades, eventos e networking profissional:</p>

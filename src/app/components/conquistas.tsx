@@ -70,8 +70,8 @@ export default function AchievementsPage() {
   };
 
   return (
-    <div className="pb-8">
-      <div className="sticky w-full bg-white top-0 p-6 z-1000">
+    <div className="pb-8 ">
+      <div className="sticky z-10 w-full bg-white top-0 p-6 justify-center">
         <h1 className="text-3xl font-bold text-center mb-6">Conquistas</h1>
 
         {/* Barra de progresso */}
@@ -90,10 +90,10 @@ export default function AchievementsPage() {
         </div>
       </div>
       {/* Lista de conquistas */}
-      <div className="px-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="scroll-smooth px-6 grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {achievements.map(({ id, title, description,
           xp }, index) => (
-          <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
+          <div key={index} className="scroll-smooth bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
             <label className="absolute top-2 right-2 cursor-pointer">
               <input
                 type="checkbox"

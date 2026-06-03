@@ -11,13 +11,23 @@ export default function Home() {
   return (
     <div className="min-h-screen text-black">
       <Navbar />
-      <div className="pt-[6rem]">
-        <section className="text-center py-14">
-          <h1 className="text-4xl font-bold">Dicas para sua Carreira em TI</h1>
-          <p className="text-lg text-gray-600 mt-4 px-6">
+      <div className="pt-[2rem]">
+        <section className="max-w-4xl mx-auto px-6 py-16 text-center">
+
+          <h1 className="text-5xl md:text-6xl sm:text-5xl font-extrabold leading-tight text-[#0F0F0F] mt-2">
+            Dicas para sua Carreira de TI<br />
+            {/* <span className="text-[#4A6CF7]">Tecnologia da Informação</span> */}
+          </h1>
+          <p className="text-lg text-gray-500 mt-6 max-w-2xl mx-auto leading-relaxed">
             Encontre oportunidades de emprego e aprimore seu portfólio com essas dicas essenciais.
           </p>
         </section>
+        {/* <section className="text-center py-14">
+          <h1 className="text-4xl font-bold">Dicas para sua Carreira em TI</h1>
+          <p className="text-lg text-gray-600 mt-4 px-6">
+            
+          </p>
+        </section> */}
 
         {/* Seção: Sites de Vagas */}
         <div className="max-w-5xl mx-auto p-6 grid md:grid-cols-2 gap-6 mb-10">

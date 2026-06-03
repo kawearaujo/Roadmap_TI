@@ -89,7 +89,7 @@ export default function IA() {
 
                     children: [
                         {
-                            id: '3-2-1', title: 'Corrente, Tensão e Resistência',
+                            id: '3-2-1', title: 'Conceitos da Eletricidade',
                             content: <div className="space-y-2 text-sm text-gray-700">
                                 <p>Os conceitos fundamentais de eletricidade são essenciais para entender circuitos robóticos. A corrente (fluxo de elétrons), tensão (diferença de potencial) e resistência (oposição ao fluxo) são grandezas relacionadas pela Lei de Ohm e determinam o funcionamento básico de todos os circuitos eletrônicos.</p>
                                 <ul className="list-disc list-inside">
@@ -102,7 +102,7 @@ export default function IA() {
                             children: []
                         },
                         {
-                            id: '3-2-2', title: 'Protoboard, Multímetro, Solda',
+                            id: '3-2-2', title: 'Ferramentas Básicas',
                             content: <div className="space-y-2 text-sm text-gray-700">
                                 <p>As ferramentas básicas para construção de circuitos eletrônicos incluem a protoboard (para montagens temporárias), multímetro (para medir grandezas elétricas) e técnicas de solda (para conexões permanentes). Dominar esses elementos é essencial para o desenvolvimento prático de projetos robóticos.</p>
                                 <ul className="list-disc list-inside">
@@ -128,7 +128,7 @@ export default function IA() {
                             children: []
                         },
                         {
-                            id: '3-2-4', title: 'Microcontroladores (Arduino, ESP32)',
+                            id: '3-2-4', title: 'Microcontroladores',
                             content: <div className="space-y-2 text-sm text-gray-700">
                                 <p>Microcontroladores são os &quot;cérebros&quot; dos robôs simples e médios. Plataformas como Arduino e ESP32 oferecem processamento, entradas/saídas digitais e analógicas, comunicação e facilidade de programação, tornando-se elementos centrais para protótipos e projetos robóticos educacionais e amadores.</p>
                                 <ul className="list-disc list-inside">
@@ -184,7 +184,7 @@ export default function IA() {
                             children: []
                         },
                         {
-                            id: '3-3-3', title: 'ROS (Robot Operating System)',
+                            id: '3-3-3', title: 'Framework',
                             content: <div className="space-y-2 text-sm text-gray-700">
                                 <p>O Robot Operating System é um framework flexível para desenvolvimento de software robótico. Não é um sistema operacional tradicional, mas oferece serviços como abstração de hardware, controle de dispositivos, comunicação entre processos e gerenciamento de pacotes, sendo amplamente usado em robótica profissional e acadêmica.</p>
                                 <ul className="list-disc list-inside">
@@ -241,7 +241,7 @@ export default function IA() {
                             children: []
                         },
                         {
-                            id: '3-4-3', title: 'Modelagem 3D (Fusion, Tinkercad)',
+                            id: '3-4-3', title: 'Modelagem 3D',
                             content: <div className="space-y-2 text-sm text-gray-700">
                                 <p>A modelagem 3D permite projetar peças personalizadas para robôs antes da construção física. Ferramentas como Fusion 360 e Tinkercad possibilitam criar componentes estruturais, suportes para sensores e peças mecânicas que podem ser fabricadas por impressão 3D ou outros métodos de fabricação digital.</p>
                                 <ul className="list-disc list-inside">

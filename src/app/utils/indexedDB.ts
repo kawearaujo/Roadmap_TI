@@ -81,6 +81,7 @@ class UserDataStore {
   }
 
   /** 🔹 Função para salvar um atributo individualmente */
+
   async saveUserAttribute<T extends keyof UserData>(attribute: T, value: UserData[T]): Promise<void> {
     
     const userData = await this.getUserData(); // Pega os dados atuais do usuário
@@ -93,11 +94,30 @@ class UserDataStore {
     userData[attribute] = value; // Atualiza apenas o atributo específico
     // this.saveUserData({ id: "user1", name: "a" , photo: "a", level: 0, experience: 0, area: "a", achievements:[] });
     // console.log("Foi atualizado ",value)
+    
     return this.saveUserData(userData); // Salva os dados atualizados
     // this.saveUserData({ id: "user1", name: "a", photo: "", level: 0, experience: 0, area: "QA", achievements:[],roadmap:[], [attribute]: value });
 
 
   }
+
+  async clearUserData(): Promise<void> {
+  const db = await this.openDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction(this.storeName, "readwrite");
+    const store = transaction.objectStore(this.storeName);
+    const request = store.clear();
+
+    request.onsuccess = () => {
+      resolve();
+    };
+
+    request.onerror = () => {
+      console.error("Erro ao limpar os dados no IndexedDB");
+      reject("Failed to clear user data");
+    };
+  });
+}
 }
 
 export const userDataStore = new UserDataStore();

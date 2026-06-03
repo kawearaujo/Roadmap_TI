@@ -1,10 +1,33 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { userDataStore } from "@/app/utils/indexedDB"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [area, setArea] = useState("");
+
+  useEffect(() => {
+    const loadUserData = async () => {
+      const userData = await userDataStore.getUserData();
+
+      if (userData?.area) {
+        setArea(userData.area);
+      }
+    };
+
+    loadUserData();
+  }, []);
+
+  // const loadUserData = async () => {
+  //   const userData = await userDataStore.getUserData();
+  //   if (userData) {
+  //     setArea(userData.area);
+  //     console.log(userData.area);
+  //   }
+  // }
+
   const pathname = usePathname();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -16,7 +39,7 @@ export default function Navbar() {
       </h1>
 
       {/* Ícone de hambúrguer */}
-      <div className="md:hidden flex items-center">
+      <div className="md:hidden flex items-center ">
         <button onClick={toggleMenu} className="text-2xl">
           {isMenuOpen ? "✖" : "☰"} {/* Ícone de hambúrguer ou "X" */}
         </button>
@@ -27,7 +50,11 @@ export default function Navbar() {
         <Link href="/" className={`hover:text-gray-500 ${pathname === "/" ? "border-b-3 rounded-md border-blue-600" : ""}`}>Inicio</Link>
         <Link href="/about" className={`hover:text-gray-500 ${pathname === "/about" ? "border-b-3 rounded-md border-blue-600" : ""}`}>Sobre</Link>
         <Link href="/tips" className={`hover:text-gray-500 ${pathname === "/tips" ? "border-b-3 rounded-md border-blue-600" : ""}`}>Dicas</Link>
-        <Link href="/user" className={`hover:text-gray-500 ${pathname === "/know" ? "border-b-3 rounded-md border-blue-600" : ""}`}>Usuario</Link>
+        {area != "" ?
+          <Link href="/user" className={`hover:text-gray-500 ${pathname === "/user" ? "border-b-3 rounded-md border-blue-600" : ""}`}>Usuario</Link>
+          : ""}
+
+
       </div>
     </nav>
   );

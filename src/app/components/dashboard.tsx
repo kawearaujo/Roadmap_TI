@@ -72,15 +72,15 @@ export default function Dashboard() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50 p-6 ml-[16rem]">
+        <div className="min-h-screen bg-gray-50 p-6 md:ml-[16rem] sticky">
             {/* Top Bar */}
-            <nav className="w-full flex justify-between items-center mb-8">
-                <Link href="/" className="text-blue-600 font-semibold">
+            <div className="w-full flex justify-center items-center mb-8">
+                {/* <Link href="/" className="text-blue-600 font-semibold">
                     ← Voltar
-                </Link>
-                <h1 className="text-2xl font-bold text-center">Dashboard</h1>
+                </Link> */}
+                <h1 className="text-3xl font-bold text-center mb-6">Dashboard</h1>
                 <div className="w-20" />
-            </nav>
+            </div>
 
             {/* Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
@@ -103,8 +103,8 @@ export default function Dashboard() {
             <div className="bg-white shadow-md rounded-xl p-6 ">
 
                 <h2 className="text-lg font-semibold mb-4">Tarefas e Conquistas</h2>
-                <div className="flex">
-                    <ResponsiveContainer width="50%" height={300}>
+                <div className="md:flex">
+                    <ResponsiveContainer width="100%" height={300}>
                         <BarChart data={dataT}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="day" />
@@ -113,7 +113,7 @@ export default function Dashboard() {
                             <Bar dataKey="tarefas" fill="#3B82F6" radius={[8, 8, 0, 0]} />
                         </BarChart>
                     </ResponsiveContainer>
-                    <ResponsiveContainer width="50%" height={300}>
+                    <ResponsiveContainer width="100%" height={300}>
                         <BarChart data={dataC}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="day" />
