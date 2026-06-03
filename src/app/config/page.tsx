@@ -358,7 +358,7 @@ export default function Config1() {
             </button>
             <h2 className="text-xl font-bold text-center">{selectedBranch}</h2>
             {/* <p className="mt-4"> */}
-            <div className="h-[70vh] overflow-y-auto">
+            <div className="h-[50vh] overflow-y-auto">
               {areas[selectedArea][selectedBranch]}
             </div>
             {/* </p> */}
