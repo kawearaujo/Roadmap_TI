@@ -268,7 +268,7 @@ export default function Config1() {
   return (
     <div className="min-h-screen text-black">
       <Navbar />
-      <div className="flex min-h-screen flex-col justify-start items-center  relative pt-[2rem]">
+      <div className="flex pb-20 flex-col justify-start items-center  relative pt-[2rem]">
         <div className="absolute inset-0 -z-10 ">
           <div className="w-full h-[95vh] flex justify-center">
             <img src={bg.src} alt="" className="w-full object-none" />
