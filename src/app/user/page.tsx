@@ -233,7 +233,7 @@ export default function UserPage() {
     </div>
   );
   const CadastroInicial = () => {
-    const novoTeste = document.getElementById("novoNome")?.value;
+    const novoTeste = (document.getElementById("novoNome") as HTMLInputElement)?.value;
     // console.error("Novo nome: " + novoTeste);
     setUserName(novoTeste);
   };
