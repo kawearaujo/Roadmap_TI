@@ -4,7 +4,7 @@ import bg from "@/img/bg1.jpg"
 import Link from "next/link";
 // import { usePathname } from "next/navigation";
 import Navbar from "@/app/components/nav"
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
 
 export default function Home() {
   // const pathname = usePathname();
@@ -54,7 +54,7 @@ export default function Home() {
         </section>
 
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
 

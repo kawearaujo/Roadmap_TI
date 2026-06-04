@@ -68,7 +68,7 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
     ${node.children.length > 3 ? 'w-full' : ''}  items-start relative md:ml-4 mt-1 ${isThirdLevelParent ? '' : 'flex-col '} `}>
       <div
         onClick={handleClick}
-        className={`cursor-pointer rounded  ${Road.includes(node.id) ? 'bg-green-300 hover:bg-green-400' : 'bg-blue-100 hover:bg-blue-400'} px-4 py-2 hover:bg-blue-400 hover:text-white transition-all duration-300 whitespace-nowrap z-10`}
+        className={`cursor-pointer rounded  ${Road.includes(node.id) ? 'bg-green-300 hover:bg-green-400' : 'bg-blue-100 hover:bg-blue-400'} px-4 py-1 hover:bg-blue-400 hover:text-white transition-all duration-300 whitespace-nowrap z-10`}
       >
         {node.title}
 
@@ -78,7 +78,7 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
         children.length > 0 && (
           // ${toggle && isThirdLevelParent ? 'invisible ' : 'visible '}
           <div
-            className={`${isSecLevelParent ? '' : ''} relative  ml-4  md:flex items-center  ${isThirdLevelParent ? 'flex-row items-center' : 'mt-6 flex-col items-start gap-8 '}`}
+            className={`${isSecLevelParent ? '' : ''} relative  ml-4  md:flex items-center  ${isThirdLevelParent ? 'flex-row items-center' : 'mt-6 flex-col items-start md:gap-6 gap-16 md:mb-0 mb-10'}`}
           >
 
             {node.children.map((child, index) => (

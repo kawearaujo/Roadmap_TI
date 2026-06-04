@@ -1,7 +1,7 @@
 "use client"
 import bg from "@/img/bg1.jpg"
 import Navbar from "../components/nav"
-import Footer from "../components/footer";
+// import Footer from "../components/footer";
 import { JSX, useEffect, useState } from "react";
 import { userDataStore } from "@/app/utils/indexedDB"
 
@@ -372,7 +372,7 @@ export default function Config1() {
           </div>
         </div>
       )}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
