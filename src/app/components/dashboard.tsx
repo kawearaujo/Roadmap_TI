@@ -78,23 +78,23 @@ export default function Dashboard() {
                 {/* <Link href="/" className="text-blue-600 font-semibold">
                     ← Voltar
                 </Link> */}
-                <h1 className="text-3xl font-bold text-center mb-6">Dashboard</h1>
-                <div className="w-20" />
+                <h1 className="text-3xl font-bold text-center mb-6">Painel</h1>
+                {/* <div className="w-20" /> */}
             </div>
 
             {/* Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
                 <div className="bg-white shadow-md rounded-xl p-6 flex flex-col justify-between">
                     <h2 className="text-lg font-semibold text-gray-700">Tarefas Concluidas</h2>
-                    <p className="text-4xl font-bold text-blue-600 mt-4">{Road.length}</p>
+                    <p className="text-2xl font-bold text-blue-600 mt-4">{Road.length}</p>
                 </div>
                 <div className="bg-white shadow-md rounded-xl p-6 flex flex-col justify-between">
                     <h2 className="text-lg font-semibold text-gray-700">Conquistas Obtidas</h2>
-                    <p className="text-4xl font-bold text-blue-600 mt-4">{QConq.length}</p>
+                    <p className="text-2xl font-bold text-blue-600 mt-4">{QConq.length}</p>
                 </div>
                 <div className="bg-white shadow-md rounded-xl p-6 flex flex-col justify-between">
                     <h2 className="text-lg font-semibold text-gray-700">Total</h2>
-                    <p className="text-4xl font-bold text-blue-600 mt-4">{Road.length + QConq.length}</p>
+                    <p className="text-2xl font-bold text-blue-600 mt-4">{Road.length + QConq.length}</p>
                 </div>
                 {/* Adicione mais cards se quiser */}
             </div>
