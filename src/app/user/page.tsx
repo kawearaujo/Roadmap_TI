@@ -10,16 +10,21 @@ import { useUserStore } from "@/app/store/useUserStore"
 
 
 // Função que abre a tela de seleção de imagens
-const Images = ({ onSelect }: { onSelect: (image: string) => void }) => {
+
+const ImagesSelecao = ({ onSelect, ImagemSelecionada }: { ImagemSelecionada: string; onSelect: (image: string) => void }) => {
   const imagens = [
     "/images/Avatar-1.png",
     "/images/Avatar-2.png",
     "/images/Avatar-3.png",
     "/images/Avatar-4.png",
-    "/images/Avatar-1.png",
-    "/images/Avatar-2.png",
-    "/images/Avatar-3.png",
-    "/images/Avatar-4.png",
+    "/images/Avatar-5.png",
+    "/images/Avatar-6.png",
+    "/images/Avatar-7.png",
+    "/images/Avatar-8.png",
+    "/images/Avatar-9.png",
+    "/images/Avatar-10.png",
+    "/images/Avatar-11.png",
+    "/images/Avatar-12.png",
   ];
 
   return (
@@ -29,8 +34,13 @@ const Images = ({ onSelect }: { onSelect: (image: string) => void }) => {
           <img
             src={image}
             alt={`Imagem ${index + 1}`}
-            className="w-24 h-24 object-cover rounded-lg selected:border-4 selected:border-blue-500"
-            onClick={() => onSelect(image)}
+            className={`w-24 h-24 object-cover rounded-lg ${ImagemSelecionada === image
+              ? "ring-4 ring-blue-500"
+              : ""
+              }`}
+            onClick={() => {
+              onSelect(image)
+            }}
           />
         </div>
       ))}
@@ -223,7 +233,13 @@ export default function UserPage() {
               />
             </div>
           ))} */}
-          <Images onSelect={handleImageSelect} />
+          <ImagesSelecao
+            ImagemSelecionada={ImagemSelecionada}
+            onSelect={(image) => {
+              setSelectedImage(image)
+              handleImageSelect
+            }}
+          />
         </div>
         {/* <p className="text-gray-600">Esta ação não pode ser desfeita.</p> */}
         <div className="space-x-4">
@@ -291,7 +307,7 @@ export default function UserPage() {
     setActivePage("inicio");
   };
 
-
+  const [ImagemSelecionada, setImagemSelecionada] = useState("");
 
   return (
     <>
@@ -324,7 +340,13 @@ export default function UserPage() {
 
               <div className="bg-gray-700 grid md:grid-cols-4 grid-cols-3 gap-4 p-2 rounded-md flex justify-center items-center">
 
-                <Images onSelect={handleImageSelect} />
+                <ImagesSelecao
+                  ImagemSelecionada={ImagemSelecionada}
+                  onSelect={(image) => {
+                    handleImageSelect(image)
+                    setImagemSelecionada(image)
+
+                  }} />
               </div>
               <div className="space-x-4">
                 <button
@@ -466,7 +488,7 @@ export default function UserPage() {
         </div>
 
         {/* Área Principal */}
-        <div className="flex-1">
+        <div className="flex-1 ">
           {renderActivePage()}
         </div>
 

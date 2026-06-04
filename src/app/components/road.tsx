@@ -145,14 +145,14 @@ export default function RoadmapPage() {
     loadUserData();
   }, []);
   return (
-    <main className="min-h-screen bg-white pt-8">
-      <h1 className="text-3xl font-bold mb-6 flex justify-center">
+    <main className="min-h-screen bg-white pt-8 ">
+      <h1 className="text-3xl font-bold mb-6  flex justify-center">
 
         <p className="text-blue-400 ml-4"> {"{"} </p>
         {area}
         <p className="text-blue-400"> {"}"} </p>
       </h1>
-      <div className="flex flex-col gap-16 items-start md:m-4 mb-10">
+      <div className="flex flex-col gap-16 items-start md:pb-10 mb-0">
         {Road.filter((node) => (node.title == area)).map((node, index) => (
           <RoadmapNode key={index} node={node} />
         ))}
