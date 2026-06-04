@@ -4,7 +4,7 @@ export default function IA() {
             id: '6',
             title: 'Data Science',
             content:
-                <div className="space-y-4 text-md text-gray-800">
+                <div className="space-y-4 text-md text-zinc-100">
                     <p>A <strong>Ciência de Dados (Data Science)</strong> é um campo interdisciplinar que utiliza métodos científicos, processos, algoritmos e sistemas para extrair conhecimento e insights de dados estruturados e não-estruturados. Combinando <strong>estatística, matemática, programação, visualização e conhecimento de domínio</strong>, a ciência de dados permite transformar grandes volumes de informações em decisões estratégicas e soluções inovadoras.</p>
                     <p>Os cientistas de dados atuam como verdadeiros detetives de dados, investigando <strong>padrões ocultos, tendências emergentes e correlações significativas</strong> que podem impulsionar a inovação e eficiência em diversos setores. Este campo está em constante evolução, incorporando avanços em <strong>inteligência artificial, aprendizado de máquina e computação de alto desempenho</strong>.</p>
                     <p>Esta seção apresenta um panorama completo da ciência de dados, desde seus fundamentos teóricos até aplicações práticas em ambientes reais, servindo como guia para profissionais e estudantes que desejam navegar por esta área transformadora.</p>
@@ -14,7 +14,7 @@ export default function IA() {
                     id: '6-1',
                     title: '🟢 Fundamentos Matemáticos',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>Os <strong>fundamentos matemáticos e estatísticos</strong> formam a base teórica que sustenta todas as técnicas e algoritmos utilizados na ciência de dados. Este conhecimento é essencial para <strong>compreender como os modelos funcionam, interpretar resultados corretamente e desenvolver novas abordagens</strong> para problemas complexos.</p>
                             <p>A matemática fornece as ferramentas para <strong>representar e manipular dados multidimensionais</strong>, enquanto a estatística permite <strong>quantificar incertezas e fazer inferências robustas</strong> a partir de amostras limitadas. Juntas, essas disciplinas capacitam o cientista de dados a extrair conhecimento significativo e confiável mesmo de conjuntos de dados desafiadores.</p>
                             <p>Esta seção explora os principais conceitos matemáticos e estatísticos que todo profissional de dados deve dominar, desde álgebra linear e cálculo até probabilidade e análise exploratória de dados.</p>
@@ -23,7 +23,7 @@ export default function IA() {
                         {
                             id: '6-1-1',
                             title: 'Álgebra Linear',
-                            content: <div className="space-y-2 text-sm text-gray-700">
+                            content: <div className="space-y-2 text-sm text-zinc-100">
                                 <p>A <strong>Álgebra Linear</strong> é fundamental para Data Science, fornecendo ferramentas matemáticas para <strong>manipular dados multidimensionais</strong>. Conceitos como <strong>matrizes, vetores, autovalores e autovetores</strong> são essenciais para algoritmos de machine learning, redução de dimensionalidade e transformações lineares de dados.</p>
 
                                 <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -39,7 +39,7 @@ export default function IA() {
                                     <li><a className="text-blue-600 underline" href="https://www.cs.cornell.edu/courses/cs485/2006sp/LinAlg_Complete.pdf" target="_blank">Álgebra Linear para Aprendizado de Máquina</a></li>
                                 </ul>
 
-                                <p className="font-semibold text-purple-800">💡 Dica: Pratique com exercícios de transformações lineares e decomposição de matrizes.</p>
+                                <p className="font-semibold text-black-800">💡 Dica: Pratique com exercícios de transformações lineares e decomposição de matrizes.</p>
                             </div>,
                             children: []
                         },
@@ -47,23 +47,27 @@ export default function IA() {
                             id: '6-1-2',
                             title: 'Cálculo Diferencial e Integral',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>O <strong>Cálculo</strong> é essencial na <strong>otimização de modelos de machine learning</strong>, especialmente no processo de <strong>gradient descent</strong>. Derivadas ajudam a entender a taxa de mudança em funções e são usadas para minimizar funções de custo, enquanto integrais são aplicadas em probabilidade e estatística.</p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" target="_blank">Essence of Calculus - 3Blue1Brown</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=HfACrKJ_Y2w" target="_blank">Cálculo para Machine Learning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.coursera.org/learn/multivariate-calculus-machine-learning" target="_blank">Cálculo Multivariado para Machine Learning</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy - Cálculo Diferencial</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.khanacademy.org/math/calculus-2" target="_blank">Khan Academy - Cálculo Integral</a></li>
+                                            </ul>
+                                        </div>
 
-                                    <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-blue-600 underline" href="https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" target="_blank">Essence of Calculus - 3Blue1Brown</a></li>
-                                        <li><a className="text-blue-600 underline" href="https://www.youtube.com/watch?v=HfACrKJ_Y2w" target="_blank">Cálculo para Machine Learning</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-green-800">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-blue-600 underline" href="https://www.coursera.org/learn/multivariate-calculus-machine-learning" target="_blank">Cálculo Multivariado para Machine Learning</a></li>
-                                        <li><a className="text-blue-600 underline" href="https://www.khanacademy.org/math/calculus-1" target="_blank">Khan Academy - Cálculo Diferencial</a></li>
-                                        <li><a className="text-blue-600 underline" href="https://www.khanacademy.org/math/calculus-2" target="_blank">Khan Academy - Cálculo Integral</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-purple-800">💡 Dica: Foque em derivadas parciais e a regra da cadeia para entender backpropagation.</p>
+                                    </div>
+                                    <p className="font-semibold text-black-800">💡 Dica: Foque em derivadas parciais e a regra da cadeia para entender backpropagation.</p>
                                 </div>,
                             children: []
                         },
@@ -71,7 +75,7 @@ export default function IA() {
                             id: '6-1-3',
                             title: 'Probabilidade e Estatística',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Probabilidade e Estatística</strong> formam a base teórica da ciência de dados, permitindo <strong>quantificar incertezas e fazer inferências</strong> a partir de amostras. Conceitos como <strong>distribuições de probabilidade, intervalos de confiança, testes de hipóteses e regressão</strong> são fundamentais para análise de dados.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -87,7 +91,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://www.statsmodels.org/stable/index.html" target="_blank">Statsmodels - Biblioteca Python para Estatística</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Domine testes de hipótese e intervalos de confiança para validação de modelos.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Domine testes de hipótese e intervalos de confiança para validação de modelos.</p>
                                 </div>,
                             children: []
                         },
@@ -95,7 +99,7 @@ export default function IA() {
                             id: '6-1-4',
                             title: 'Análise de Dados',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>A <strong>Análise Exploratória de Dados (EDA)</strong> é o processo de investigar, visualizar e sumarizar dados para <strong>descobrir padrões, anomalias e relacionamentos</strong>. Esta etapa crucial ocorre antes da modelagem e ajuda a formular hipóteses, identificar variáveis relevantes e detectar problemas nos dados.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -111,7 +115,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15" target="_blank">Guia Prático para EDA</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use pairplots e matrizes de correlação para identificar relações entre variáveis.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use pairplots e matrizes de correlação para identificar relações entre variáveis.</p>
                                 </div>,
                             children: []
                         }
@@ -121,7 +125,7 @@ export default function IA() {
                     id: '6-2',
                     title: '🟡 Programação e Ferramentas',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>O <strong>domínio de linguagens de programação e ferramentas especializadas</strong> é fundamental para o trabalho prático em ciência de dados. Estas habilidades técnicas permitem <strong>implementar algoritmos, automatizar fluxos de trabalho e criar soluções escaláveis</strong> para problemas data-driven.</p>
                             <p><strong>Python</strong> emergiu como a linguagem predominante neste campo devido à sua versatilidade, legibilidade e ao rico ecossistema de bibliotecas especializadas. Junto com ambientes de desenvolvimento como <strong>Jupyter Notebooks</strong> e ferramentas de controle de versão como <strong>Git</strong>, estas tecnologias formam o toolkit essencial do cientista de dados moderno.</p>
                             <p>Esta seção aborda as principais ferramentas computacionais utilizadas na prática da ciência de dados, fornecendo recursos para desenvolver proficiência técnica e implementar soluções eficientes.</p>
@@ -131,7 +135,7 @@ export default function IA() {
                             id: '6-2-1',
                             title: 'Python',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Python</strong> tornou-se a linguagem dominante para ciência de dados devido à sua <strong>sintaxe clara, vasta comunidade e ecossistema rico</strong> de bibliotecas especializadas. Para cientistas de dados, dominar Python significa compreender <strong>estruturas de dados básicas, funções, orientação a objetos e conceitos avançados</strong> como compreensões de lista e geradores.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -147,14 +151,14 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://docs.python-guide.org/" target="_blank">O Guia Definitivo para Python</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Pratique com exercícios no HackerRank e LeetCode.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Pratique com exercícios no HackerRank e LeetCode.</p>
                                 </div>,
                             children: []
                         },
                         {
                             id: '6-2-2',
                             title: 'Bibliotecas Essenciais',
-                            content: <div className="space-y-2 text-sm text-gray-700">
+                            content: <div className="space-y-2 text-sm text-zinc-100">
                                 <p>As <strong>bibliotecas essenciais para Data Science</strong> em Python formam um ecossistema poderoso. <strong>NumPy</strong> fornece estruturas para computação numérica eficiente, <strong>Pandas</strong> oferece DataFrames flexíveis para manipulação de dados tabulares, e <strong>Matplotlib</strong> permite criar visualizações personalizáveis.</p>
 
                                 <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -170,14 +174,14 @@ export default function IA() {
                                     <li><a className="text-blue-600 underline" href="https://matplotlib.org/stable/tutorials/introductory/pyplot.html" target="_blank">Tutorial Introdutório de Matplotlib</a></li>
                                 </ul>
 
-                                <p className="font-semibold text-purple-800">💡 Dica: Domine operações de groupby e merge no Pandas para manipulação eficiente.</p>
+                                <p className="font-semibold text-black-800">💡 Dica: Domine operações de groupby e merge no Pandas para manipulação eficiente.</p>
                             </div>,
                             children: []
                         },
                         {
                             id: '6-2-3',
                             title: 'Jupyter Notebook',
-                            content: <div className="space-y-2 text-sm text-gray-700">
+                            content: <div className="space-y-2 text-sm text-zinc-100">
                                 <p>O <strong>Jupyter Notebook</strong> revolucionou a forma como cientistas de dados trabalham, oferecendo um <strong>ambiente interativo que combina código, visualizações, narrativas e equações</strong>. Esta ferramenta permite desenvolvimento iterativo, documentação inline e compartilhamento de análises completas.</p>
 
                                 <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -193,14 +197,14 @@ export default function IA() {
                                     <li><a className="text-blue-600 underline" href="https://www.kaggle.com/notebooks" target="_blank">Exemplos de Notebooks no Kaggle</a></li>
                                 </ul>
 
-                                <p className="font-semibold text-purple-800">💡 Dica: Use magic commands (%timeit, %%time) para profiling de código.</p>
+                                <p className="font-semibold text-black-800">💡 Dica: Use magic commands (%timeit, %%time) para profiling de código.</p>
                             </div>,
                             children: []
                         },
                         {
                             id: '6-2-4',
                             title: 'Ambientes e Versionamento',
-                            content: <div className="space-y-2 text-sm text-gray-700">
+                            content: <div className="space-y-2 text-sm text-zinc-100">
                                 <p>Ferramentas de <strong>ambiente e versionamento são cruciais</strong> para o desenvolvimento sustentável de projetos. <strong>Git</strong> permite controle de versão, <strong>virtualenv/conda</strong> criam ambientes Python isolados, e <strong>Docker</strong> oferece containerização para replicabilidade perfeita.</p>
 
                                 <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -216,7 +220,7 @@ export default function IA() {
                                     <li><a className="text-blue-600 underline" href="https://www.docker.com/get-started" target="_blank">Primeiros Passos com Docker</a></li>
                                 </ul>
 
-                                <p className="font-semibold text-purple-800">💡 Dica: Use Docker Compose para orquestrar múltiplos serviços.</p>
+                                <p className="font-semibold text-black-800">💡 Dica: Use Docker Compose para orquestrar múltiplos serviços.</p>
                             </div>,
                             children: []
                         }
@@ -226,7 +230,7 @@ export default function IA() {
                     id: '6-3',
                     title: '🟠 Processamento e Manipulação de Dados',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>O <strong>processamento e manipulação de dados</strong> representa uma etapa crucial e frequentemente desafiadora no fluxo de trabalho da ciência de dados. É nesta fase que <strong>dados brutos, muitas vezes desestruturados e imperfeitos, são transformados</strong> em formatos adequados para análise e modelagem.</p>
                             <p>Este processo abrange desde a <strong>coleta inicial através de diversas fontes</strong> (APIs, web scraping, bancos de dados) até a <strong>limpeza, transformação e enriquecimento</strong> dos dados. A qualidade do trabalho realizado nesta etapa determina diretamente a confiabilidade e relevância dos insights finais.</p>
                             <p>Esta seção explora as técnicas e melhores práticas para aquisição, preparação e engenharia de features, estabelecendo bases sólidas para análises e modelagens subsequentes.</p>
@@ -236,7 +240,7 @@ export default function IA() {
                             id: '6-3-1',
                             title: 'Coleta de Dados',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>A <strong>coleta de dados</strong> é o primeiro passo crucial em qualquer projeto. <strong>Web scraping</strong> permite extrair informações de páginas web, enquanto <strong>APIs</strong> oferecem acesso programático a dados organizados. Considerações éticas e legais são essenciais nesta etapa.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -252,7 +256,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://www.selenium.dev/documentation/pt-br/" target="_blank">Selenium - Automação Web</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Respeite robots.txt e termos de serviço ao fazer web scraping.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Respeite robots.txt e termos de serviço ao fazer web scraping.</p>
                                 </div>,
                             children: []
                         },
@@ -260,7 +264,7 @@ export default function IA() {
                             id: '6-3-2',
                             title: 'Limpeza e Preparação',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>A <strong>limpeza e preparação de dados</strong>, frequentemente consumindo 60-80% do tempo em projetos, transformam dados brutos em formatos adequados para análise. Inclui <strong>tratamento de valores ausentes, correção de inconsistências, remoção de duplicatas e tratamento de outliers</strong>.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -276,7 +280,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4" target="_blank">Guia Definitivo para Limpeza de Dados</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Documente todas as transformações para reprodutibilidade.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Documente todas as transformações para reprodutibilidade.</p>
                                 </div>
                             ,
                             children: []
@@ -285,7 +289,7 @@ export default function IA() {
                             id: '6-3-3',
                             title: 'Feature Engineering',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Feature engineering</strong> é a arte de transformar dados brutos em características que <strong>melhoram o desempenho dos modelos de machine learning</strong>. Envolve criação de novas variáveis, transformações matemáticas, codificação de variáveis categóricas e extração de padrões temporais.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -301,7 +305,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/" target="_blank">Guia Prático de Feature Engineering</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use domain knowledge para criar features mais relevantes.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use domain knowledge para criar features mais relevantes.</p>
                                 </div>,
                             children: []
                         },
@@ -309,7 +313,7 @@ export default function IA() {
                             id: '6-3-4',
                             title: 'Tratamento de Dados',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>O <strong>tratamento adequado de dados ausentes e outliers</strong> é crucial para construir modelos robustos. Para dados ausentes, técnicas incluem <strong>remoção, imputação e métodos baseados em modelos</strong>. Outliers podem ser identificados por <strong>métodos estatísticos e técnicas de clustering</strong>.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -325,7 +329,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba" target="_blank">Métodos para Detectar e Remover Outliers</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Investigue a causa dos missing values antes de decidir o tratamento.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Investigue a causa dos missing values antes de decidir o tratamento.</p>
                                 </div>,
                             children: []
                         }
@@ -335,7 +339,7 @@ export default function IA() {
                     id: '6-4',
                     title: '🔵 Machine Learning',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p><strong>Machine Learning (Aprendizado de Máquina)</strong> representa o coração da ciência de dados moderna, permitindo que <strong>computadores aprendam padrões a partir de dados</strong> e realizem previsões ou tomem decisões sem programação explícita.</p>
                             <p>Os algoritmos de machine learning podem ser categorizados em <strong>supervisionados (dados rotulados), não-supervisionados (dados não rotulados) e por reforço</strong>. Cada paradigma oferece ferramentas específicas para diferentes tipos de problemas.</p>
                             <p>Esta seção explora os fundamentos do aprendizado de máquina, desde algoritmos clássicos até técnicas de validação e otimização, fornecendo a base necessária para desenvolver modelos preditivos eficazes.</p>
@@ -345,7 +349,7 @@ export default function IA() {
                             id: '6-4-1',
                             title: 'Aprendizado Supervisionado',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>O <strong>aprendizado supervisionado</strong> é um paradigma onde algoritmos aprendem padrões a partir de <strong>dados rotulados</strong>. Dividido em <strong>regressão (valores contínuos) e classificação (categorias)</strong>, inclui algoritmos como regressão linear, árvores de decisão, random forests e SVM.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -361,7 +365,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://www.kaggle.com/learn/classification" target="_blank">Kaggle Learn - Classificação</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Comece com modelos simples antes de partir para algoritmos complexos.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Comece com modelos simples antes de partir para algoritmos complexos.</p>
                                 </div>,
                             children: []
                         },
@@ -369,7 +373,7 @@ export default function IA() {
                             id: '6-4-2',
                             title: 'Aprendizado Não Supervisionado',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>O <strong>aprendizado não supervisionado</strong> explora dados sem rótulos para <strong>descobrir estruturas e padrões intrínsecos</strong>. Técnicas principais incluem <strong>clustering (agrupamento), redução de dimensionalidade e detecção de anomalias</strong>.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -385,7 +389,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://towardsdatascience.com/unsupervised-learning-with-python-173c51dc7f03" target="_blank">Aprendizado Não Supervisionado com Python</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use elbow method para determinar o número ideal de clusters.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use elbow method para determinar o número ideal de clusters.</p>
                                 </div>,
                             children: []
                         },
@@ -393,7 +397,7 @@ export default function IA() {
                             id: '6-4-3',
                             title: 'Validação de Modelos',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>A <strong>validação de modelos</strong> é essencial para garantir que algoritmos <strong>generalizem bem para dados não vistos</strong>. Técnicas como <strong>validação cruzada</strong> ajudam a avaliar robustez. O <strong>overfitting</strong> ocorre quando modelos "decoram" dados de treino em vez de aprender padrões gerais.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -409,7 +413,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://machinelearningmastery.com/overfitting-and-underfitting-with-machine-learning-algorithms/" target="_blank">Guia sobre Overfitting e Underfitting</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use learning curves para diagnosticar overfitting/underfitting.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use learning curves para diagnosticar overfitting/underfitting.</p>
                                 </div>,
                             children: []
                         },
@@ -417,7 +421,7 @@ export default function IA() {
                             id: '6-4-4',
                             title: 'Modelos Clássicos',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>Os <strong>modelos clássicos de machine learning</strong> formam a base da ciência de dados moderna. <strong>Regressões</strong> modelam relações entre variáveis, <strong>Árvores de decisão</strong> capturam interações complexas, <strong>KNN</strong> classifica por similaridade, e <strong>SVM</strong> encontra hiperplanos ótimos de separação.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -433,7 +437,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://scikit-learn.org/stable/modules/svm.html" target="_blank">Support Vector Machines (SVM)</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Entenda os hiperparâmetros de cada algoritmo para tuning eficiente.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Entenda os hiperparâmetros de cada algoritmo para tuning eficiente.</p>
                                 </div>,
                             children: []
                         }
@@ -443,7 +447,7 @@ export default function IA() {
                     id: '6-5',
                     title: '🟣 Aprendizado Profundo',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>O <strong>Aprendizado Profundo (Deep Learning)</strong> representa uma evolução revolucionária do machine learning, utilizando <strong>redes neurais com múltiplas camadas</strong> para modelar relações altamente complexas nos dados.</p>
                             <p>As arquiteturas de deep learning são capazes de <strong>aprender hierarquias de representações</strong>, identificando desde características básicas até conceitos abstratos. Este poder vem com desafios significativos, incluindo <strong>necessidade de grandes volumes de dados e intenso poder computacional</strong>.</p>
                             <p>Esta seção explora os principais tipos de redes neurais profundas, frameworks de implementação e aplicações práticas.</p>
@@ -453,7 +457,7 @@ export default function IA() {
                             id: '6-5-1',
                             title: 'Redes Neurais Artificiais',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Redes Neurais Artificiais</strong> são modelos inspirados no cérebro humano, compostos por <strong>camadas de neurônios interconectados</strong>. O aprendizado ocorre via <strong>backpropagation</strong>, ajustando pesos para minimizar erros. Arquiteturas <strong>feedforward e MLP</strong> modelam relações não-lineares complexas.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -469,7 +473,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://playground.tensorflow.org/" target="_blank">Playground Neural Network - Visualização Interativa</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Comece com redes simples e aumente a complexidade gradualmente.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Comece com redes simples e aumente a complexidade gradualmente.</p>
                                 </div>,
                             children: []
                         },
@@ -477,7 +481,7 @@ export default function IA() {
                             id: '6-5-2',
                             title: 'Redes Convolucionais',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Redes Neurais Convolucionais (CNNs)</strong> revolucionaram o processamento de imagens com sua arquitetura especializada em <strong>detectar padrões espaciais</strong>. Compostas por <strong>camadas convolucionais, pooling e totalmente conectadas</strong>, estas redes automaticamente aprendem hierarquias de características.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -493,7 +497,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://cs231n.github.io/" target="_blank">CS231n - Curso de CNNs de Stanford</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use transfer learning com modelos pré-treinados para problemas específicos.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use transfer learning com modelos pré-treinados para problemas específicos.</p>
                                 </div>,
                             children: []
                         },
@@ -501,7 +505,7 @@ export default function IA() {
                             id: '6-5-3',
                             title: 'Redes Recorrentes',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Redes Neurais Recorrentes (RNNs)</strong> são especializadas em <strong>processamento sequencial de dados</strong>, mantendo uma "memória" de informações anteriores. <strong>LSTM e GRU</strong> superam limitações de RNNs tradicionais, permitindo retenção seletiva de informações por períodos prolongados.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -517,7 +521,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html" target="_blank">RNN para Classificação com PyTorch</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use gradient clipping para evitar exploding gradients em RNNs.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use gradient clipping para evitar exploding gradients em RNNs.</p>
                                 </div>,
                             children: []
                         },
@@ -525,7 +529,7 @@ export default function IA() {
                             id: '6-5-4',
                             title: 'Frameworks',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>Os <strong>frameworks modernos de deep learning</strong> simplificam o desenvolvimento de arquiteturas complexas. <strong>TensorFlow</strong> oferece computação distribuída, <strong>PyTorch</strong> tem API intuitiva, e <strong>Keras</strong> facilita prototipagem rápida.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -541,7 +545,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://keras.io/getting_started/" target="_blank">Primeiros Passos com Keras</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Escolha PyTorch para pesquisa e TensorFlow para produção.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Escolha PyTorch para pesquisa e TensorFlow para produção.</p>
                                 </div>,
                             children: []
                         }
@@ -551,7 +555,7 @@ export default function IA() {
                     id: '6-6',
                     title: '🔴 Banco de Dados',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>A <strong>infraestrutura de armazenamento e processamento</strong> é fundamental para lidar com os volumes, velocidades e variedades de dados no mundo contemporâneo. As tecnologias de <strong>Banco de Dados e Big Data</strong> fornecem os alicerces para gerenciar desde análises tradicionais até pipelines de dados massivos.</p>
                             <p>Os sistemas de <strong>banco de dados relacionais (SQL)</strong> continuam sendo cruciais para dados estruturados, enquanto tecnologias <strong>NoSQL</strong> oferecem flexibilidade para formatos variados. Para volumes realmente grandes, ecossistemas como <strong>Hadoop e Spark</strong> permitem processamento distribuído.</p>
                             <p>Esta seção explora o espectro de tecnologias de armazenamento e processamento de dados, desde SQL tradicional até arquiteturas modernas de data lakes.</p>
@@ -561,7 +565,7 @@ export default function IA() {
                             id: '6-6-1',
                             title: 'SQL',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>SQL (Structured Query Language)</strong> é fundamental para cientistas de dados que precisam <strong>extrair, transformar e analisar dados</strong> em bancos relacionais. A linguagem permite desde consultas simples até operações complexas como <strong>JOINS, agregações, window functions e CTEs</strong>.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -577,14 +581,14 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://sqlzoo.net/" target="_blank">SQLZoo - Exercícios Interativos</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Pratique com queries complexas envolvendo múltiplos JOINs e subqueries.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Pratique com queries complexas envolvendo múltiplos JOINs e subqueries.</p>
                                 </div>,
                             children: []
                         },
                         {
                             id: '6-6-2',
                             title: 'NoSQL',
-                            content: <div className="space-y-2 text-sm text-gray-700">
+                            content: <div className="space-y-2 text-sm text-zinc-100">
                                 <p>Bancos de dados <strong>NoSQL</strong> oferecem alternativas flexíveis aos sistemas relacionais. <strong>MongoDB</strong> armazena dados em documentos JSON-like, <strong>Redis</strong> é um armazenamento em memória rápido. Outros sistemas incluem bancos orientados a <strong>colunas, grafos e chave-valor</strong>.</p>
 
                                 <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -600,7 +604,7 @@ export default function IA() {
                                     <li><a className="text-blue-600 underline" href="https://www.tutorialspoint.com/mongodb/mongodb_overview.htm" target="_blank">Visão Geral do MongoDB</a></li>
                                 </ul>
 
-                                <p className="font-semibold text-purple-800">💡 Dica: Use MongoDB para dados semi-estruturados e Redis para caching.</p>
+                                <p className="font-semibold text-black-800">💡 Dica: Use MongoDB para dados semi-estruturados e Redis para caching.</p>
                             </div>,
                             children: []
                         },
@@ -608,7 +612,7 @@ export default function IA() {
                             id: '6-6-3',
                             title: 'Hadoop e Spark',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Apache Hadoop e Spark</strong> são ecossistemas fundamentais para processamento de big data. <strong>Hadoop</strong> utiliza <strong>MapReduce e HDFS</strong>, enquanto <strong>Spark</strong> oferece computação em memória mais rápida com APIs unificadas para streaming, SQL e machine learning.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -624,7 +628,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://databricks.com/learn/training/free-courses" target="_blank">Cursos Gratuitos de Spark - Databricks</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use PySpark para processamento distribuído com Python.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use PySpark para processamento distribuído com Python.</p>
                                 </div>,
                             children: []
                         },
@@ -632,7 +636,7 @@ export default function IA() {
                             id: '6-6-4',
                             title: 'Data Lakes e Data Warehousing',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Data Lakes e Data Warehouses</strong> representam abordagens complementares. <strong>Data Lakes</strong> armazenam dados brutos sem esquema predefinido, <strong>Data Warehouses</strong> são repositórios estruturados otimizados para consultas analíticas. Soluções modernas criam arquiteturas de <strong>"lakehouse"</strong>.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -648,7 +652,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://docs.databricks.com/data-engineering/index.html" target="_blank">Engenharia de Dados com Databricks</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use data lakes para dados brutos e warehouses para dados processados.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use data lakes para dados brutos e warehouses para dados processados.</p>
                                 </div>,
                             children: []
                         }
@@ -658,7 +662,7 @@ export default function IA() {
                     id: '6-7',
                     title: '⚫ Visualização e Comunicação',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>A <strong>visualização e comunicação eficaz de dados</strong> transforma números abstratos em insights acionáveis, sendo frequentemente o fator decisivo para o sucesso de projetos. Como ponte entre a análise técnica e a tomada de decisões, estas habilidades permitem <strong>transmitir descobertas complexas de forma acessível</strong>.</p>
                             <p>A visualização de dados combina <strong>princípios estatísticos, design gráfico e psicologia cognitiva</strong> para criar representações visuais que amplificam nossa capacidade de detectar padrões. Complementarmente, o <strong>storytelling com dados</strong> estrutura visualizações em narrativas coerentes.</p>
                             <p>Esta seção aborda tanto as ferramentas técnicas de visualização quanto as estratégias de comunicação e apresentação de resultados.</p>
@@ -668,7 +672,7 @@ export default function IA() {
                             id: '6-7-1',
                             title: 'Bibliotecas de Visualização',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>As <strong>bibliotecas de visualização em Python</strong> oferecem capacidades complementares. <strong>Matplotlib</strong> fornece controle detalhado, <strong>Seaborn</strong> simplifica visualizações estatísticas, e <strong>Plotly</strong> se destaca por gráficos interativos para web e dashboards.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -684,7 +688,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://plotly.com/python/getting-started/" target="_blank">Primeiros Passos com Plotly</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use Plotly para dashboards interativos e Matplotlib para publicações científicas.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use Plotly para dashboards interativos e Matplotlib para publicações científicas.</p>
                                 </div>,
                             children: []
                         },
@@ -692,7 +696,7 @@ export default function IA() {
                             id: '6-7-2',
                             title: 'Dashboards e Ferramentas de BI',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>Ferramentas de <strong>Business Intelligence como Power BI e Tableau</strong> transformaram a forma como as empresas visualizam dados. Permitem criar <strong>dashboards interativos sem programação extensiva</strong>, com conectividade a múltiplas fontes de dados e atualizações automatizadas.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -708,7 +712,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://community.powerbi.com/" target="_blank">Comunidade Power BI - Exemplos e Suporte</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use Power BI para integração com Microsoft Stack e Tableau para visualizações avançadas.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use Power BI para integração com Microsoft Stack e Tableau para visualizações avançadas.</p>
                                 </div>,
                             children: []
                         },
@@ -716,7 +720,7 @@ export default function IA() {
                             id: '6-7-3',
                             title: 'Storytelling',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>O <strong>storytelling com dados</strong> vai além de gráficos bonitos, transformando números em <strong>narrativas convincentes que geram ação</strong>. Combina análise técnica com princípios de comunicação visual e narrativa para criar apresentações que ressoam com o público.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -732,7 +736,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://infovis.fh-potsdam.de/readings/Cairo2013-TheFactfulArt.pdf" target="_blank">Princípios de Design para Visualização</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Estruture suas apresentações com: situação, complicação, solução.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Estruture suas apresentações com: situação, complicação, solução.</p>
                                 </div>,
                             children: []
                         },
@@ -740,7 +744,7 @@ export default function IA() {
                             id: '6-7-4',
                             title: 'Apresentações',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>A capacidade de <strong>comunicar efetivamente resultados</strong> para diferentes públicos é crucial. <strong>Apresentações técnicas</strong> exigem rigor metodológico e detalhamento, enquanto comunicações para <strong>públicos não técnicos</strong> requerem foco nos insights e impactos práticos.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -756,7 +760,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://www.slideshare.net/databricks/communicating-data-science-results-effectively" target="_blank">Comunicando Resultados de Ciência de Dados Efetivamente</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Adapte o nível de detalhe técnico conforme o conhecimento da audiência.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Adapte o nível de detalhe técnico conforme o conhecimento da audiência.</p>
                                 </div>,
                             children: []
                         }
@@ -766,7 +770,7 @@ export default function IA() {
                     id: '6-8',
                     title: '🌐 Aplicações e Projetos',
                     content:
-                        <div className="space-y-4 text-md text-gray-800">
+                        <div className="space-y-4 text-md text-zinc-100">
                             <p>A <strong>aplicação prática da ciência de dados em projetos reais</strong> é o objetivo final de todo o conhecimento teórico e técnico. É nos desafios do mundo real que as metodologias são testadas, adaptadas e refinadas, <strong>gerando valor tangível para organizações e sociedade</strong>.</p>
                             <p>O ciclo completo de um projeto de dados envolve desde a <strong>definição clara do problema de negócio</strong> até a <strong>implementação de modelos em produção e monitoramento contínuo</strong>. Este processo iterativo frequentemente revela complexidades não antecipadas.</p>
                             <p>Esta seção explora metodologias de desenvolvimento de projetos, técnicas de operacionalização de modelos e casos de uso em diversos setores.</p>
@@ -776,7 +780,7 @@ export default function IA() {
                             id: '6-8-1',
                             title: 'Projetos com Dados Públicos',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>Projetos com dados públicos</strong> são excelentes oportunidades para construir portfólio e desenvolver habilidades práticas. Fontes como <strong>IBGE, Portal de Dados Abertos e Kaggle</strong> oferecem dados diversos para análise. Projetos bem documentados demonstram capacidade de obter insights a partir de dados brutos.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -792,7 +796,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://dados.gov.br/" target="_blank">Portal Brasileiro de Dados Abertos</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Documente seus projetos no GitHub com README detalhado.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Documente seus projetos no GitHub com README detalhado.</p>
                                 </div>,
                             children: []
                         },
@@ -800,7 +804,7 @@ export default function IA() {
                             id: '6-8-2',
                             title: 'Modelos Preditivos',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>A implementação bem-sucedida de <strong>modelos preditivos em contextos empresariais</strong> vai além da precisão técnica, exigindo <strong>alinhamento com objetivos de negócio</strong>. Aplicações comuns incluem previsão de demanda, detecção de fraudes, análise de churn e sistemas de recomendação.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -816,7 +820,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://www.mckinsey.com/business-functions/quantumblack/our-insights/scaling-ai-like-a-tech-native-the-ceos-role" target="_blank">McKinsey: Implementando IA em Escala</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Traduza métricas técnicas em KPIs de negócio compreensíveis.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Traduza métricas técnicas em KPIs de negócio compreensíveis.</p>
                                 </div>,
                             children: []
                         },
@@ -824,7 +828,7 @@ export default function IA() {
                             id: '6-8-3',
                             title: 'Deploy de Modelos',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p>O <strong>deployment de modelos</strong> transforma algoritmos teóricos em serviços práticos acessíveis via APIs. <strong>Flask</strong> é ideal para projetos pequenos a médios, enquanto <strong>FastAPI</strong> oferece performance superior e documentação automática. Ferramentas como <strong>Docker</strong> garantem consistência entre ambientes.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -840,7 +844,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://www.tensorflow.org/tfx/tutorials/serving/rest_simple" target="_blank">TensorFlow Serving para Deploy de Modelos</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Use Docker para criar imagens reproduzíveis dos seus modelos.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Use Docker para criar imagens reproduzíveis dos seus modelos.</p>
                                 </div>,
                             children: []
                         },
@@ -848,7 +852,7 @@ export default function IA() {
                             id: '6-8-4',
                             title: 'Monitoramento de Modelos',
                             content:
-                                <div className="space-y-2 text-sm text-gray-700">
+                                <div className="space-y-2 text-sm text-zinc-100">
                                     <p><strong>MLOps (Machine Learning Operations)</strong> aplica princípios de DevOps ao ciclo de vida de modelos, garantindo transição eficiente para produção. Práticas essenciais incluem <strong>controle de versão, pipelines automatizados e monitoramento contínuo</strong> de performance.</p>
 
                                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
@@ -864,7 +868,7 @@ export default function IA() {
                                         <li><a className="text-blue-600 underline" href="https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide" target="_blank">Guia para Monitoramento de Modelos em Produção</a></li>
                                     </ul>
 
-                                    <p className="font-semibold text-purple-800">💡 Dica: Monitore data drift e model decay para manter modelos relevantes.</p>
+                                    <p className="font-semibold text-black-800">💡 Dica: Monitore data drift e model decay para manter modelos relevantes.</p>
                                 </div>,
                             children: []
                         }
