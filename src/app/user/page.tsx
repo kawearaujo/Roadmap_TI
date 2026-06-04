@@ -54,7 +54,14 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
     "/images/Avatar-2.png",
     "/images/Avatar-3.png",
     "/images/Avatar-4.png",
-    "/images/Avatar-4.png",
+    "/images/Avatar-5.png",
+    "/images/Avatar-6.png",
+    "/images/Avatar-7.png",
+    "/images/Avatar-8.png",
+    "/images/Avatar-9.png",
+    "/images/Avatar-10.png",
+    "/images/Avatar-11.png",
+    "/images/Avatar-12.png",
   ];
 
   return (
