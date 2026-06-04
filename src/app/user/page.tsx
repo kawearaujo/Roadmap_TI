@@ -142,7 +142,13 @@ export default function UserPage() {
 
   const [nomeTemp, setNomeTemp] = useState("");
   const [loading, setLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
+
+  // const isMobile = window.innerWidth < 768
   var teste = "";
   const loadUserData = async () => {
     const userData = await userDataStore.getUserData();
@@ -284,7 +290,7 @@ export default function UserPage() {
     setModalApagar(false);
     setActivePage("inicio");
   };
-  // const isMobile = window.innerWidth < 768
+
 
 
   return (
@@ -416,8 +422,8 @@ export default function UserPage() {
             <button
               className={`cursor-pointer w-full p-2 text-white hover:bg-blue-500 ${activePage ? activePage : ""}`}
               onClick={() => {
-                // if (isMobile)
-                setMenuOpen(false);
+                if (isMobile)
+                  setMenuOpen(false);
                 setActivePage("dashboard")
               }}
             >
@@ -426,8 +432,8 @@ export default function UserPage() {
             <button
               className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
               onClick={() => {
-                // if (isMobile)
-                setMenuOpen(false);
+                if (isMobile)
+                  setMenuOpen(false);
                 setActivePage("roadmap")
               }}
             >
@@ -436,8 +442,8 @@ export default function UserPage() {
             <button
               className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
               onClick={() => {
-                // if (isMobile)
-                setMenuOpen(false);
+                if (isMobile)
+                  setMenuOpen(false);
                 setActivePage("conquistas")
               }}
             >
