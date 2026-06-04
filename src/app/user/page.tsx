@@ -284,6 +284,7 @@ export default function UserPage() {
     setModalApagar(false);
     setActivePage("inicio");
   };
+  const isMobile = window.innerWidth < 768
 
 
   return (
@@ -414,19 +415,31 @@ export default function UserPage() {
           <div className="space-y-0 ">
             <button
               className={`cursor-pointer w-full p-2 text-white hover:bg-blue-500 ${activePage ? activePage : ""}`}
-              onClick={() => setActivePage("dashboard")}
+              onClick={() => {
+                if (isMobile)
+                  setMenuOpen(false);
+                setActivePage("dashboard")
+              }}
             >
               Dashboard
             </button>
             <button
               className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
-              onClick={() => setActivePage("roadmap")}
+              onClick={() => {
+                if (isMobile)
+                  setMenuOpen(false);
+                setActivePage("roadmap")
+              }}
             >
               RoadMap - Trajetoria
             </button>
             <button
               className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
-              onClick={() => setActivePage("conquistas")}
+              onClick={() => {
+                if (isMobile)
+                  setMenuOpen(false);
+                setActivePage("conquistas")
+              }}
             >
               Conquistas
             </button>

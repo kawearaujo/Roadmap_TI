@@ -264,7 +264,6 @@ export default function Config1() {
     setSelectedBranch(null);
     setShowModal(false);
   };
-
   return (
     <div className="min-h-screen h-full text-black bg-[#F7F6F2]">
       <Navbar />
@@ -296,7 +295,7 @@ export default function Config1() {
           {/* Modal de confirmação */}
           {showModal && (
             <div className=" fixed inset-0 bg-black/80 bg-opacity-50 flex items-center justify-center z-50">
-              <div className="bg-white rounded-xl p-6 max-w-sm text-center shadow-lg">
+              <div className=" bg-white rounded-xl p-6 md:max-w-sm w-[80vw] text-center shadow-lg">
                 <h2 className="text-lg font-semibold mb-4">Tem certeza?</h2>
                 {areaAtual == "" ? (
                   <p className="mb-6 text-gray-700">

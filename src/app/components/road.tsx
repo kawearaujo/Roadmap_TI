@@ -78,7 +78,7 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
         children.length > 0 && (
           // ${toggle && isThirdLevelParent ? 'invisible ' : 'visible '}
           <div
-            className={`${isSecLevelParent ? 'text-lg font-semibold' : ''} relative  ml-4  md:flex items-center  ${isThirdLevelParent ? 'flex-row items-center' : 'mt-6 flex-col items-start gap-8 '}`}
+            className={`${isSecLevelParent ? '' : ''} relative  ml-4  md:flex items-center  ${isThirdLevelParent ? 'flex-row items-center' : 'mt-6 flex-col items-start gap-8 '}`}
           >
 
             {node.children.map((child, index) => (
