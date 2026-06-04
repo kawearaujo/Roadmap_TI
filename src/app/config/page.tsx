@@ -16,7 +16,7 @@ const areas: Areas = {
         <p className="pb-1">O desenvolvimento frontend é o desenvolvimento de elementos visuais e interativos de um site com os quais os usuários interagem diretamente. É uma combinação basicamente de <span className="font-bold">HTML, CSS e JavaScript </span>, onde HTML fornece a estrutura, CSS o estilo e layout e JavaScript o comportamento dinâmico e interatividade.</p>
         <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
         <p>Exemplos de Frameworks e Biblioteca:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Next Js</p>
           </div>
@@ -39,7 +39,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem diversas <i>Ferramentas de Teste</i> <span className="text-blue-500">(são aplicações que auxiliam no processo de teste automatizado e manual, permitindo criar, executar e analisar testes de software de forma eficiente e padronizada.)</span></p>
         <p>Exemplos de Ferramentas de Teste:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Selenium</p>
           </div>
@@ -62,7 +62,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Porem existem algumas <i>Game Engines</i> <span className="text-blue-500">(são plataformas que fornecem as ferramentas necessárias para criar jogos, como gráficos, física, som, animações e scripts, facilitando o desenvolvimento sem precisar programar tudo do zero.)</span> </p>
         <p>Exemplos de Games Engines:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Unity</p>
           </div>
@@ -87,7 +87,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem várias <i>Plataformas de Desenvolvimento</i> <span className="text-blue-500">(são conjuntos de hardware e software que facilitam a criação de sistemas embarcados, oferecendo ferramentas de programação, depuração e teste para agilizar o desenvolvimento.)</span></p>
         <p>Exemplos de Plataformas:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Arduino</p>
           </div>
@@ -109,7 +109,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem diversas <i>Plataformas Robóticas</i> <span className="text-blue-500">(são conjuntos de hardware e software que proporcionam a base para o desenvolvimento de sistemas robóticos, incluindo chassis, motores, controladores e ferramentas de programação específicas.)</span></p>
         <p>Exemplos de Plataformas Robóticas:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">ROS</p>
           </div>
@@ -133,7 +133,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem diversas <i>Bibliotecas e Ferramentas</i> <span className="text-blue-500">(são conjuntos de funções e recursos que facilitam a manipulação, análise e visualização de dados, permitindo que cientistas de dados realizem tarefas complexas com menos código e maior eficiência.)</span></p>
         <p>Exemplos de Bibliotecas e Ferramentas:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Pandas</p>
           </div>
@@ -155,7 +155,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem diversos <i>Frameworks de IA</i> <span className="text-blue-500">(são bibliotecas e plataformas que fornecem ferramentas para criar, treinar e implantar modelos de inteligência artificial, simplificando tarefas complexas de aprendizado de máquina e deep learning.)</span></p>
         <p>Exemplos de Frameworks de IA:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">TensorFlow</p>
           </div>
@@ -179,7 +179,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem diversas <i>Ferramentas Ágeis</i> <span className="text-blue-500">(são aplicações que ajudam equipes Scrum a planejar, acompanhar e gerenciar seu trabalho de forma visual e colaborativa, facilitando a implementação das práticas ágeis.)</span></p>
         <p>Exemplos de Ferramentas Ágeis:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Jira</p>
           </div>
@@ -201,7 +201,7 @@ const areas: Areas = {
         </p>
         <p className="pb-1">Existem diversas <i>Ferramentas de Gestão de Produto</i> <span className="text-blue-500">(são aplicações que ajudam Product Managers a definir estratégias, planejar roadmaps, priorizar backlog e acompanhar métricas do produto, facilitando a tomada de decisões baseadas em dados.)</span></p>
         <p>Exemplos de Ferramentas de Gestão:</p>
-        <div className="flex py-6 gap-4 justify-center">
+        <div className="flex py-6 gap-2 justify-center">
           <div className="border border-blue-500 border-1 p-1">
             <p className="text-blue-500">Productboard</p>
           </div>
@@ -358,7 +358,7 @@ export default function Config1() {
             </button>
             <h2 className="text-xl font-bold text-center">{selectedBranch}</h2>
             {/* <p className="mt-4"> */}
-            <div className="h-[60vh] overflow-y-auto">
+            <div className="h-[55vh] overflow-y-auto">
               {areas[selectedArea][selectedBranch]}
             </div>
             {/* </p> */}
