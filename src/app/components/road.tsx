@@ -108,8 +108,8 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
         )}
 
       {showModal && (
-        <div className="fixed inset-0 z-950 flex items-center justify-center bg-black/80 " >
-          <div className="w-96 rounded bg-white p-6 shadow-lg animate-scale-in w-[90vw] min-h-[50vh] md:w-[70vw]">
+        <div className="fixed inset-0 z-950 flex items-center justify-center bg-black/80 " onClick={() => setShowModal(false)}>
+          <div className="w-96 rounded bg-white p-6 shadow-lg animate-scale-in w-[90vw] min-h-[50vh] md:w-[70vw]" onClick={(e) => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-4">
               <label className="flex items-center gap-4">
                 <h2 className="text-lg font-semibold">{node.title}</h2>
