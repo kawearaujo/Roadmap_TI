@@ -5,8 +5,11 @@ import Link from "next/link";
 // import { usePathname } from "next/navigation";
 import Navbar from "@/app/components/nav"
 // import Footer from "./components/footer";
+import { userDataStore } from "@/app/utils/indexedDB"
 
 export default function Home() {
+  //  Limpar Nome
+  // userDataStore.saveUserAttribute("name", "")
   // const pathname = usePathname();
   return (
     <div className="min-h-screen text-black">

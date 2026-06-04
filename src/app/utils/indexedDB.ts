@@ -92,11 +92,11 @@ class UserDataStore {
     }
     
     userData[attribute] = value; // Atualiza apenas o atributo específico
-    // this.saveUserData({ id: "user1", name: "a" , photo: "a", level: 0, experience: 0, area: "a", achievements:[] });
+    // this.saveUserData({ id: "user1", name: "" , photo: "a", level: 0, experience: 0, area: "a", achievements:[] });
     // console.log("Foi atualizado ",value)
-    
-    return this.saveUserData(userData); // Salva os dados atualizados
-    // this.saveUserData({ id: "user1", name: "a", photo: "", level: 0, experience: 0, area: "QA", achievements:[],roadmap:[], [attribute]: value });
+    // return this.saveUserData({ id: "user1", name: "", photo: "", level: 0, experience: 0, area: "", achievements:[],roadmap:[], [attribute]: value });
+    return (this.saveUserData(userData)); // Salva os dados atualizados
+    // this.saveUserData({ id: "user1", name: "a", photo: "", level: 0, experience: 0, area: "", achievements:[],roadmap:[], [attribute]: value });
 
 
   }

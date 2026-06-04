@@ -137,7 +137,7 @@ export default function UserPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [showImagePicker, setShowImagePicker] = useState(false);
-  const [userName, setUserName] = useState("N/A");
+  const [userName, setUserName] = useState("");
   const [editingName, setEditingName] = useState(false);
   const [newUserName, setNewUserName] = useState(userName);
   const [activePage, setActivePage] = useState<"dashboard" | "inicio" | "roadmap" | "conquistas" | "delete">("dashboard");
@@ -205,9 +205,11 @@ export default function UserPage() {
     setEditingName(false);
   };
   const TesteInicial = () => {
-    setUserName(nomeTemp);
-    userDataStore.saveUserAttribute("name", nomeTemp);
-    userDataStore.saveUserAttribute("photo", selectedImage || "");
+    if (nomeTemp != "") {
+      setUserName(nomeTemp);
+      userDataStore.saveUserAttribute("name", nomeTemp);
+      userDataStore.saveUserAttribute("photo", selectedImage || "");
+    }
   };
   const Cadastrar = () => (
 
