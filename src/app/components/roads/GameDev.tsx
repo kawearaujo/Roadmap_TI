@@ -6,21 +6,25 @@ export default function IA() {
 
             content: (
                 <div className="space-y-2 text-sm text-zinc-100">
-                    <p><strong>Desenvolvimento de jogos (GameDev)</strong> é a área que combina <strong>programação, arte, design e narrativa</strong> para criar experiências interativas. Envolve conhecimento de <strong>engines de jogos, lógica de gameplay, física, animação</strong> e muito mais.</p>
-
-                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                    <ul className="list-disc list-inside">
-                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=g4dJ0D9sXkU" target="_blank">Game Development Roadmap 2024</a></li>
-                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=U6vAa6vQS_k" target="_blank">Como Começar no GameDev</a></li>
-                    </ul>
-
-                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                    <ul className="list-disc list-inside">
-                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/" target="_blank">Unity Learn</a></li>
-                        <li><a className="text-zinc-200 underline" href="https://www.gamedev.net/" target="_blank">GameDev.net</a></li>
-                        <li><a className="text-zinc-200 underline" href="https://www.gamasutra.com/" target="_blank">Gamasutra</a></li>
-                        <li><a className="text-zinc-200 underline" href="https://docs.unrealengine.com/" target="_blank">Unreal Engine Docs</a></li>
-                    </ul>
+                    <p>
+                        <strong>Desenvolvimento de jogos (GameDev)</strong> é a área que combina <strong>programação, arte, design e narrativa</strong> para criar experiências interativas. Envolve conhecimento de <strong>engines de jogos, lógica de gameplay, física, animação</strong> e muito mais.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                            <ul className="list-disc list-inside">
+                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=g4dJ0D9sXkU" target="_blank">Game Development Roadmap 2024</a></li>
+                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=U6vAa6vQS_k" target="_blank">Como Começar no GameDev</a></li>
+                            </ul>
+                        </div>
+                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                            <ul className="list-disc list-inside">
+                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/" target="_blank">Unity Learn</a></li>
+                                <li><a className="text-zinc-200 underline" href="https://www.gamedev.net/" target="_blank">GameDev.net</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             ),
 
@@ -66,7 +70,6 @@ export default function IA() {
                                 </div>
                             ),
 
-
                             children: []
                         },
                         {
@@ -83,20 +86,19 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=pTB0EiLXUC8" target="_blank">POO para Iniciantes</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=M7-bKMnE6-4" target="_blank">POO em C# para Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=-031oTWNW6w&list=PLCPwMcbEISGFu-hmzvTQyvogjAlAbOKQx" target="_blank">POO em C# para Unity</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.alura.com.br/artigos/poo-programacao-orientada-a-objetos" target="_blank">Alura - POO</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/interfaces-scriptable-objects" target="_blank">Unity Learn - POO em C#</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://unity.com/pt/learn/get-started" target="_blank">Unity Learn - POO em C#</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -114,7 +116,7 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=DPfxjQ6sqrc" target="_blank">Matemática para GameDev</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=7L8gLV_P39M" target="_blank">Vetores e Física em Jogos</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=4UfWio5N4rY&list=PLQP3EJn4IhNhx0liOprpuKbqd6jzAUozo" target="_blank">Vetores e Física em Jogos</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -143,7 +145,6 @@ export default function IA() {
                             </p>
                         </div>
                     ),
-
 
                     children: [
                         {
@@ -189,8 +190,8 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=ON9c_5lyT2c" target="_blank">Visual Studio para Unity</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Y-CHs3x8rRY" target="_blank">VS Code para GameDev</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=4SVxARbHU1M&list=PLzjwaizNOg6RQi0lTGRhhTL-yEoHq6Mt6" target="_blank">Visual Studio para Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=hHLCDSrHkN0&list=PLQyxir6TzMSVaH7Ua8Myfx9SUOwjfINrS" target="_blank">VS Code para GameDev</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -220,7 +221,6 @@ export default function IA() {
                         </div>
                     ),
 
-
                     children: [
                         {
                             id: '2-3-1',
@@ -236,20 +236,19 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=9ZEu_I-ido4" target="_blank">C# para Unity</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=qpow5aDn9_w" target="_blank">Programação Avançada Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=p9UAmas6iuA&list=PLARDsRa4d7UyZF3cf9tbp_6vN3M737DY2" target="_blank">Programação Avançada Unity</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://docs.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/" target="_blank">Microsoft - Tour pelo C#</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/scritps-as-behaviour-components" target="_blank">Unity - Scripts como Componentes</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/index.html" target="_blank">Unity - Scripts como Componentes</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -273,14 +272,13 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/index.html" target="_blank">Unity - Manual do Input System</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Packages/com.unity.inputsystem@1.19/manual/index.html" target="_blank">Unity - Manual do Input System</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/working-with-the-new-input-system" target="_blank">Unity Learn - Trabalhando com o Novo Input System</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -297,21 +295,20 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=0w6rS1hopAo" target="_blank">Física na Unity</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=b7C1V8FL6SU" target="_blank">Física 2D na Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=JO3eZ2KX-nA&list=PLm07WONRdynz0MNmrft-jAaxycWK5MDQH" target="_blank">Física na Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=_o9kax5F0-k&pp=ygUQRsOtc2ljYSBuYSBVbml0eQ%3D%3D" target="_blank">Física 2D na Unity</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/PhysicsSection.html" target="_blank">Unity - Manual de Física</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/es/2019.4/Manual/PhysicsSection.html" target="_blank">Unity - Manual de Física</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/physics-components" target="_blank">Unity Learn - Componentes de Física</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -329,7 +326,7 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=H1OkG3a1w-o" target="_blank">Prefabs e Instanciação</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=7T4dFqT62yU" target="_blank">Object Pooling</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=tdSmKaJvCoA&pp=ygUOT2JqZWN0IFBvb2xpbmc%3D" target="_blank">Object Pooling</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -342,7 +339,6 @@ export default function IA() {
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -367,14 +363,12 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/AnimationSection.html" target="_blank">Unity - Manual de Animação</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/controlling-animation" target="_blank">Unity Learn - Controlando Animações</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/6000.4/Documentation/Manual/class-AnimatorController.html" target="_blank">Unity Learn - Controlando Animações</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             ),
-
-
                             children: []
                         },
                     ],
@@ -391,7 +385,6 @@ export default function IA() {
                         </div>
                     ),
 
-
                     children: [
                         {
                             id: '2-4-1', title: 'Game Loop',
@@ -406,7 +399,7 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=IFayQioG71A" target="_blank">Ciclo de Vida na Unity</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=YMDXuHWNg4c" target="_blank">Update vs FixedUpdate</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=MfIsp28TYAQ&pp=ygUVVXBkYXRlIHZzIEZpeGVkVXBkYXRl0gcJCSgLAYcqIYzv" target="_blank">Update vs FixedUpdate</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -419,7 +412,6 @@ export default function IA() {
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -436,7 +428,7 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=iNEe3KhMvXM" target="_blank">Level Design Workshop</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Y2q7dgM0Lv4" target="_blank">Design de Fases na Prática</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=xp4iJhNDJpg&pp=ygUbRGVzaWduIGRlIEZhc2VzIG5hIFByw6F0aWNh" target="_blank">Design de Fases na Prática</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -449,7 +441,6 @@ export default function IA() {
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -466,20 +457,19 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=HwdweCX5aMI" target="_blank">Sistema de UI na Unity</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=CG8KJ1p6Y1A" target="_blank">UX para Jogos</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=qwpKIMqntkM&pp=ygUNVVggcGFyYSBKb2dvcw%3D%3D" target="_blank">UX para Jogos</a></li>
                                             </ul>
                                         </div>
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/UIToolkits.html" target="_blank">Unity - UI Toolkits</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/ui-components-for-games" target="_blank">Unity Learn - Componentes de UI para Jogos</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn-unity-com.translate.goog/tutorial/working-with-ui-in-unity?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc&_x_tr_hist=true" target="_blank">Unity Learn - Componentes de UI para Jogos</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             ),
-
 
                             children: []
                         },
@@ -497,7 +487,6 @@ export default function IA() {
                         </div>
                     ),
 
-
                     children: [
                         {
                             id: '2-5-1',
@@ -509,19 +498,17 @@ export default function IA() {
 
                                     <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                     <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=rBHCnRXYcde" target="_blank">Gerenciamento de Assets</a></li>
+                                        <li><a className="text-zinc-200 underline" href="https://unity.com/pt/products/asset-manager" target="_blank">Gerenciamento de Assets</a></li>
                                         <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=0fGB2H1AGP8" target="_blank">Importação de Assets</a></li>
                                     </ul>
 
                                     <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                     <ul className="list-disc list-inside">
                                         <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/ImportingAssets.html" target="_blank">Unity - Manual de Importação de Assets</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/asset-store-packages" target="_blank">Unity Learn - Pacotes da Asset Store</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=rBHCnRXYcde" target="_blank">Game Dev Guide - Gerenciamento de Assets</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/asset-bundles-and-addressables" target="_blank">Unity Blog - Asset Bundles e Addressables</a></li>
-                                    </ul>
-                                </div>
-                            ),
+                                        <li><a className="text-zinc-200 underline" href="https://assetstore.unity.com/?srsltid=AfmBOooh7yStVppiDVCSL-QdjJY7atLmeCc4MFFGKlKTaNCYMM1pcWmu" target="_blank">Unity Learn - Pacotes da Asset Store</a></li>
+                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=YttotvHX_TU&pp=ygUoR2FtZSBEZXYgR3VpZGUgLSBHZXJlbmNpYW1lbnRvIGRlIEFzc2V0cw%3D%3D" target="_blank">Game Dev Guide - Gerenciamento de Assets</a></li>
+                                        <li><a className="text-zinc-200 underline" href="https://unity.com/blog/engine-platform/addressables-planning-and-best-practices" target="_blank">Unity Blog - Asset Bundles e Addressables</a></li>
+                                    </ul>                                </div>),
 
                             children: []
                         },
@@ -531,21 +518,26 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p><strong>Sprites</strong> são imagens 2D utilizadas para representar personagens, objetos e elementos de interface em jogos. A Unity oferece ferramentas robustas para manipular sprites, criar <strong>animações 2D com sprite sheets</strong>, e configurar atlas de texturas para otimização. O sistema de animação 2D permite criar movimentos fluidos e expressivos para personagens e elementos do jogo.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=hkaysu1Z-N8" target="_blank">Animação 2D na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=on9nwbZngyw" target="_blank">Sprite Editor Tutorial</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/SpriteEditor.html" target="_blank">Unity - Editor de Sprites</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/introduction-to-sprite-animations" target="_blank">Unity Learn - Introdução às Animações de Sprites</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=hkaysu1Z-N8" target="_blank">Brackeys - Animação 2D na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/2d-animation-tips-and-tricks" target="_blank">Unity Blog - Dicas de Animação 2D</a></li>
-                                    </ul>                                </div>
+                                    <p>
+                                        <strong>Sprites</strong> são imagens 2D utilizadas para representar personagens, objetos e elementos de interface em jogos. A Unity oferece ferramentas robustas para manipular sprites, criar <strong>animações 2D com sprite sheets</strong>, e configurar atlas de texturas para otimização. O sistema de animação 2D permite criar movimentos fluidos e expressivos para personagens e elementos do jogo.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=hkaysu1Z-N8" target="_blank">Animação 2D na Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=on9nwbZngyw" target="_blank">Sprite Editor Tutorial</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/SpriteEditor.html" target="_blank">Unity - Editor de Sprites</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/introduction-to-sprite-animations" target="_blank">Unity Learn - Introdução às Animações de Sprites</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             ),
 
                             children: []
@@ -556,21 +548,26 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p><strong>Modelos 3D e materiais</strong> são elementos essenciais para criar ambientes, personagens e objetos tridimensionais. A Unity suporta a importação de diversos formatos 3D (.fbx, .obj, etc.) e oferece um <strong>sistema de materiais poderoso com shaders personalizáveis</strong> para criar efeitos visuais realistas ou estilizados, adaptáveis a diferentes plataformas e capacidades de hardware.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=n69LxG2tzYw" target="_blank">Materiais e Texturas</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=T8wO_w6YQvE" target="_blank">Shader Graph Tutorial</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/3DAssets.html" target="_blank">Unity - Manual de Assets 3D</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/materials-standard-shader" target="_blank">Unity Learn - Materiais e Standard Shader</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=n69LxG2tzYw" target="_blank">Brackeys - Materiais e Texturas na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/custom-shader-graph-nodes" target="_blank">Unity Blog - Shader Graph para Materiais</a></li>
-                                    </ul>                                </div>
+                                    <p>
+                                        <strong>Modelos 3D e materiais</strong> são elementos essenciais para criar ambientes, personagens e objetos tridimensionais. A Unity suporta a importação de diversos formatos 3D (.fbx, .obj, etc.) e oferece um <strong>sistema de materiais poderoso com shaders personalizáveis</strong> para criar efeitos visuais realistas ou estilizados, adaptáveis a diferentes plataformas e capacidades de hardware.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Ir3eS8t_rXo&pp=ygUUTWF0ZXJpYWlzIGUgVGV4dHVyYXM%3D" target="_blank">Materiais e Texturas</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=VsUK9K6UbY4&list=PLzDRvYVwl53tpvp6CP6e-Mrl6dmxs9uhx" target="_blank">Shader Graph Tutorial</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/AssetWorkflow.html" target="_blank">Unity - Manual de Assets 3D</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/pathway/creative-core/unit/shaders-and-materials" target="_blank">Unity Learn - Materiais e Standard Shader</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             ),
 
                             children: []
@@ -596,21 +593,25 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p>A <strong>otimização de performance</strong> é crucial para garantir que seu jogo rode suavemente em diferentes dispositivos. Isso inclui técnicas como <strong>Level of Detail (LOD), occlusion culling, otimização de draw calls, baking de iluminação, gerenciamento de memória e profiling</strong> para identificar gargalos. Jogos bem otimizados proporcionam melhor experiência e alcançam um público mais amplo.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=_wxitgdx-UI" target="_blank">Dicas de Otimização</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=9h-y7mQ1QpU" target="_blank">Usando o Profiler</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/OptimisingGraphicsPerformance.html" target="_blank">Unity - Otimização de Performance Gráfica</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/fixing-performance-problems" target="_blank">Unity Learn - Resolvendo Problemas de Performance</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=_wxitgdx-UI" target="_blank">Brackeys - Dicas de Otimização na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/profiler-improvements" target="_blank">Unity Blog - Melhorias no Profiler</a></li>
-                                    </ul>                                </div>
+                                    <p>
+                                        A <strong>otimização de performance</strong> é crucial para garantir que seu jogo rode suavemente em diferentes dispositivos. Isso inclui técnicas como <strong>Level of Detail (LOD), occlusion culling, otimização de draw calls, baking de iluminação, gerenciamento de memória e profiling</strong> para identificar gargalos. Jogos bem otimizados proporcionam melhor experiência e alcançam um público mais amplo.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=_wxitgdx-UI" target="_blank">Dicas de Otimização</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://unity.com/pt/how-to/performance-optimization-high-end-graphics" target="_blank">Unity - Otimização de Performance Gráfica</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/diagnosing-performance-problems-2019-" target="_blank">Unity Learn - Resolvendo Problemas de Performance</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             ),
 
                             children: []
@@ -621,21 +622,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p><strong>Efeitos visuais (VFX)</strong> adicionam impacto e feedback visual ao seu jogo, desde sistemas de partículas para fogo, fumaça e explosões até pós-processamento para ajustar cores, iluminação e efeitos atmosféricos. A Unity oferece ferramentas como o <strong>Sistema de Partículas, Visual Effect Graph e o pacote de pós-processamento</strong> para criar efeitos visuais impressionantes e responsivos.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=FEA1wTMJAR0" target="_blank">Efeitos de Partículas</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6dP6aM_i2bM" target="_blank">Visual Effect Graph</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/ParticleSystems.html" target="_blank">Unity - Sistema de Partículas</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/introduction-to-visual-effects" target="_blank">Unity Learn - Introdução aos Efeitos Visuais</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=FEA1wTMJAR0" target="_blank">Brackeys - Efeitos de Partículas na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/advanced-visual-effects-with-urp" target="_blank">Unity Blog - VFX Avançados com URP</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        <strong>Efeitos visuais (VFX)</strong> adicionam impacto e feedback visual ao seu jogo, desde sistemas de partículas para fogo, fumaça e explosões até pós-processamento para ajustar cores, iluminação e efeitos atmosféricos. A Unity oferece ferramentas como o <strong>Sistema de Partículas, Visual Effect Graph e o pacote de pós-processamento</strong> para criar efeitos visuais impressionantes e responsivos.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=FEA1wTMJAR0" target="_blank">Efeitos de Partículas</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=TwWL5IY4Lqs&list=PLQMQNmwN3FvySzk-SdqJeRa6hpH6FYKji" target="_blank">Visual Effect Graph</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/ParticleSystems.html" target="_blank">Unity - Sistema de Partículas</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/pathway/game-development/unit/visual-effects" target="_blank">Unity Learn - Introdução aos Efeitos Visuais</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
@@ -645,21 +652,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p><strong>Áudio</strong> é um componente vital para a imersão em jogos, abrangendo música de fundo, efeitos sonoros e diálogos. A Unity fornece um <strong>mixer de áudio completo com mixagem espacial 3D, efeitos DSP, grupos de mixagem e controle dinâmico de volume</strong>. Um bom design de áudio pode transformar a experiência do jogador, criando atmosfera e fornecendo feedback importante sobre eventos do jogo.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6OT43pvUyfY" target="_blank">Sistema de Áudio na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=JnbD7PwQr2c" target="_blank">Audio Mixer Tutorial</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/AudioOverview.html" target="_blank">Unity - Visão Geral do Sistema de Áudio</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/working-with-audio" target="_blank">Unity Learn - Trabalhando com Áudio</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6OT43pvUyfY" target="_blank">Brackeys - Sistema de Áudio na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/procedural-audio-in-games" target="_blank">Unity Blog - Áudio Procedural em Jogos</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        <strong>Áudio</strong> é um componente vital para a imersão em jogos, abrangendo música de fundo, efeitos sonoros e diálogos. A Unity fornece um <strong>mixer de áudio completo com mixagem espacial 3D, efeitos DSP, grupos de mixagem e controle dinâmico de volume</strong>. Um bom design de áudio pode transformar a experiência do jogador, criando atmosfera e fornecendo feedback importante sobre eventos do jogo.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6OT43pvUyfY" target="_blank">Sistema de Áudio na Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=vOaQp2x-io0&pp=ygUaQXVkaW8gTWl4ZXIgVHV0b3JpYWwgdW5pdHnSBwkJKAsBhyohjO8%3D" target="_blank">Audio Mixer Tutorial</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/AudioOverview.html" target="_blank">Unity - Visão Geral do Sistema de Áudio</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn-unity-com.translate.goog/tutorial/working-with-audio-components-2019-3?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc&_x_tr_hist=true" target="_blank">Unity Learn - Trabalhando com Áudio</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
@@ -676,6 +689,7 @@ export default function IA() {
                             </p>
                         </div>
                     ),
+
                     children: [
                         {
                             id: '2-7-1',
@@ -683,21 +697,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p>O processo de <strong>build para PC e Android</strong> na Unity envolve configurar as plataformas-alvo, otimizar assets e definir configurações específicas para cada plataforma. Para Android, são necessárias etapas adicionais como <strong>configuração do SDK, assinatura digital do APK e adaptações</strong> para diferentes tamanhos de tela e capacidades de hardware. A Unity facilita esse processo com ferramentas de build automatizadas e cross-platform.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=4oTluGK-NFw" target="_blank">Build para Android</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=4jFerT3M5tM" target="_blank">Build para Windows</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/PublishingBuilds.html" target="_blank">Unity - Publicando Builds</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/building-for-mobile" target="_blank">Unity Learn - Build para Mobile</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=4oTluGK-NFw" target="_blank">Brackeys - Build para Android</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/optimizing-for-android-devices" target="_blank">Unity Blog - Otimizando para Dispositivos Android</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        O processo de <strong>build para PC e Android</strong> na Unity envolve configurar as plataformas-alvo, otimizar assets e definir configurações específicas para cada plataforma. Para Android, são necessárias etapas adicionais como <strong>configuração do SDK, assinatura digital do APK e adaptações</strong> para diferentes tamanhos de tela e capacidades de hardware. A Unity facilita esse processo com ferramentas de build automatizadas e cross-platform.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=QFsmKxbzjGw&pp=ugMGCgJwdBABugUEEgJwdMoFGEJ1aWxkIHBhcmEgQW5kcm9pZCB1bml0edgHAQ%3D%3D" target="_blank">Build para Android</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=2ZIY6F3SJ5o&pp=ugMGCgJwdBABugUEEgJwdMoFGEJ1aWxkIHBhcmEgV2luZG93cyB1bml0edgHAQ%3D%3D" target="_blank">Build para Windows</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/PublishingBuilds.html" target="_blank">Unity - Publicando Builds</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/course/mobile-touch/tutorial/mobile-development-techniques" target="_blank">Unity Learn - Build para Mobile</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
@@ -707,21 +727,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p>Publicar seu jogo na <strong>Itch.io ou Google Play Store</strong> envolve preparar builds finalizadas, criar páginas de loja atraentes e seguir os processos específicos de cada plataforma. A <strong>Itch.io</strong> é uma plataforma indie que oferece um processo simples e flexível, enquanto a <strong>Google Play Store</strong> requer conformidade com políticas mais rigorosas, classificações de conteúdo e processo de revisão, mas proporciona acesso a um público mais amplo.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=dGwAGe9aWG8" target="_blank">Publicando na Itch.io</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=lE8NdaX97m0" target="_blank">Publicando na Play Store</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://itch.io/docs/creators/getting-started" target="_blank">Itch.io - Guia para Criadores</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://developer.android.com/distribute/googleplay/start" target="_blank">Google - Publicação na Play Store</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=dGwAGe9aWG8" target="_blank">Game Dev Guide - Publicando na Itch.io</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/launching-your-game-on-the-google-play-store" target="_blank">Unity Blog - Lançando seu Jogo na Play Store</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        Publicar seu jogo na <strong>Itch.io ou Google Play Store</strong> envolve preparar builds finalizadas, criar páginas de loja atraentes e seguir os processos específicos de cada plataforma. A <strong>Itch.io</strong> é uma plataforma indie que oferece um processo simples e flexível, enquanto a <strong>Google Play Store</strong> requer conformidade com políticas mais rigorosas, classificações de conteúdo e processo de revisão, mas proporciona acesso a um público mais amplo.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=4VOxfN1Vpbo&list=PLfvOpw8k80WotNMAdJ4oMPe39t0FgaBu0" target="_blank">Publicando na Itch.io</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Y6QNfgvh8cA&pp=ygUYUHVibGljYW5kbyBuYSBQbGF5IFN0b3Jl" target="_blank">Publicando na Play Store</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://itch.io/docs/creators/getting-started" target="_blank">Itch.io - Guia para Criadores</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://developer.android.com/distribute/googleplay/start" target="_blank">Google - Publicação na Play Store</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
@@ -746,21 +772,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p><strong>Photon</strong> é uma solução popular para implementar jogos multiplayer na Unity, oferecendo <strong>servidores hospedados na nuvem e SDK robusto</strong>. Com o Photon PUN (Photon Unity Networking), é possível criar jogos multiplayer em tempo real com salas, matchmaking e sincronização de estados entre jogadores. A solução é escalável e funciona bem tanto para jogos casuais quanto para experiências mais complexas.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=93SkbMpWCGo" target="_blank">Multiplayer com Photon</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6z6nK1t7+8" target="_blank">Photon PUN Tutorial</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://doc.photonengine.com/en-us/pun/current/getting-started/pun-intro" target="_blank">Photon - Introdução ao PUN</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/photon-networking-fundamentals" target="_blank">Unity Learn - Fundamentos de Networking com Photon</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=93SkbMpWCGo" target="_blank">Brackeys - Multiplayer com Photon</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.photonengine.com/multiplayer-best-practices" target="_blank">Photon Blog - Melhores Práticas para Multiplayer</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        <strong>Photon</strong> é uma solução popular para implementar jogos multiplayer na Unity, oferecendo <strong>servidores hospedados na nuvem e SDK robusto</strong>. Com o Photon PUN (Photon Unity Networking), é possível criar jogos multiplayer em tempo real com salas, matchmaking e sincronização de estados entre jogadores. A solução é escalável e funciona bem tanto para jogos casuais quanto para experiências mais complexas.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=93SkbMpWCGo" target="_blank">Multiplayer com Photon</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=93SkbMpWCGo&t=5s&pp=ygUUUGhvdG9uIFBVTiBUdXRvcmlhbCA%3D" target="_blank">Photon PUN Tutorial</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://doc.photonengine.com/en-us/pun/current/getting-started/pun-intro" target="_blank">Photon - Introdução ao PUN</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/setting-up-photon-unity-networking" target="_blank">Unity Learn - Fundamentos de Networking com Photon</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
@@ -770,21 +802,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p><strong>Sistemas de salvamento e carregamento</strong> são essenciais para preservar o progresso do jogador. Na Unity, esses sistemas podem ser implementados usando <strong>PlayerPrefs para dados simples, serialização para estruturas de dados complexas, ou sistemas personalizados</strong> para grandes volumes de dados. Um bom sistema deve ser robusto contra corrupção de dados, eficiente em termos de armazenamento e transparente para o jogador.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=XOjd_qU2Ido" target="_blank">Sistema de Save na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=5roZtuqZyuw" target="_blank">Save System Avançado</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/script-Serialization.html" target="_blank">Unity - Serialização de Dados</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/implementing-game-saving" target="_blank">Unity Learn - Implementando Salvamento de Jogo</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=XOjd_qU2Ido" target="_blank">Brackeys - Sistema de Save na Unity</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/persistent-data-solutions-for-games" target="_blank">Unity Blog - Soluções para Dados Persistentes</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        <strong>Sistemas de salvamento e carregamento</strong> são essenciais para preservar o progresso do jogador. Na Unity, esses sistemas podem ser implementados usando <strong>PlayerPrefs para dados simples, serialização para estruturas de dados complexas, ou sistemas personalizados</strong> para grandes volumes de dados. Um bom sistema deve ser robusto contra corrupção de dados, eficiente em termos de armazenamento e transparente para o jogador.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=XOjd_qU2Ido" target="_blank">Sistema de Save na Unity</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=5roZtuqZyuw" target="_blank">Save System Avançado</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/script-Serialization.html" target="_blank">Unity - Serialização de Dados</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://unity.com/pt/blog/games/persistent-data-how-to-save-your-game-states-and-settings" target="_blank">Unity Learn - Implementando Salvamento de Jogo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
@@ -794,21 +832,27 @@ export default function IA() {
 
                             content: (
                                 <div className="space-y-2 text-sm text-zinc-100">
-                                    <p>A <strong>integração com APIs e serviços web</strong> permite que seu jogo se conecte a sistemas externos para funcionalidades como <strong>autenticação de usuários, tabelas de classificação online, análise de dados, atualizações de conteúdo e microtransações</strong>. A Unity fornece classes como UnityWebRequest para realizar comunicações HTTP e JSON Utility para processamento de dados, facilitando a integração com praticamente qualquer serviço web.</p>
-
-                                    <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Oza5PbkY7fI" target="_blank">Comunicação com APIs Web</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=7XFY0X1aBcU" target="_blank">REST APIs na Unity</a></li>
-                                    </ul>
-
-                                    <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                    <ul className="list-disc list-inside">
-                                        <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/UnityWebRequest.html" target="_blank">Unity - UnityWebRequest</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://learn.unity.com/tutorial/working-with-restful-apis" target="_blank">Unity Learn - Trabalhando com APIs RESTful</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Oza5PbkY7fI" target="_blank">Brackeys - Comunicação com APIs Web</a></li>
-                                        <li><a className="text-zinc-200 underline" href="https://blog.unity.com/technology/implementing-cloud-services-for-your-game" target="_blank">Unity Blog - Implementando Serviços na Nuvem</a></li>
-                                    </ul>                                </div>),
+                                    <p>
+                                        A <strong>integração com APIs e serviços web</strong> permite que seu jogo se conecte a sistemas externos para funcionalidades como <strong>autenticação de usuários, tabelas de classificação online, análise de dados, atualizações de conteúdo e microtransações</strong>. A Unity fornece classes como UnityWebRequest para realizar comunicações HTTP e JSON Utility para processamento de dados, facilitando a integração com praticamente qualquer serviço web.
+                                    </p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=x_H2GgqjCZI&pp=ygUaQ29tdW5pY2HDp8OjbyBjb20gQVBJcyBXZWI%3D" target="_blank">Comunicação com APIs Web</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=GXvJ1RddsfQ&pp=ugMGCgJwdBABugUEEgJwdMoFElJFU1QgQVBJcyBuYSBVbml0edIHCQkoCwGHKiGM79gHAQ%3D%3D" target="_blank">REST APIs na Unity</a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                                            <ul className="list-disc list-inside">
+                                                <li><a className="text-zinc-200 underline" href="https://docs.unity3d.com/Manual/UnityWebRequest.html" target="_blank">Unity - UnityWebRequest</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://unity.com/learn" target="_blank">Unity Learn - Trabalhando com APIs RESTful</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            ),
 
                             children: []
                         },
