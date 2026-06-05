@@ -6,7 +6,7 @@ export default function IA() {
             title: 'QA',
 
             content:
-                <div className="space-y-2 text-sm text-gray-700">
+                <div className="space-y-4 text-md text-zinc-100">
                     <p>Quality Assurance (QA) é responsável por garantir que produtos e serviços atendam aos requisitos especificados. No desenvolvimento de software, QA envolve testes, automação, identificação de bugs e melhoria contínua de processos.</p>
                     <ul className="list-disc list-inside">
                         <li><a className="text-blue-600 underline" href="https://www.guru99.com/software-testing.html" target="_blank">Guru99 - Software Testing</a></li>
