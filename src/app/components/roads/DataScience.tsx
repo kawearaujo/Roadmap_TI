@@ -199,7 +199,7 @@ export default function IA() {
                                         <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                         <ul className="list-disc list-inside">
                                             <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=HW29067qVWk" target="_blank">Jupyter Notebook Tutorial</a></li>
-                                            <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=wCwSxYV0aTo" target="_blank">Dicas e Truques do Jupyter</a></li>
+                                            <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=K5WkA9Hx2XQ" target="_blank">Jupyter Notebook para Data Science</a></li>
                                         </ul>
                                     </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                         <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
@@ -266,8 +266,8 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">Documentação BeautifulSoup</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://requests.readthedocs.io/pt_BR/latest/" target="_blank">Biblioteca Requests para APIs</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.selenium.dev/documentation/pt-br/" target="_blank">Selenium - Automação Web</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.freecodecamp.org/news/web-scraping-python-tutorial-how-to-scrape-data-from-a-website/" target="_blank">APIs and Web Scraping - freeCodeCamp</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.coursera.org/learn/python-network-data" target="_blank">SUsing Python to Access Web Data</a></li>
                                             </ul>
                                         </div></div>
                                     <p className="font-semibold text-black-800">💡 Dica: Respeite robots.txt e termos de serviço ao fazer web scraping.</p>
@@ -284,8 +284,8 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=K96rwcZ6o7c" target="_blank">Data Cleaning com Pandas</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=W26C1_yMBWE" target="_blank">Técnicas Avançadas de Limpeza</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=bDhvCp3_lYw" target="_blank">Data Cleaning com Pandas</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=RuDxj894BXQ" target="_blank">Limpeza de Dados em um Dataset Real</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
@@ -311,13 +311,12 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=V0u6bxQOUJ8" target="_blank">Feature Engineering Tutorial</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=GD1LENeX38A" target="_blank">Técnicas Avançadas de Feature Engineering</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://youtu.be/2ztncUNeNQI" target="_blank">Técnicas Avançadas de Feature Engineering</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://scikit-learn.org/stable/modules/feature_extraction.html" target="_blank">Extração de Features com Scikit-learn</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.featuretools.com/" target="_blank">FeatureTools - Automação de Feature Engineering</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/" target="_blank">Guia Prático de Feature Engineering</a></li>
                                             </ul>
                                         </div></div>
@@ -335,8 +334,8 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=KNu8-cX9F8U" target="_blank">Handling Missing Data</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=A6g8Y_GsNwE" target="_blank">Detecção de Outliers</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=ut91uz_4ISg&pp=ygUpSGFuZGxpbmcgTWlzc2luZyBEYXRhIFRyYXRhbWVudG8gZGUgRGFkb3M%3D" target="_blank">Tratamento de Missing values</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=mmwT5NIv1ec&pp=ygUWRGV0ZWPDp8OjbyBkZSBPdXRsaWVycw%3D%3D" target="_blank">Detecção de Outliers</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
@@ -372,7 +371,7 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=PPLop4L2eGk" target="_blank">Supervised Learning Overview</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Mu3POlNoLdc&pp=ygUcU3VwZXJ2aXNlZCBMZWFybmluZyBPdmVydmlldw%3D%3D" target="_blank">Aprendizado de máquina supervisionado</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=LsK-xG1cLYA" target="_blank">Classification vs Regression</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -405,7 +404,7 @@ export default function IA() {
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://scikit-learn.org/stable/unsupervised_learning.html" target="_blank">Algoritmos de Aprendizado Não Supervisionado</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.tensorflow.org/tutorials/generative/autoencoder" target="_blank">Autoencoders com TensorFlow</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://towardsdatascience.com/unsupervised-learning-with-python-173c51dc7f03" target="_blank">Aprendizado Não Supervisionado com Python</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://builtin-com.translate.goog/data-science/unsupervised-learning-python?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc" target="_blank">Aprendizado Não Supervisionado com Python</a></li>
                                             </ul>
                                         </div></div>
                                     <p className="font-semibold text-black-800">💡 Dica: Use elbow method para determinar o número ideal de clusters.</p>
@@ -422,7 +421,7 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Oi2a9YfY5n0" target="_blank">Cross-Validation Explained</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=fSytzGwwBVw&pp=ygUaQ3Jvc3MtVmFsaWRhdGlvbiBFeHBsYWluZWQ%3D" target="_blank">Cross-Validation Explained</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Anq4PgdASsc" target="_blank">Overfitting and Underfitting</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -447,7 +446,7 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Zz0_Jp4R5Ew" target="_blank">Decision Trees Explained</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=_L39rN6gz7Y&pp=ygUYRGVjaXNpb24gVHJlZXMgRXhwbGFpbmVk" target="_blank">Decision Trees Explained</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=efR1C6CvhmE" target="_blank">Support Vector Machines</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -627,7 +626,7 @@ export default function IA() {
                                         <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                         <ul className="list-disc list-inside">
                                             <li><a className="text-zinc-200 underline" href="https://university.mongodb.com/" target="_blank">MongoDB University - Cursos Gratuitos</a></li>
-                                            <li><a className="text-zinc-200 underline" href="https://redis.io/docs/manual/" target="_blank">Documentação Oficial do Redis</a></li>
+                                            <li><a className="text-zinc-200 underline" href="https://redis.io/docs/latest//" target="_blank">Documentação Oficial do Redis</a></li>
                                             <li><a className="text-zinc-200 underline" href="https://www.tutorialspoint.com/mongodb/mongodb_overview.htm" target="_blank">Visão Geral do MongoDB</a></li>
                                         </ul>
                                     </div></div>
@@ -645,15 +644,15 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=aReuLtY0YWI" target="_blank">Hadoop Explained</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=z9r1K4pY3k8" target="_blank">Apache Spark Tutorial</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=aReuLtY0YMI&pp=ygUQSGFkb29wIEV4cGxhaW5lZA%3D%3D" target="_blank">Hadoop Explained</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=QaoJNXW6SQo&list=PLEiEAq2VkUUK3tuBXyd01meHuDj7RLjHv&pp=0gcJCWYDOCosWNin" target="_blank">Apache Spark Tutorial</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://spark.apache.org/docs/latest/quick-start.html" target="_blank">Spark Quick Start</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html" target="_blank">Tutorial MapReduce</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://databricks.com/learn/training/free-courses" target="_blank">Cursos Gratuitos de Spark - Databricks</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.databricks.com/br/resources/learn/training/databricks-fundamentals?scid=7018Y000001Fi0cQAC&utm_medium=paid+search&utm_source=google&utm_campaign=23696641842&utm_adgroup=197904179187&utm_content=training&utm_offer=databricks-fundamentals&utm_ad=802687690717&utm_term=curso%20gratuito%20databricks&gad_source=1&gad_campaignid=23696641842&gclid=CjwKCAjwxITRBhBYEiwA6mZm7ZjW0JhuCQ3cyNfIYeTTbuNQ8O8tKSpZ1m2uQI6dIlKga6PyI9-AURoC2F8QAvD_BwE" target="_blank">Cursos Gratuitos de Spark - Databricks</a></li>
                                             </ul>
                                         </div></div>
                                     <p className="font-semibold text-black-800">💡 Dica: Use PySpark para processamento distribuído com Python.</p>
@@ -670,8 +669,8 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=W3ZmG4g41YI" target="_blank">Data Lake vs Data Warehouse</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=U1TALsTiS6M" target="_blank">Building Data Lakes on AWS</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=V07Pk4de-5M&pp=ygUbRGF0YSBMYWtlIHZzIERhdGEgV2FyZWhvdXNl" target="_blank">Data Lake vs Data Warehouse</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=LAovcGquDc4&pp=ygUaQnVpbGRpbmcgRGF0YSBMYWtlcyBvbiBBV1PSBwkJKAsBhyohjO8%3D" target="_blank">Building Data Lakes on AWS</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
@@ -733,7 +732,7 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=AGrl-H87pRU" target="_blank">Power BI Tutorial for Beginners</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6mBt_Tggc5I" target="_blank">Tableau Tutorial for Beginners</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6xv1KvCMF1Q&pp=ygUeVGFibGVhdSBUdXRvcmlhbCBmb3IgQmVnaW5uZXJz0gcJCSgLAYcqIYzv" target="_blank">Tableau Tutorial for Beginners</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
@@ -758,45 +757,45 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=8EMW7io4rSI" target="_blank">Data Storytelling Techniques</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=xj-2eSUe-2g" target="_blank">How to Tell Stories with Data</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=r5_34YnCmMY&pp=ygUdSG93IHRvIFRlbGwgU3RvcmllcyB3aXRoIERhdGE%3D" target="_blank">How to Tell Stories with Data</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="http://www.storytellingwithdata.com/" target="_blank">Storytelling with Data - Blog</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=8EMW7io4rSI" target="_blank">Dicas de Storytelling com Dados - Vídeo</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://infovis.fh-potsdam.de/readings/Cairo2013-TheFactfulArt.pdf" target="_blank">Princípios de Design para Visualização</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi59sKQlO-UAxU7JrkGHRlWMWcQFnoECBoQAQ&url=https%3A%2F%2Ftranslate.google.com%2Ftranslate%3Fu%3Dhttps%3A%2F%2Fwww.nngroup.com%2Farticles%2Fprinciples-visual-design%2F%26hl%3Dpt%26sl%3Den%26tl%3Dpt%26client%3Dsrp&usg=AOvVaw1OZ0vPWcI5FgOJQWoEqaV4&opi=89978449" target="_blank">Princípios de Design para Visualização</a></li>
                                             </ul>
                                         </div></div>
                                     <p className="font-semibold text-black-800">💡 Dica: Estruture suas apresentações com: situação, complicação, solução.</p>
                                 </div>,
                             children: []
                         },
-                        {
-                            id: '6-7-4',
-                            title: 'Apresentações',
-                            content:
-                                <div className="space-y-2 text-sm text-zinc-100">
-                                    <p>A capacidade de <strong>comunicar efetivamente resultados</strong> para diferentes públicos é crucial. <strong>Apresentações técnicas</strong> exigem rigor metodológico e detalhamento, enquanto comunicações para <strong>públicos não técnicos</strong> requerem foco nos insights e impactos práticos.</p>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                        <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
-                                            <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
-                                            <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=wh2S2A0fHbE" target="_blank">Presenting Technical Topics to Non-Technical Audiences</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=l9JXGR7UIww" target="_blank">Data Science Presentation Skills</a></li>
-                                            </ul>
-                                        </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
-                                            <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
-                                            <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://hbr.org/2018/09/don-t-let-your-analytics-cheat-the-truth" target="_blank">Harvard Business Review: Apresentando Dados Honestamente</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://medium.com/nightingale/how-to-present-data-to-people-who-are-scared-of-numbers-9089944cebaf" target="_blank">Como Apresentar Dados para Pessoas com Receio de Números</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.slideshare.net/databricks/communicating-data-science-results-effectively" target="_blank">Comunicando Resultados de Ciência de Dados Efetivamente</a></li>
-                                            </ul>
-                                        </div></div>
-                                    <p className="font-semibold text-black-800">💡 Dica: Adapte o nível de detalhe técnico conforme o conhecimento da audiência.</p>
-                                </div>,
-                            children: []
-                        }
+                        // {
+                        //     id: '6-7-4',
+                        //     title: 'Apresentações',
+                        //     content:
+                        //         <div className="space-y-2 text-sm text-zinc-100">
+                        //             <p>A capacidade de <strong>comunicar efetivamente resultados</strong> para diferentes públicos é crucial. <strong>Apresentações técnicas</strong> exigem rigor metodológico e detalhamento, enquanto comunicações para <strong>públicos não técnicos</strong> requerem foco nos insights e impactos práticos.</p>
+                        //             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        //                 <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                        //                     <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
+                        //                     <ul className="list-disc list-inside">
+                        //                         <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=wh2S2A0fHbE" target="_blank">Presenting Technical Topics to Non-Technical Audiences</a></li>
+                        //                         <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=l9JXGR7UIww" target="_blank">Data Science Presentation Skills</a></li>
+                        //                     </ul>
+                        //                 </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
+                        //                     <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
+                        //                     <ul className="list-disc list-inside">
+                        //                         <li><a className="text-zinc-200 underline" href="https://hbr.org/2018/09/don-t-let-your-analytics-cheat-the-truth" target="_blank">Harvard Business Review: Apresentando Dados Honestamente</a></li>
+                        //                         <li><a className="text-zinc-200 underline" href="https://medium.com/nightingale/how-to-present-data-to-people-who-are-scared-of-numbers-9089944cebaf" target="_blank">Como Apresentar Dados para Pessoas com Receio de Números</a></li>
+                        //                         <li><a className="text-zinc-200 underline" href="https://www.slideshare.net/databricks/communicating-data-science-results-effectively" target="_blank">Comunicando Resultados de Ciência de Dados Efetivamente</a></li>
+                        //                     </ul>
+                        //                 </div></div>
+                        //             <p className="font-semibold text-black-800">💡 Dica: Adapte o nível de detalhe técnico conforme o conhecimento da audiência.</p>
+                        //         </div>,
+                        //     children: []
+                        // }
                     ]
                 },
                 {
@@ -819,7 +818,7 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=LhMqU0MCyH0" target="_blank">Data Science Projects for Beginners</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=MpF9HENQjDo&pp=ygUjRGF0YSBTY2llbmNlIFByb2plY3RzIGZvciBCZWdpbm5lcnM%3D" target="_blank">Data Science Projects for Beginners</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=ql4J6SpLXZA" target="_blank">Building Data Science Portfolio</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
@@ -844,14 +843,13 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=wqSbo20mdj8" target="_blank">Business Applications of Predictive Modeling</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=PX4N_Sf99-c" target="_blank">Measuring ROI of Data Science Projects</a></li>
+                                                <li><a className="text-zinc-200 underline" href="Modeling https://www.youtube.com/watch?v=4y6fUC56KPw&pp=ygUsQnVzaW5lc3MgQXBwbGljYXRpb25zIG9mIFByZWRpY3RpdmUgTW9kZWxpbmc%3D" target="_blank">Business Applications of Predictive Modeling</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=NS-Ej6hhIDs&pp=ygUmTWVhc3VyaW5nIFJPSSBvZiBEYXRhIFNjaWVuY2UgUHJvamVjdHM%3D" target="_blank">Measuring ROI of Data Science Projects</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://hbr.org/2018/01/you-dont-need-artificial-intelligence-you-need-augmented-intelligence" target="_blank">Harvard Business Review: Inteligência Aumentada nos Negócios</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://towardsdatascience.com/data-science-for-business-predictive-modeling-strategies-adad0e0080c5" target="_blank">Estratégias de Modelagem Preditiva para Negócios</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjekvWYlO-UAxXICrkGHR7VB2AQFnoECBwQAQ&url=https%3A%2F%2Ftranslate.google.com%2Ftranslate%3Fu%3Dhttps%3A%2F%2Fwww.projectpro.io%2Farticle%2Fpredictive-modelling-techniques%2F598%26hl%3Dpt%26sl%3Den%26tl%3Dpt%26client%3Dsrp&usg=AOvVaw0g-xnvszncN0ia-MmV_g5E&opi=89978449" target="_blank">Estratégias de Modelagem Preditiva para Negócios</a></li>
                                                 <li><a className="text-zinc-200 underline" href="https://www.mckinsey.com/business-functions/quantumblack/our-insights/scaling-ai-like-a-tech-native-the-ceos-role" target="_blank">McKinsey: Implementando IA em Escala</a></li>
                                             </ul>
                                         </div></div>
@@ -870,7 +868,7 @@ export default function IA() {
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
                                                 <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=Z1RJmh_OqeA" target="_blank">Deploy ML Model with Flask</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=-ykeT6kj-7s" target="_blank">FastAPI for ML Deployment</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=b5F667g1yCk&pp=ygUZRmFzdEFQSSBmb3IgTUwgRGVwbG95bWVudA%3D%3D" target="_blank">FastAPI for ML Deployment</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
@@ -894,8 +892,8 @@ export default function IA() {
                                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
                                             <ul className="list-disc list-inside">
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=6g3tSWo4vrY" target="_blank">MLOps Complete Course</a></li>
-                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=1PXyf1DKfqE" target="_blank">Monitoring ML Models in Production</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=biqYkVf-a7Y" target="_blank">MLOps Complete Course</a></li>
+                                                <li><a className="text-zinc-200 underline" href="https://www.youtube.com/watch?v=oUcuilWWX78&pp=ygUiTW9uaXRvcmluZyBNTCBNb2RlbHMgaW4gUHJvZHVjdGlvbg%3D%3D" target="_blank">Monitoring ML Models in Production</a></li>
                                             </ul>
                                         </div><div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                                             <p className="font-semibold text-zinc-100">🔍 Onde Pesquisar:</p>
