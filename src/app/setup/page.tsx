@@ -9,15 +9,7 @@ export default function SetupPage() {
 
     const [selected, setSelected] = useState<string | null>(null);
     const [name, setName] = useState("");
-    // const router = useRouter();
 
-    // useEffect(() => {
-    //     const loadUserData = async () => {
-    //         const userData = await userDataStore.getUserData();
-    //         if (userData)
-    //             setName(userData.name);
-    //     }
-    // }, [])
 
     const changeName = async (nome: string) => {
         await userDataStore.saveUserAttribute("name", nome);
@@ -52,50 +44,9 @@ export default function SetupPage() {
                 <h1 className="text-lg font-bold">Começar</h1>
                 <div className="w-16" /> {/* Placeholder para equilibrar o espaço */}
             </nav>
-
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdk41w4czpcyVP_G1wnk5PDfPtGS1T-vjBwJDCmbGb-x1Rhtw/viewform?embedded=true" width="640" height="700" >Carregando…</iframe>
             {/* Content */}
-            <main className="flex flex-col items-center mt-10 w-full px-4">
-                <input
-                    type="text"
-                    placeholder="Digite seu nome"
-                    value={name}
-                    onChange={(e) => {
-                        setName(e.target.value);
-                        changeName(e.target.value);
-                    }}
-                    className="border border-gray-300 rounded px-4 py-2 w-full max-w-sm mb-6 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
 
-                {/* Button Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-3xl">
-                    {options.map((option, index) => (
-                        <button
-                            key={index}
-                            onClick={() => {
-                                setSelected(option);
-                                changeArea(option);
-
-                            }}
-                            className={`px-4 py-2 rounded-lg shadow text-white font-semibold transition ${selected === option
-                                ? "bg-blue-600"
-                                : "bg-gray-400 hover:bg-gray-500"
-                                }`}
-                        >
-                            {option}
-                        </button>
-                    ))}
-                </div>
-
-                {/* Link to /user */}
-                <div className="mt-10">
-                    <Link
-                        href="/user"
-                        className="text-blue-600 font-semibold underline hover:text-blue-800"
-                    >
-                        Continuar
-                    </Link>
-                </div>
-            </main>
         </div>
     );
 }

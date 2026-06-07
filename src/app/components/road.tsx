@@ -20,6 +20,8 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
   const Road = useUserStore((state) => state.roadmap);
   const setRoad = useUserStore((state) => state.setR);
   const [showModal, setShowModal] = useState(false);
+  const temMuitosFilhos = node.
+    children.every(child => child.id.split('-').length >= 3);
   const isThirdLevelParent = node.
     children.every(child => child.id.split('-').length === 3);
   const isSecLevelParent = node.
@@ -68,7 +70,10 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
     ${node.children.length > 3 ? 'w-full' : ''}  items-start relative md:ml-4 mt-1 ${isThirdLevelParent ? '' : 'flex-col '} `}>
       <div
         onClick={handleClick}
-        className={`cursor-pointer rounded  ${Road.includes(node.id) ? 'bg-green-300 hover:bg-green-400' : 'bg-blue-100 hover:bg-blue-400'} px-4 py-1 hover:bg-blue-400 hover:text-white transition-all duration-300 whitespace-nowrap z-10`}
+        // ${!isSecLevelParent ? "bg-blue-800" : ""} <Linha para Testar a função de quando os filhos estiverem completos ele tbm fica completo automaticamente>
+        /*Original*/ className={`cursor-pointer rounded  ${Road.includes(node.id) ? 'bg-green-300 hover:bg-green-400' : 'bg-blue-100 hover:bg-blue-400'}  px-4 py-1 hover:bg-blue-400 hover:text-white transition-all duration-300 whitespace-nowrap z-10`}
+      // className={`cursor-pointer rounded  ${Road.includes(node.id) && isSecLevelParent ? 'bg-green-300 hover:bg-green-400' : 'bg-blue-100 hover:bg-blue-400'}  px-4 py-1 hover:bg-blue-400 hover:text-white transition-all duration-300 whitespace-nowrap z-10`}
+
       >
         {node.title}
 
@@ -157,6 +162,22 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
           )} */}
               </div>
               <div className="flex items-center gap-4">
+
+                {/* {isSecLevelParent && isThirdLevelParent ?
+                  <label className="flex items-center gap-2 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      className="w-4 h-4 rounded border-gray-300 accent-emerald-500"
+                      checked={Road.includes(node.id)}
+                      onChange={() => handleCheckboxChange(node.id)}
+                    />
+                    <span className="text-xs text-gray-500">Marcar como concluído</span>
+                  </label>
+                  : ""
+                } */}
+
+                {/*Original*/}
+
                 <label className="flex items-center gap-2 cursor-pointer select-none">
                   <input
                     type="checkbox"
@@ -166,6 +187,9 @@ const RoadmapNode = ({ node, parentToggle = true }: { node: NodeType, parentTogg
                   />
                   <span className="text-xs text-gray-500">Marcar como concluído</span>
                 </label>
+
+
+
                 <button
                   onClick={() => setShowModal(false)}
                   className="text-gray-400 hover:text-red-500 transition-colors p-1 rounded"

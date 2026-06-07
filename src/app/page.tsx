@@ -38,24 +38,24 @@ export default function Home() {
                 Começar Agora</Link>
             </button>
           </div>
-          {/* <Link href="/config" className="">
+          <Link href="/setup" className="">
             <div className="absolute right-0 bottom-0 p-6">
               <div className="hover:bg-blue-200 ease-in duration-300 bg-white shadow-md p-4 rounded-xl flex items-center space-x-4">
                 <div>
-                  <h3 className="font-bold">Áreas de Atuação</h3>
-                  <p className="text-sm text-gray-500">Descubra a área que mais te interessa!</p>
+                  <h3 className="font-bold">Responder Formulário</h3>
+                  <p className="text-sm text-gray-500">Formulário de Avaliação!</p>
                 </div>
                 <span className="text-2xl text-blue-600">→</span>
               </div>
             </div>
-          </Link> */}
+          </Link>
           <div className="absolute inset-0 -z-10 px-0 md:px-0 pt-0">
             <div className="w-full h-[100vh] overflow-hidden flex justify-center rounded-[0rem] md:rounded-[0srem]">
               <img src={bg.src} alt="" className="w-full object-none" />
             </div>
           </div>
         </section>
-
+        {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdk41w4czpcyVP_G1wnk5PDfPtGS1T-vjBwJDCmbGb-x1Rhtw/viewform?embedded=true" width="640" height="2380">Carregando…</iframe> */}
 
         {/* <Footer /> */}
       </div>
