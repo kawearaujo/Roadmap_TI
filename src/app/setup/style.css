@@ -1,8 +1,10 @@
 .iframe-wrapper {
+  margin-top: 1vh;
   width: 100%;
   max-width: 640px;
   margin: 0 auto;
   aspect-ratio: 640 / 700;
+  height: 98vh;
 }
 
 .iframe-wrapper iframe {

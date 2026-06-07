@@ -42,7 +42,7 @@ export default function SetupPage() {
             {/* Top Navigation */}
             <nav className="w-full flex justify-between items-center px-4 py-4 bg-white shadow-md">
                 <Link href="/" className="text-blue-600 font-semibold">← Voltar</Link>
-                <h1 className="text-lg font-bold">Avaliação de Usabilidade do Sistema Roadmap {" { "}TI{" } "}</h1>
+                <h1 className="text-lg font-bold">Avaliação{" { "}TI{" } "}</h1>
                 <div className="w-16" /> {/* Placeholder para equilibrar o espaço */}
             </nav>
 
