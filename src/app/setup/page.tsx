@@ -3,7 +3,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { userDataStore } from "@/app/utils/indexedDB"
 // import { useRouter } from 'next/navigation'
-
+// import  from "style.css"
+import "./style.css";
 
 export default function SetupPage() {
 
@@ -44,7 +45,17 @@ export default function SetupPage() {
                 <h1 className="text-lg font-bold">Avaliação de Usabilidade do Sistema Roadmap {" { "}TI{" } "}</h1>
                 <div className="w-16" /> {/* Placeholder para equilibrar o espaço */}
             </nav>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdk41w4czpcyVP_G1wnk5PDfPtGS1T-vjBwJDCmbGb-x1Rhtw/viewform?embedded=true" width="640" height="700" >Carregando…</iframe>
+
+            <div className="iframe-wrapper">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdk41w4czpcyVP_G1wnk5PDfPtGS1T-vjBwJDCmbGb-x1Rhtw/viewform?embedded=true"
+                    title="Avaliação de Usabilidade"
+                    loading="lazy"
+                >
+                    Carregando…
+                </iframe>
+            </div>
+            {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdk41w4czpcyVP_G1wnk5PDfPtGS1T-vjBwJDCmbGb-x1Rhtw/viewform?embedded=true" width="640" height="700" >Carregando…</iframe> */}
             {/* Content */}
 
         </div>
