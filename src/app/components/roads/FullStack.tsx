@@ -28,7 +28,7 @@ export default function IA() {
             children: [
                 {
                     id: '1-1',
-                    title: 'Front-End',
+                    title: '🟢 Front-End',
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -132,7 +132,7 @@ export default function IA() {
                 },
                 {
                     id: '1-2',
-                    title: 'Back-End',
+                    title: '🟡 Back-End',
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -269,7 +269,7 @@ export default function IA() {
                 },
                 {
                     id: '1-3',
-                    title: 'Versionamento',
+                    title: '🟠 Versionamento',
                     content: (
                         <div className="space-y-2 text-sm text-zinc-100">
                             <p>
@@ -300,7 +300,7 @@ export default function IA() {
                 },
                 {
                     id: '1-4',
-                    title: 'Frameworks Front-End',
+                    title: '🔵 Frameworks Front-End',
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -410,7 +410,7 @@ export default function IA() {
                 },
                 {
                     id: '1-5',
-                    title: 'Frameworks Back-End',
+                    title: '🟣 Frameworks Back-End',
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -487,7 +487,7 @@ export default function IA() {
                 },
                 {
                     id: '1-6',
-                    title: 'Autenticação',
+                    title: '🔴 Autenticação',
                     content: (
                         <div className="space-y-2 text-sm text-zinc-100">
                             <p>
@@ -519,7 +519,7 @@ export default function IA() {
                 },
                 {
                     id: '1-7',
-                    title: 'Tipos de Testes',
+                    title: '⚫ Tipos de Testes',
                     content: (
                         <div className="space-y-2 text-sm text-zinc-100">
                             <p>
@@ -551,7 +551,7 @@ export default function IA() {
                 },
                 {
                     id: '1-8',
-                    title: 'Serviços AWS',
+                    title: '🌐 Serviços AWS',
                     content: (
                         <div className="space-y-2 text-sm text-zinc-100">
                             <p>

@@ -18,7 +18,7 @@ export default function IA() {
             children: [
                 {
                     id: '3-1',
-                    title: 'Fundamentos',
+                    title: '🟢 Fundamentos',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -118,7 +118,7 @@ export default function IA() {
                 },
                 {
                     id: '3-2',
-                    title: 'Eletrônica',
+                    title: '🟡 Eletrônica',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -245,7 +245,7 @@ export default function IA() {
                 },
                 {
                     id: '3-3',
-                    title: 'Programação',
+                    title: '🟠 Programação',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -344,7 +344,7 @@ export default function IA() {
                 },
                 {
                     id: '3-4',
-                    title: 'Mecânica',
+                    title: '🔵 Mecânica',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -443,7 +443,7 @@ export default function IA() {
                 },
                 {
                     id: '3-5',
-                    title: 'Projetos Práticos',
+                    title: '🟣 Projetos Práticos',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -542,7 +542,7 @@ export default function IA() {
                 },
                 {
                     id: '3-6',
-                    title: 'Avançado',
+                    title: '⚫ Avançado',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">

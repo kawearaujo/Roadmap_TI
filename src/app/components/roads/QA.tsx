@@ -19,7 +19,7 @@ export default function IA() {
             children: [
                 {
                     id: '4-1',
-                    title: 'Fundamentos de Teste',
+                    title: '🟢 Fundamentos de Teste',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -150,7 +150,7 @@ export default function IA() {
                 },
                 {
                     id: '4-2',
-                    title: 'Teste Manual',
+                    title: '🟡 Teste Manual',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -245,7 +245,7 @@ export default function IA() {
                 },
                 {
                     id: '4-3',
-                    title: 'Automação de Testes',
+                    title: '🟠 Automação de Testes',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -367,7 +367,7 @@ export default function IA() {
                 },
                 {
                     id: '4-4',
-                    title: 'Programação para QA',
+                    title: '🔵 Programação para QA',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -462,7 +462,7 @@ export default function IA() {
                 },
                 {
                     id: '4-5',
-                    title: 'Testes de API',
+                    title: '🟣 Testes de API',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -557,7 +557,7 @@ export default function IA() {
                 },
                 {
                     id: '4-6',
-                    title: 'Testes de Performance',
+                    title: '🔴 Testes de Performance',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -652,7 +652,7 @@ export default function IA() {
                 },
                 {
                     id: '4-7',
-                    title: 'Testes Mobile',
+                    title: '⚫ Testes Mobile',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -720,7 +720,7 @@ export default function IA() {
                 },
                 {
                     id: '4-8',
-                    title: 'CI/CD e Integração de Testes',
+                    title: '🟤 CI/CD e Integração de Testes',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
@@ -788,7 +788,7 @@ export default function IA() {
                 },
                 {
                     id: '4-9',
-                    title: 'Extras',
+                    title: '🌐 Extras',
 
                     content:
                         <div className="space-y-4 text-md text-zinc-100">

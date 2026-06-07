@@ -17,7 +17,7 @@ export default function IA() {
             children: [
                 {
                     id: '5-1',
-                    title: 'Fundamentos',
+                    title: '🟢 Fundamentos',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -146,7 +146,7 @@ export default function IA() {
                 },
                 {
                     id: '5-2',
-                    title: 'Programação e Ferramentas',
+                    title: '🟡 Programação e Ferramentas',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -276,7 +276,7 @@ export default function IA() {
                 },
                 {
                     id: '5-3',
-                    title: 'Microcontroladores',
+                    title: '🟠 Microcontroladores',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -405,7 +405,7 @@ export default function IA() {
                 },
                 {
                     id: '5-4',
-                    title: 'Sistemas Operacionais de Tempo Real',
+                    title: '🔵 Sistemas Operacionais de Tempo Real',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -505,7 +505,7 @@ export default function IA() {
                 },
                 {
                     id: '5-5',
-                    title: 'Periféricos e Comunicação',
+                    title: '🟣 Periféricos e Comunicação',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -634,7 +634,7 @@ export default function IA() {
                 },
                 {
                     id: '5-6',
-                    title: 'Aplicações Práticas',
+                    title: '🔴 plicações Práticas',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
@@ -762,7 +762,7 @@ export default function IA() {
                 },
                 {
                     id: '5-7',
-                    title: 'Avançado',
+                    title: '⚫ Avançado',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>

@@ -31,7 +31,7 @@ export default function IA() {
             children: [
                 {
                     id: '2-1',
-                    title: 'Fundamentos',
+                    title: '🟢 Fundamentos',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -136,7 +136,7 @@ export default function IA() {
                 },
                 {
                     id: '2-2',
-                    title: 'Ferramentas',
+                    title: '🟡 Ferramentas',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -211,7 +211,7 @@ export default function IA() {
                 },
                 {
                     id: '2-3',
-                    title: 'Programação com Unity',
+                    title: '🟠 Programação com Unity',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -375,7 +375,7 @@ export default function IA() {
                 },
                 {
                     id: '2-4',
-                    title: 'Design para Jogos',
+                    title: '🔵 Design para Jogos',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -477,7 +477,7 @@ export default function IA() {
                 },
                 {
                     id: '2-5',
-                    title: 'Assets e Arte',
+                    title: '🟣 Assets e Arte',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -576,7 +576,7 @@ export default function IA() {
                 },
                 {
                     id: '2-6',
-                    title: 'Polimento e Otimização',
+                    title: '🔴 Polimento e Otimização',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -680,7 +680,7 @@ export default function IA() {
                 },
                 {
                     id: '2-7',
-                    title: 'Build e Publicação',
+                    title: '⚫ Build e Publicação',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
@@ -755,7 +755,7 @@ export default function IA() {
                 },
                 {
                     id: '2-8',
-                    title: 'Extras',
+                    title: '🌐 Extras',
 
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
