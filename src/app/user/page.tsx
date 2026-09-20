@@ -34,7 +34,7 @@ const ImagesSelecao = ({ onSelect, ImagemSelecionada }: { ImagemSelecionada: str
           <img
             src={image}
             alt={`Imagem ${index + 1}`}
-            className={`w-24 h-24 object-cover rounded-lg ${ImagemSelecionada === image
+            className={`w-16 h-16 md:w-24 md:h-24 object-cover rounded-lg ${ImagemSelecionada === image
               ? "ring-4 ring-blue-500"
               : ""
               }`}
@@ -67,7 +67,7 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
   return (
     <div>
 
-      <div className="mt-0 fixed inset-0 bg-black/90 z-1001 flex items-center justify-center">
+      <div className="mt-0 fixed inset-0 bg-black/50 z-1001 flex items-center justify-center">
         <div className="bg-white p-4 rounded-lg space-y-4">
           <h2 className="text-xl font-semibold">Selecione uma imagem</h2>
           <div className="grid grid-cols-3 gap-4">
@@ -76,7 +76,7 @@ const ImagePicker = ({ onSelectImage }: { onSelectImage: (image: string) => void
                 <img
                   src={image}
                   alt={`Imagem ${index + 1}`}
-                  className="w-24 h-24 object-cover rounded-lg"
+                  className="w-16 h-16 md:w-24 md:h-24 object-cover rounded-lg"
                   onClick={() => onSelectImage(image)}
                 />
               </div>

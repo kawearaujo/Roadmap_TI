@@ -227,10 +227,10 @@ export default function Config1() {
   const [pendingBranch, setPendingBranch] = useState<string | null>(null);
   const [showModal, setShowModal] = useState(false);
   const resumo = {
-    'Software': "O desenvolvimento de software é a criação de aplicativos, sistemas e programas usando linguagens de programação e ferramentas de desenvolvimento, abrangendo desde o design até a implementação e manutenção.",
-    'Hardware': "O desenvolvimento de hardware envolve a criação de componentes físicos, como circuitos, dispositivos e sistemas eletrônicos, utilizando conhecimentos de engenharia elétrica, mecânica e design para construir produtos tangíveis.",
-    'Ciência': "A ciência de dados é uma disciplina que utiliza técnicas estatísticas, matemáticas e computacionais para extrair insights e conhecimento a partir de dados, aplicando-se em diversas áreas para tomada de decisões informadas.",
-    'Gestão': "A gestão de projetos é a aplicação de conhecimentos, habilidades e técnicas para planejar, executar e controlar projetos, garantindo que sejam concluídos dentro do prazo, orçamento e escopo definidos."
+    'Software': "O desenvolvimento de software é a criação de aplicações, sistemas e programas usando linguagens de programação e ferramentas de desenvolvimento, abrangendo desde o design até a implementação e manutenção.",
+    'Hardware': "A área de hardware envolve o desenvolvimento de sistemas e dispositivos físicos capazes de perceber o ambiente, processar informações e executar ações. Ela combina conhecimentos de eletrônica, engenharia elétrica, mecânica e programação para criar soluções como circuitos, sistemas embarcados, robôs, sensores e dispositivos inteligentes. É uma área voltada para transformar ideias e conceitos em produtos físicos que interagem com o mundo real.",
+    'Ciência': "A ciência de dados é uma área que utiliza técnicas estatísticas, matemáticas e computacionais para extrair informação e conhecimento a partir de dados, aplicando-se em diversas áreas para tomada de decisões como por exemplo na escalabilidade, redução de riscos e custos entre outros.",
+    'Gestão': "A área de gestão envolve planejar, organizar e coordenar pessoas, recursos e processos para alcançar objetivos de forma eficiente. Ela reúne conhecimentos de planejamento, liderança, tomada de decisões, comunicação, análise e organização, podendo ser aplicada à gestão de projetos, equipes, negócios e operações. É uma área voltada para transformar objetivos em ações, acompanhar resultados e encontrar melhores formas de alcançar os resultados esperados."
   }
   const router = useRouter();
 
@@ -274,7 +274,7 @@ export default function Config1() {
         </div> */}
         <section className="max-w-4xl mx-auto px-6 md:py-16 pt-16 pb-6 text-center">
 
-          <h1 className="text-4xl md:text-5xl sm:text-4xl font-extrabold leading-tight text-[#0F0F0F] ">
+          <h1 className="text-3xl md:text-5xl sm:text-4xl font-extrabold leading-tight text-[#0F0F0F] ">
             Encontre a área com maior compatibilidade<br />
           </h1>
         </section>

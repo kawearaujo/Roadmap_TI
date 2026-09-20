@@ -14,7 +14,7 @@ export default function Home() {
       <div className="pt-[2rem]">
         <section className="max-w-4xl mx-auto px-6 py-16 text-center">
 
-          <h1 className="text-5xl md:text-6xl sm:text-5xl font-extrabold leading-tight text-[#0F0F0F] mt-2">
+          <h1 className="text-3xl md:text-6xl sm:text-5xl font-extrabold leading-tight text-[#0F0F0F] mt-2">
             Dicas para sua Carreira de TI<br />
             {/* <span className="text-[#4A6CF7]">Tecnologia da Informação</span> */}
           </h1>
