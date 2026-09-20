@@ -4,6 +4,7 @@ export interface UserData {
   id: string;
   name: string;
   photo: string;
+  welcomeSeen?: boolean;
   level: number;
   experience: number;
   area: string;
@@ -88,7 +89,7 @@ class UserDataStore {
     
     if (!userData) {
       console.warn("Nenhum dado encontrado, criando novo usuário...");
-      return this.saveUserData({ id: "user1", name: "", photo: "", level: 0, experience: 0, area: "", achievements:[],roadmap:[], [attribute]: value });
+      return this.saveUserData({ id: "user1", name: "", photo: "", welcomeSeen: false, level: 0, experience: 0, area: "", achievements:[],roadmap:[], [attribute]: value });
     }
     
     userData[attribute] = value; // Atualiza apenas o atributo específico

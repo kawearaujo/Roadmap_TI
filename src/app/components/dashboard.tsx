@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 //     { day: "Dom", tarefas: 0 },
 // ];
 
-export default function Dashboard() {
+export default function Dashboard({ onGoToRoadmap }: { onGoToRoadmap: () => void }) {
     // const totalTarefas = data.reduce((acc, item) => acc + item.tarefas, 0);
     const setQConq = useUserStore((state) => state.set);
     const QConq = useUserStore((state) => state.conquistas);
@@ -78,7 +78,16 @@ export default function Dashboard() {
                 {/* <Link href="/" className="text-blue-600 font-semibold">
                     ← Voltar
                 </Link> */}
-                <h1 className="text-3xl font-bold text-center mb-6">Painel</h1>
+                <div className="flex flex-col items-center gap-3">
+                    <h1 className="text-3xl font-bold text-center">Painel</h1>
+                    <button
+                        type="button"
+                        onClick={onGoToRoadmap}
+                        className="rounded-md bg-blue-600 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-700"
+                    >
+                        Ir para Atividades
+                    </button>
+                </div>
                 {/* <div className="w-20" /> */}
             </div>
 

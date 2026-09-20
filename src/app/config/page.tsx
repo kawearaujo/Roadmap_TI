@@ -330,6 +330,12 @@ export default function Config1() {
             {resumo[selectedArea as keyof typeof resumo]}
           </p>
         </div>
+        <div >
+          <p className=" md:text-xl text-lg text-black-500  md:mx-90 mx-10 justify-center ">
+            Escolha uma das áreas abaixo:
+          </p>
+        </div>
+
 
         <div className="mt-6 p-4 border border-blue-400 rounded-lg flex justify-center space-x-4">
 

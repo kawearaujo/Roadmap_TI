@@ -130,6 +130,42 @@ const DeleteConfirmation = ({ onConfirm, onCancel }: { onConfirm: () => void; on
   </div>
 );
 
+const WelcomeModal = ({ userName, area, onClose }: { userName: string; area: string; onClose: () => void }) => (
+  <div className="z-[10000] fixed inset-0 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div className="bg-white border border-slate-200 shadow-2xl rounded-2xl overflow-hidden max-h-[90vh] w-full md:max-w-2xl" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+      <div className="bg-gradient-to-r from-blue-700 to-cyan-600 px-6 py-7 text-white md:px-8">
+        <p className="text-sm font-semibold uppercase tracking-wider text-blue-100">RoadMap TI</p>
+        <h2 id="welcome-title" className="mt-2 text-3xl font-bold leading-tight">Olá, {userName}!</h2>
+        <p className="mt-2 text-blue-50">Seu percurso de aprendizado começa aqui.</p>
+      </div>
+
+      <div className="max-h-[55vh] space-y-5 overflow-y-auto px-6 py-6 text-[15px] leading-7 text-slate-600 md:px-8">
+        <p>
+          O <strong className="font-semibold text-slate-900">RoadMap TI</strong> é um guia de estudos e apoio para quem deseja desenvolver novas habilidades e mudar de carreira.
+        </p>
+        <div className="space-y-3">
+          <p>
+            No menu lateral, o <strong className="font-semibold text-slate-900">Dashboard</strong> apresenta um resumo do seu percurso, das atividades concluídas e das conquistas alcançadas.
+          </p>
+          <p>
+            Em <strong className="font-semibold text-slate-900">RoadMap - Trajetória</strong>, você encontrará a trilha de <strong className="font-semibold text-blue-700">{area}</strong>. Cada etapa reúne cursos e materiais úteis para apoiar seu aprendizado e progresso.
+          </p>
+        </div>
+        <div className="rounded-lg border-l-4 border-amber-400 bg-amber-50 px-4 py-3 text-amber-950">
+          <p>
+            Também é possível <strong className="font-semibold">trocar de área</strong>. Porém, essa escolha pode apagar todo o progresso acumulado até o momento.
+          </p>
+        </div>
+      </div>
+
+      <div className="border-t border-slate-200 bg-slate-50 px-6 py-4 md:px-8">
+        <button className="w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" onClick={onClose}>
+          Começar minha jornada
+        </button>
+      </div>
+    </div>
+  </div>
+);
 
 export default function UserPage() {
 
@@ -160,6 +196,7 @@ export default function UserPage() {
   const [nomeTemp, setNomeTemp] = useState("");
   const [loading, setLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
@@ -172,6 +209,9 @@ export default function UserPage() {
     if (userData) {
       setQConq(userData.achievements);
       setRoad(userData.roadmap);
+      if (userData.name?.trim() && userData.area?.trim() && !userData.welcomeSeen) {
+        setShowWelcome(true);
+      }
       if (area == "") {
         setUserName(userData.name);
         setSelectedImage(userData.photo);
@@ -279,22 +319,29 @@ export default function UserPage() {
     setShowImagePicker(false);
   };
 
-  const handleNameChange = () => {
-    userDataStore.saveUserAttribute("name", newUserName)
+  const handleNameChange = async () => {
+    if (!newUserName.trim()) return;
+    await userDataStore.saveUserAttribute("name", newUserName.trim())
     setUserName(newUserName);
     setEditingName(false);
+    if (area.trim()) setShowWelcome(true);
+  };
+
+  const closeWelcome = async () => {
+    setShowWelcome(false);
+    await userDataStore.saveUserAttribute("welcomeSeen", true);
   };
 
   const renderActivePage = () => {
     switch (activePage) {
       case "dashboard":
-        return <Db />;
+        return <Db onGoToRoadmap={() => setActivePage("roadmap")} />;
       case "roadmap":
         return <RM />;
       case "conquistas":
         return <Conquistas />;
       case "inicio":
-        return <Db />;
+        return <Db onGoToRoadmap={() => setActivePage("roadmap")} />;
       case "delete":
         return (<DeleteConfirmation
           onConfirm={handleDeleteProgress}
@@ -330,6 +377,9 @@ export default function UserPage() {
               setActivePage("dashboard");
             }} />
           : ""}
+        {showWelcome && (
+          <WelcomeModal userName={userName} area={area} onClose={closeWelcome} />
+        )}
         {!loading && (!userName || userName.trim() === "") ?
           <div className="z-9999 fixed inset-0 bg-black/50 flex items-center justify-center ">
             <div className="bg-white p-6 rounded-lg space-y-4 md:w-[40vw] w-[80vw]">
