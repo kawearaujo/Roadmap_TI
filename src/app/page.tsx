@@ -2,12 +2,43 @@
 // import Image from "next/image";
 import bg from "@/img/bg1.jpg"
 import Link from "next/link";
+import { ChangeEvent, useState } from "react";
 // import { usePathname } from "next/navigation";
 import Navbar from "@/app/components/nav"
 // import Footer from "./components/footer";
-import { userDataStore } from "@/app/utils/indexedDB"
+import { parseUserDataBackup, userDataStore } from "@/app/utils/indexedDB"
 
 export default function Home() {
+  const [showImportModal, setShowImportModal] = useState(false);
+  const [notification, setNotification] = useState<"success" | "error" | null>(null);
+  const [isImporting, setIsImporting] = useState(false);
+
+  const handleImport = async (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+
+    if (!file) {
+      return;
+    }
+
+    setIsImporting(true);
+    try {
+      const importedData = parseUserDataBackup(JSON.parse(await file.text()));
+      if (!importedData) {
+        setNotification("error");
+        return;
+      }
+
+      await userDataStore.saveUserData(importedData);
+      setShowImportModal(false);
+      setNotification("success");
+    } catch {
+      setNotification("error");
+    } finally {
+      setIsImporting(false);
+    }
+  };
+
   //  Limpar Nome
   // userDataStore.saveUserAttribute("name", "")
   // const pathname = usePathname();
@@ -33,10 +64,21 @@ export default function Home() {
               </p>
             </section>
 
-            <button className="hover:bg-blue-600 transition ease-in duration-300 mt-6 bg-blue-400 text-white px-6 py-3 rounded-full" >
-              <Link href={"/config"}>
-                Começar Agora</Link>
-            </button>
+            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link href="/config" className="rounded-full bg-blue-400 px-6 py-3 text-white transition duration-300 ease-in hover:bg-blue-600">
+                Começar Agora
+              </Link>
+              <button
+                type="button"
+                className="rounded-full border border-blue-500 bg-white/90 px-6 py-3 text-blue-700 transition duration-300 ease-in hover:bg-blue-50"
+                onClick={() => {
+                  setNotification(null);
+                  setShowImportModal(true);
+                }}
+              >
+                Carregar Progresso +
+              </button>
+            </div>
           </div>
           <Link href="/setup" className="">
             <div className="absolute right-0 bottom-0 p-6">
@@ -59,6 +101,69 @@ export default function Home() {
 
         {/* <Footer /> */}
       </div>
+
+      {showImportModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4" role="dialog" aria-modal="true" aria-labelledby="import-title">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h2 id="import-title" className="text-2xl font-bold text-slate-900">Carregar progresso</h2>
+                <p className="mt-2 text-sm text-slate-600">Selecione um arquivo JSON exportado pelo RoadMap TI.</p>
+              </div>
+              <button
+                type="button"
+                aria-label="Fechar janela"
+                className="text-2xl leading-none text-slate-500 hover:text-slate-900"
+                onClick={() => setShowImportModal(false)}
+              >
+                &times;
+              </button>
+            </div>
+
+            <label className="mt-6 block cursor-pointer rounded-xl border-2 border-dashed border-blue-300 bg-blue-50 px-4 py-8 text-center text-sm font-semibold text-blue-700 transition hover:border-blue-500 hover:bg-blue-100">
+              {isImporting ? "Analisando arquivo..." : "Selecionar arquivo JSON"}
+              <input type="file" accept="application/json,.json" className="sr-only" onChange={handleImport} disabled={isImporting} />
+            </label>
+
+            <button
+              type="button"
+              className="mt-4 w-full rounded-lg bg-slate-100 px-4 py-2 font-semibold text-slate-700 hover:bg-slate-200"
+              onClick={() => setShowImportModal(false)}
+              disabled={isImporting}
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      )}
+
+      {notification && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4" role="alertdialog" aria-modal="true" aria-labelledby="notification-title">
+          <div className="w-full max-w-md rounded-2xl bg-white p-6 text-center shadow-2xl">
+            <h2 id="notification-title" className={`text-2xl font-bold ${notification === "success" ? "text-emerald-700" : "text-red-700"}`}>
+              {notification === "success" ? "Progresso Identificado" : "Arquivo não compatível"}
+            </h2>
+            <p className="mt-3 text-slate-600">
+              {notification === "success"
+                ? "Seu progresso foi carregado com sucesso."
+                : "Selecione uma exportação válida do RoadMap TI."}
+            </p>
+            {notification === "success" ? (
+              <Link href="/user" className="mt-6 block w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white hover:bg-blue-700">
+                Ir para área do usuário
+              </Link>
+            ) : (
+              <button
+                type="button"
+                className="mt-6 w-full rounded-lg bg-slate-100 px-4 py-3 font-semibold text-slate-700 hover:bg-slate-200"
+                onClick={() => setNotification(null)}
+              >
+                Fechar
+              </button>
+            )}
+          </div>
+        </div>
+      )}
     </div>
 
   );

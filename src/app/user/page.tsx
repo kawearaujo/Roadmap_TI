@@ -197,6 +197,9 @@ export default function UserPage() {
   const [loading, setLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [showWelcome, setShowWelcome] = useState(false);
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [isExporting, setIsExporting] = useState(false);
+  const [exportStatus, setExportStatus] = useState<"success" | "empty" | "error" | null>(null);
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
@@ -332,6 +335,33 @@ export default function UserPage() {
     await userDataStore.saveUserAttribute("welcomeSeen", true);
   };
 
+  const handleExport = async () => {
+    setIsExporting(true);
+    setExportStatus(null);
+
+    try {
+      const backup = await userDataStore.exportUserData();
+      if (!backup) {
+        setExportStatus("empty");
+        return;
+      }
+
+      const file = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
+      const downloadUrl = URL.createObjectURL(file);
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      const areaName = backup.data.area.trim().replace(/[<>:"/\\|?*]+/g, "").replace(/\s+/g, "_") || "TI";
+      link.download = `Roadmap_${areaName}.json`;
+      link.click();
+      URL.revokeObjectURL(downloadUrl);
+      setExportStatus("success");
+    } catch {
+      setExportStatus("error");
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   const renderActivePage = () => {
     switch (activePage) {
       case "dashboard":
@@ -414,7 +444,6 @@ export default function UserPage() {
                 >
                   Confirmar
                 </button>
-
               </div>
             </div>
           </div>
@@ -531,6 +560,17 @@ export default function UserPage() {
               Conquistas
             </button>
             <button
+              className="cursor-pointer w-full p-2 text-white hover:bg-blue-500"
+              onClick={() => {
+                if (isMobile)
+                  setMenuOpen(false);
+                setExportStatus(null);
+                setShowExportModal(true);
+              }}
+            >
+              Exportar Progresso
+            </button>
+            <button
               className="cursor-pointer w-full  p-2 text-white hover:bg-blue-500"
               onClick={() =>
                 setModalApagar(true)
@@ -553,6 +593,54 @@ export default function UserPage() {
 
         {/* Modal de Seleção de Imagens */}
         {showImagePicker && <ImagePicker onSelectImage={handleImageSelect} />}
+
+        {showExportModal && (
+          <div className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/60 p-4" role="dialog" aria-modal="true" aria-labelledby="export-title">
+            <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h2 id="export-title" className="text-2xl font-bold text-slate-900">Exportar Progresso</h2>
+                  <p className="mt-2 text-sm text-slate-600">Baixe um arquivo para carregar seu progresso em outro computador.</p>
+                </div>
+                <button
+                  type="button"
+                  aria-label="Fechar janela"
+                  className="text-2xl leading-none text-slate-500 hover:text-slate-900"
+                  onClick={() => setShowExportModal(false)}
+                >
+                  &times;
+                </button>
+              </div>
+
+              {exportStatus === "success" && (
+                <p className="mt-5 rounded-lg bg-emerald-50 px-4 py-3 text-sm text-emerald-700">Progresso exportado com sucesso.</p>
+              )}
+              {exportStatus === "empty" && (
+                <p className="mt-5 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-700">Não há progresso salvo para exportar.</p>
+              )}
+              {exportStatus === "error" && (
+                <p className="mt-5 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">Não foi possível exportar o progresso.</p>
+              )}
+
+              <button
+                type="button"
+                className="mt-6 w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-60"
+                onClick={handleExport}
+                disabled={isExporting}
+              >
+                {isExporting ? "Preparando arquivo..." : "Baixar progresso"}
+              </button>
+              <button
+                type="button"
+                className="mt-3 w-full rounded-lg bg-slate-100 px-4 py-3 font-semibold text-slate-700 hover:bg-slate-200"
+                onClick={() => setShowExportModal(false)}
+                disabled={isExporting}
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
     </>

@@ -12,6 +12,50 @@ export interface UserData {
   roadmap: string[];
 }
 
+export interface UserDataBackup {
+  format: "roadmap-ti-user-data";
+  version: 1;
+  data: UserData;
+}
+
+function isUserData(value: unknown): value is UserData {
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+
+  const data = value as Partial<UserData>;
+  return data.id === "user1"
+    && typeof data.name === "string"
+    && typeof data.photo === "string"
+    && (data.welcomeSeen === undefined || typeof data.welcomeSeen === "boolean")
+    && typeof data.level === "number"
+    && Number.isFinite(data.level)
+    && typeof data.experience === "number"
+    && Number.isFinite(data.experience)
+    && typeof data.area === "string"
+    && Array.isArray(data.achievements)
+    && data.achievements.every((achievement) => typeof achievement === "number" && Number.isFinite(achievement))
+    && Array.isArray(data.roadmap)
+    && data.roadmap.every((step) => typeof step === "string");
+}
+
+export function parseUserDataBackup(value: unknown): UserData | null {
+  if (isUserData(value)) {
+    return value;
+  }
+
+  if (!value || typeof value !== "object") {
+    return null;
+  }
+
+  const backup = value as Partial<UserDataBackup>;
+  if (backup.format !== "roadmap-ti-user-data" || backup.version !== 1) {
+    return null;
+  }
+
+  return isUserData(backup.data) ? backup.data : null;
+}
+
 class UserDataStore {
   private dbName = "userDatabase";
   private storeName = "userData";
@@ -55,6 +99,19 @@ class UserDataStore {
         reject("Failed to fetch user data");
       };
     });
+  }
+
+  async exportUserData(): Promise<UserDataBackup | null> {
+    const userData = await this.getUserData();
+    if (!userData) {
+      return null;
+    }
+
+    return {
+      format: "roadmap-ti-user-data",
+      version: 1,
+      data: userData,
+    };
   }
 
   async saveUserData(userData: UserData): Promise<void> {
