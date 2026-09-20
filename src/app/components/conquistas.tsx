@@ -33,6 +33,7 @@ export default function AchievementsPage() {
   const setQConquistas = useUserStore((state) => state.set);
   // const [completedAchievements, setCompletedAchievements] = useState<number>(0);
   const [completed, setCompleted] = useState<number[]>([]);
+  const [activeTab, setActiveTab] = useState<"pending" | "completed">("pending");
   // const [experience, setExperience] = useState<number>(0);
   const totalAchievements = achievements.length;
 
@@ -69,6 +70,10 @@ export default function AchievementsPage() {
     // await userDataStore.saveUserAttribute("experience", newExperience);
   };
 
+  const visibleAchievements = achievements.filter(({ id }) =>
+    activeTab === "completed" ? completed.includes(id) : !completed.includes(id)
+  );
+
   return (
     <div className="pb-8 ">
       <div className="sticky z-10 w-full bg-white top-0 p-6 justify-center">
@@ -88,28 +93,62 @@ export default function AchievementsPage() {
 
           </div>
         </div>
+
+        <div className="flex border-b border-gray-300" role="tablist" aria-label="Filtrar conquistas">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "pending"}
+            className={`flex-1 border-b-2 pb-2 text-sm font-semibold transition-colors ${activeTab === "pending"
+              ? "border-blue-500 text-blue-600"
+              : "border-transparent text-gray-500 hover:text-gray-700"
+              }`}
+            onClick={() => setActiveTab("pending")}
+          >
+            Não concluídas ({totalAchievements - completed.length})
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeTab === "completed"}
+            className={`flex-1 border-b-2 pb-2 text-sm font-semibold transition-colors ${activeTab === "completed"
+              ? "border-blue-500 text-blue-600"
+              : "border-transparent text-gray-500 hover:text-gray-700"
+              }`}
+            onClick={() => setActiveTab("completed")}
+          >
+            Concluídas ({completed.length})
+          </button>
+        </div>
       </div>
       {/* Lista de conquistas */}
       <div className="scroll-smooth px-6 grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {achievements.map(({ id, title, description,
-          xp }, index) => (
-          <div key={index} className="scroll-smooth bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
-            <label className="absolute top-2 right-2 cursor-pointer">
-              <input
-                type="checkbox"
-                className="hidden"
-                checked={completed.includes(id)}
-                onChange={() => handleCheckboxChange(id)}
-              />
-              <div className="w-6 h-6 border-2 border-white rounded-md flex items-center justify-center bg-gray-700">
-                {completed.includes(id) && <span className="text-white text-xl">✔</span>}
-              </div>
-            </label>
-            <h2 className="text-lg font-semibold mb-2 text-blue-400">{title}</h2>
-            <p className="flex-grow text-gray-300">{description}</p>
-            <div className="mt-4 text-sm text-gray-400">+{xp} XP</div>
-          </div>
-        ))}
+        {visibleAchievements.length === 0 ? (
+          <p className="col-span-full py-8 text-center text-gray-600">
+            {activeTab === "pending"
+              ? "Todas conquistas foram alcançadas."
+              : "Nenhuma conquista ainda foi alcançada!"}
+          </p>
+        ) : (
+          visibleAchievements.map(({ id, title, description, xp }) => (
+            <div key={id} className="scroll-smooth bg-gray-800 p-4 rounded-lg shadow-md flex flex-col relative">
+              <label className="absolute top-2 right-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  checked={completed.includes(id)}
+                  onChange={() => handleCheckboxChange(id)}
+                />
+                <div className="w-6 h-6 border-2 border-white rounded-md flex items-center justify-center bg-gray-700">
+                  {completed.includes(id) && <span className="text-white text-xl">✔</span>}
+                </div>
+              </label>
+              <h2 className="text-lg font-semibold mb-2 text-blue-400">{title}</h2>
+              <p className="flex-grow text-gray-300">{description}</p>
+              <div className="mt-4 text-sm text-gray-400">+{xp} XP</div>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
