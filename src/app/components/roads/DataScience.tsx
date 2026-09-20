@@ -5,9 +5,9 @@ export default function IA() {
             title: 'Data Science',
             content:
                 <div className="space-y-4 text-md text-zinc-100">
-                    <p>A <strong>Ciência de Dados (Data Science)</strong> é um campo interdisciplinar que utiliza métodos científicos, processos, algoritmos e sistemas para extrair conhecimento e insights de dados estruturados e não-estruturados. Combinando <strong>estatística, matemática, programação, visualização e conhecimento de domínio</strong>, a ciência de dados permite transformar grandes volumes de informações em decisões estratégicas e soluções inovadoras.</p>
-                    <p>Os cientistas de dados atuam como verdadeiros detetives de dados, investigando <strong>padrões ocultos, tendências emergentes e correlações significativas</strong> que podem impulsionar a inovação e eficiência em diversos setores. Este campo está em constante evolução, incorporando avanços em <strong>inteligência artificial, aprendizado de máquina e computação de alto desempenho</strong>.</p>
-                    <p>Esta seção apresenta um panorama completo da ciência de dados, desde seus fundamentos teóricos até aplicações práticas em ambientes reais, servindo como guia para profissionais e estudantes que desejam navegar por esta área transformadora.</p>
+                    <p>Na <strong>Ciência de Dados</strong>, o objetivo é transformar informação bruta em conhecimento útil para a tomada de decisão. Você vai aprender a <strong>coletar, limpar, analisar e interpretar dados</strong>, além de criar soluções baseadas em padrões, previsões e evidências.</p>
+                    <p>Para evoluir nesse caminho, siga uma ordem prática: <strong>entender matemática e estatística</strong>, dominar <strong>Python e bibliotecas</strong>, aprender a <strong>explorar e preparar dados</strong> e aplicar <strong>modelos de aprendizado de máquina</strong> para resolver problemas reais.</p>
+                    <p>Essa área combina <strong>análise, programação, visualização e pensamento crítico</strong> e é ideal para quem gosta de descobrir padrões ocultos e gerar impacto concreto com dados.</p>
                 </div>,
             children: [
                 {
@@ -15,9 +15,9 @@ export default function IA() {
                     title: '🟢 Fundamentos Matemáticos',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
-                            <p>Os <strong>fundamentos matemáticos e estatísticos</strong> formam a base teórica que sustenta todas as técnicas e algoritmos utilizados na ciência de dados. Este conhecimento é essencial para <strong>compreender como os modelos funcionam, interpretar resultados corretamente e desenvolver novas abordagens</strong> para problemas complexos.</p>
-                            <p>A matemática fornece as ferramentas para <strong>representar e manipular dados multidimensionais</strong>, enquanto a estatística permite <strong>quantificar incertezas e fazer inferências robustas</strong> a partir de amostras limitadas. Juntas, essas disciplinas capacitam o cientista de dados a extrair conhecimento significativo e confiável mesmo de conjuntos de dados desafiadores.</p>
-                            <p>Esta seção explora os principais conceitos matemáticos e estatísticos que todo profissional de dados deve dominar, desde álgebra linear e cálculo até probabilidade e análise exploratória de dados.</p>
+                            <p>Antes de construir modelos, é essencial fortalecer a base matemática. <strong>Álgebra linear, cálculo, probabilidade e estatística</strong> ajudam a entender como os dados se relacionam e como os algoritmos tomam decisões.</p>
+                            <p>Os próximos passos são simples, mas decisivos: <strong>estudar os conceitos fundamentais</strong>, <strong>praticar com exercícios</strong> e <strong>aplicar esses conhecimentos em problemas reais</strong>. Essa etapa melhora sua capacidade de interpretar resultados, validar hipóteses e evitar conclusões equivocadas.</p>
+                            <p>Em resumo, essa base teórica é o que transforma alguém que apenas manipula dados em um profissional capaz de analisar com rigor, clareza e confiança.</p>
                         </div>,
                     children: [
                         {
@@ -135,9 +135,9 @@ export default function IA() {
                     title: '🟡 Programação e Ferramentas',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
-                            <p>O <strong>domínio de linguagens de programação e ferramentas especializadas</strong> é fundamental para o trabalho prático em ciência de dados. Estas habilidades técnicas permitem <strong>implementar algoritmos, automatizar fluxos de trabalho e criar soluções escaláveis</strong> para problemas data-driven.</p>
-                            <p><strong>Python</strong> emergiu como a linguagem predominante neste campo devido à sua versatilidade, legibilidade e ao rico ecossistema de bibliotecas especializadas. Junto com ambientes de desenvolvimento como <strong>Jupyter Notebooks</strong> e ferramentas de controle de versão como <strong>Git</strong>, estas tecnologias formam o toolkit essencial do cientista de dados moderno.</p>
-                            <p>Esta seção aborda as principais ferramentas computacionais utilizadas na prática da ciência de dados, fornecendo recursos para desenvolver proficiência técnica e implementar soluções eficientes.</p>
+                            <p>Depois de entender a teoria, você precisa transformar conhecimento em prática. É aqui que entram <strong>Python, notebooks, bibliotecas e ferramentas de versionamento</strong>, fundamentais para escrever, testar e documentar suas análises.</p>
+                            <p>O caminho recomendado é: <strong>aprender a linguagem</strong>, <strong>explorar bibliotecas essenciais</strong>, <strong>automatizar tarefas e visualizações</strong> e <strong>trabalhar com ambientes reprodutíveis</strong>. Essa etapa ajuda a desenvolver fluência técnica e tornar sua rotina mais eficiente.</p>
+                            <p>Com essas ferramentas, você consegue construir análises mais organizadas, repetir experimentos e compartilhar resultados com clareza para outras pessoas.</p>
                         </div>,
                     children: [
                         {
@@ -244,9 +244,9 @@ export default function IA() {
                     title: '🟠 Processamento e Manipulação de Dados',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
-                            <p>O <strong>processamento e manipulação de dados</strong> representa uma etapa crucial e frequentemente desafiadora no fluxo de trabalho da ciência de dados. É nesta fase que <strong>dados brutos, muitas vezes desestruturados e imperfeitos, são transformados</strong> em formatos adequados para análise e modelagem.</p>
-                            <p>Este processo abrange desde a <strong>coleta inicial através de diversas fontes</strong> (APIs, web scraping, bancos de dados) até a <strong>limpeza, transformação e enriquecimento</strong> dos dados. A qualidade do trabalho realizado nesta etapa determina diretamente a confiabilidade e relevância dos insights finais.</p>
-                            <p>Esta seção explora as técnicas e melhores práticas para aquisição, preparação e engenharia de features, estabelecendo bases sólidas para análises e modelagens subsequentes.</p>
+                            <p>Na prática, grande parte do tempo de um cientista de dados é gasto em <strong>coletar, limpar e transformar dados</strong>. Essa etapa é essencial porque dados inconsistentes ou mal organizados geram conclusões frágeis e modelos pouco confiáveis.</p>
+                            <p>Os passos principais são: <strong>coletar dados de fontes relevantes</strong>, <strong>identificar problemas como valores ausentes e inconsistências</strong>, <strong>estruturar a informação para análise</strong> e <strong>preparar features úteis para modelagem</strong>. Quando bem executada, essa fase eleva bastante a qualidade das decisões tomadas.</p>
+                            <p>É nessa parte que a ciência de dados deixa de ser apenas teoria e começa a criar impacto real em negócios, pesquisas e produtos.</p>
                         </div>,
                     children: [
                         {

@@ -6,7 +6,8 @@ export default function IA() {
             title: 'Sistemas Embarcados',
             content: (
                 <div className="space-y-2 text-sm text-gray-700">
-                    <p>Sistemas Embarcados são sistemas computacionais dedicados, projetados para executar funções específicas, geralmente com restrições de processamento, memória e energia. Presentes em diversos dispositivos do nosso cotidiano, desde eletrodomésticos até equipamentos industriais avançados, estes sistemas combinam hardware e software para atender requisitos específicos de aplicação.</p>
+                    <p>Os <strong>Sistemas Embarcados</strong> são soluções computacionais dedicadas a executar tarefas específicas com eficiência, geralmente com limitações de memória, processamento e energia. Eles aparecem em eletrodomésticos, veículos, sensores, dispositivos médicos e equipamentos industriais.</p>
+                    <p>Para aprender essa área, o ideal é seguir uma progressão clara: <strong>compreender eletrônica e lógica digital</strong>, <strong>dominar arquitetura e programação</strong>, <strong>conectar sensores e atuadores</strong> e <strong>validar o sistema em hardware real</strong>. A combinação entre software e hardware é o que torna esse campo tão relevante.</p>
                     <ul className="list-disc list-inside">
                         <li><a className="text-blue-600 underline" href="https://www.embeddedrelated.com/showarticle/1350.php" target="_blank">Introdução aos Sistemas Embarcados</a></li>
                         <li><a className="text-blue-600 underline" href="https://www.edx.org/learn/embedded-systems" target="_blank">Cursos Online de Sistemas Embarcados</a></li>
@@ -21,8 +22,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os fundamentos de sistemas embarcados integram lógica digital, arquitetura de computadores, eletrônica básica e sistemas numéricos. Entender como dados são representados em binário e hexadecimal, como portas lógicas formam circuitos e como a arquitetura interna de microcontroladores funciona é indispensável. Essa base permite programar com consciência do hardware subjacente, resultando em código mais eficiente e confiável.
+                                Os fundamentos de sistemas embarcados ajudam a entender como o hardware e o software se integram para criar dispositivos funcionais. Nessa base, você estuda <strong>lógica digital, arquitetura de computadores, eletrônica básica e sistemas numéricos</strong>, tudo isso essencial para programar com consciência do ambiente real.
                             </p>
+                            <p>O caminho inicial é: <strong>aprender representação digital</strong>, <strong>compreender arquitetura de microcontroladores</strong> e <strong>relacionar isso com circuitos e operação real do sistema</strong>. Isso reduz erros e melhora a eficiência do desenvolvimento.</p>
                         </div>
                     ,
                     children: [
@@ -150,8 +152,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                A programação de sistemas embarcados exige domínio de linguagens de baixo nível que interagem diretamente com hardware. C é a linguagem padrão da indústria por sua eficiência e controle. Assembly é essencial para entender o funcionamento mais íntimo do processador e otimizar trechos críticos. Git versiona o firmware e ferramentas de simulação validam o design antes de gravar no hardware real.
+                                Na programação embarcada, a ideia é escrever software que se comunique diretamente com o hardware e responda bem às restrições do ambiente. Linguagens como <strong>C</strong> e, em alguns casos, <strong>Assembly</strong> são fundamentais para controlar registradores, interrupções e performance.
                             </p>
+                            <p>Essas etapas ajudam você a: <strong>programar microcontroladores com eficiência</strong>, <strong>versionar firmware com Git</strong> e <strong>simular e validar projetos antes de gravar no hardware</strong>. Isso torna o desenvolvimento mais seguro, organizado e profissional.</p>
                         </div>
                     ,
                     children: [
@@ -634,7 +637,7 @@ export default function IA() {
                 },
                 {
                     id: '5-6',
-                    title: '🔴 plicações Práticas',
+                    title: '🔴 Aplicações Práticas',
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>

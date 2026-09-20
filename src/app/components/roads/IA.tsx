@@ -5,7 +5,9 @@ export default function IA() {
             title: 'IA',
             content: (
                 <div className="space-y-2 text-sm text-gray-700">
-                    <p>A <strong>Inteligência Artificial (IA)</strong> é uma área da ciência da computação que busca desenvolver <strong>sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana</strong>. Inclui <strong>aprendizado de máquina, processamento de linguagem natural, visão computacional</strong> e muito mais.</p>
+                    <p>A <strong>Inteligência Artificial</strong> é uma área que busca criar sistemas capazes de <strong>processar dados, aprender padrões e tomar decisões</strong> com base em informações e objetivos definidos. Ela abrange campos como <strong>aprendizado de máquina, redes neurais, visão computacional e processamento de linguagem</strong>.</p>
+
+                    <p>Para trilhar esse caminho com clareza, o ideal é seguir uma sequência: <strong>entender os fundamentos matemáticos e estatísticos</strong>, <strong>aprender programação em Python</strong>, <strong>explorar bibliotecas e ferramentas</strong> e, por fim, aplicar modelos em projetos reais. Esse processo ajuda a transformar conceitos em soluções práticas e mensuráveis.</p>
 
                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
                     <ul className="list-disc list-inside">
@@ -30,8 +32,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os fundamentos de IA estabelecem as bases teóricas e filosóficas do campo. Lógica booleana é o alicerce da computação, probabilidade e estatística sustentam os modelos de aprendizado, e álgebra linear e cálculo são os idiomas matemáticos dos algoritmos modernos. Entender a história e filosofia da IA situa o profissional no contexto das discussões sobre limitações, ética e o futuro da inteligência artificial.
+                                Os fundamentos de IA são a base para compreender como os modelos aprendem, como os dados são interpretados e como a tomada de decisão acontece. Em vez de estudar apenas teoria isolada, o ideal é conectar <strong>lógica, probabilidades, cálculo e álgebra linear</strong> com aplicações reais de inteligência artificial.
                             </p>
+                            <p>Os passos principais são: <strong>entender as bases matemáticas</strong>, <strong>compreender a história e a ética da IA</strong> e <strong>relacionar esses conceitos com algoritmos e problemas reais</strong>. Essa visão mais ampla permite uma formação mais sólida, crítica e aplicada.</p>
                         </div>
                     ),
                     children: [
@@ -158,8 +161,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Python consolidou-se como a linguagem principal de IA pelo seu ecossistema rico em bibliotecas especializadas. Ambientes como Jupyter Notebook e Google Colab facilitam a experimentação interativa. Bibliotecas como NumPy, Pandas, Scikit-learn, TensorFlow e PyTorch cobrem desde processamento de dados até treinamento de redes neurais avançadas. Git garante colaboração e rastreabilidade dos experimentos.
+                                A parte prática da IA começa com <strong>Python</strong>, ambientes de desenvolvimento e bibliotecas especializadas. Nessa etapa, você vai aprender a manipular dados, estruturar projetos, testar ideias e executar modelos de forma organizada e reutilizável.
                             </p>
+                            <p>O processo recomendado é: <strong>dominar Python</strong>, <strong>aprender ferramentas como Jupyter e Colab</strong>, <strong>explorar bibliotecas de dados e ML</strong> e <strong>usar versionamento para manter rastreabilidade dos experimentos</strong>. Isso ajuda a transformar conhecimento em projetos consistentes, escaláveis e fáceis de validar.</p>
                         </div>
                     ),
                     children: [

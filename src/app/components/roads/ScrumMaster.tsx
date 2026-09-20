@@ -6,7 +6,8 @@ export default function IA() {
             title: 'Scrum Master',
             content: (
                 <div className="space-y-4 text-md text-zinc-100">
-                    <p>Scrum Master é um papel crucial no framework Scrum, atuando como facilitador, coach e guardião das práticas ágeis. Esta pessoa remove impedimentos, facilita eventos, protege o time de interferências externas e ajuda a organização a adotar práticas ágeis efetivas.</p>
+                    <p>O papel de <strong>Scrum Master</strong> é apoiar o time a entregar valor de forma consistente, criando condições para que o trabalho ágil aconteça com clareza, autonomia e foco. Ele facilita eventos, remove impedimentos, fortalece a colaboração e ajuda a organização a evoluir com práticas sustentáveis.</p>
+                    <p>Para atuar bem nessa função, o ideal é aprender os princípios ágeis, entender o framework Scrum e desenvolver habilidades de <strong>facilitação, coaching e comunicação</strong>. Assim, o Scrum Master torna o time mais eficiente e mais preparado para responder às mudanças.</p>
                     <ul className="list-disc list-inside">
                         <li><a className="text-blue-600 underline" href="https://www.scrum.org/resources/what-is-a-scrum-master" target="_blank">O que é um Scrum Master (Scrum.org)</a></li>
                         <li><a className="text-blue-600 underline" href="https://www.atlassian.com/agile/scrum/scrum-master" target="_blank">Guia Atlassian sobre Scrum Master</a></li>
@@ -21,8 +22,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os fundamentos ágeis são o alicerce filosófico e prático de todo Scrum Master. O Manifesto Ágil, com seus quatro valores e doze princípios, define a mentalidade que deve permear cada decisão. Compreender os diferentes frameworks ágeis disponíveis e como cultivar uma cultura de times ágeis é essencial antes de aplicar qualquer cerimônia ou artefato do Scrum no dia a dia.
+                                Os fundamentos ágeis são a base para entender como times entregam valor com mais velocidade e qualidade. Isso inclui o <strong>Manifesto Ágil</strong>, seus princípios e a ideia de construir uma cultura que valorize <strong>colaboração, adaptação e melhoria contínua</strong>.
                             </p>
+                            <p>Os passos iniciais são: <strong>estudar os valores e princípios ágeis</strong>, <strong>entender diferentes frameworks</strong> e <strong>aplicar essa mentalidade no cotidiano do time</strong>. Quando a base está bem construída, as cerimônias do Scrum passam a ter sentido real e prático.</p>
                         </div>
                     ),
                     children: [
@@ -150,8 +152,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                O Scrum é um framework leve baseado em três pilares: transparência, inspeção e adaptação. Compreender os três papéis (Scrum Master, Product Owner, Developers), os cinco eventos (Sprint, Planning, Daily, Review, Retrospective) e os três artefatos (Product Backlog, Sprint Backlog, Incremento) é o requisito mínimo para qualquer profissional que deseja atuar como Scrum Master.
+                                O Scrum é um framework simples, mas muito poderoso, porque organiza o trabalho em ciclos curtos e incentiva melhoria contínua. Para atuar como Scrum Master, é fundamental compreender os <strong>papéis, eventos e artefatos</strong> que dão estrutura ao processo.
                             </p>
+                            <p>O caminho mais prático é: <strong>entender a dinâmica de cada papel</strong>, <strong>acompanhar os eventos com clareza</strong> e <strong>usar os artefatos para fomentar transparência e evolução</strong>. Isso ajuda a facilitar a entrega contínua de valor e a evolução do time.</p>
                         </div>
                     ),
                     children: [

@@ -6,7 +6,8 @@ export default function IA() {
             title: 'Robótica',
 
             content: <div className="space-y-2 text-sm text-gray-700">
-                <p>A robótica é a área que integra engenharia mecânica, eletrônica, ciência da computação e inteligência artificial para projetar, construir e programar robôs. Varia desde simples robôs educacionais até complexos sistemas industriais e de pesquisa.</p>
+                <p>A <strong>robótica</strong> une <strong>engenharia, eletrônica, programação e inteligência artificial</strong> para criar sistemas que percebem o ambiente, tomam decisões e executam ações. Ela pode ir desde projetos educativos simples até robôs industriais e autônomos muito complexos.</p>
+                <p>Para aprender robótica com profundidade, vale seguir uma sequência clara: <strong>entender matemática e física</strong>, <strong>dominar eletrônica e sensores</strong>, <strong>programar microcontroladores e controladores</strong> e, por fim, <strong>construir sistemas completos com autonomia e atuação no mundo real</strong>.</p>
                 <ul className="list-disc list-inside">
                     <li><a className="text-blue-600 underline" href="https://www.arduino.cc/en/Tutorial/HomePage" target="_blank">Arduino Tutorials</a></li>
                     <li><a className="text-blue-600 underline" href="https://www.ros.org/is-ros-for-me/" target="_blank">Robot Operating System (ROS)</a></li>
@@ -23,8 +24,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os fundamentos de robótica integram três pilares indispensáveis: matemática, física e lógica de programação. Sem compreender vetores, trigonometria e leis do movimento, é impossível controlar um robô com precisão. A lógica de programação estrutura o raciocínio para resolver problemas mecatrônicos complexos. Essa base sólida sustenta todo o aprendizado posterior em eletrônica, programação embarcada e projetos práticos.
+                                Os fundamentos de robótica são a base para entender como um robô <strong>se move, decide e interage com o ambiente</strong>. Sem dominar matemática, física e lógica de programação, fica difícil projetar sistemas que funcionem com precisão e consistência.
                             </p>
+                            <p>O caminho ideal é: <strong>estudar conceitos físicos e matemáticos</strong>, <strong>relacionar isso com problemas reais de movimento</strong> e <strong>aplicar a lógica de programação em soluções mecatrônicas</strong>. Essa etapa prepara você para projetos mais complexos, estáveis e relevantes.</p>
                         </div>
 
                     ,
@@ -123,8 +125,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Eletrônica é o coração físico dos robôs. Compreender os conceitos básicos da eletricidade, usar instrumentos de medição corretamente, integrar sensores e atuadores e programar microcontroladores como Arduino são habilidades práticas fundamentais. Sem eletrônica, um robô é apenas código sem interface com o mundo físico, incapaz de perceber o ambiente ou agir sobre ele.
+                                A eletrônica é o que conecta o robô com o mundo físico. Nessa etapa, você aprende a <strong>alimentar circuitos</strong>, <strong>conectar sensores e atuadores</strong> e <strong>programar microcontroladores</strong> para transformar sinais em ações reais.
                             </p>
+                            <p>Os passos principais são: <strong>entender circuitos básicos</strong>, <strong>usar instrumentos corretos</strong>, <strong>montar protótipos com sensores e atuadores</strong> e <strong>validar o comportamento do sistema em hardware real</strong>. Essa é a etapa que transforma teoria em robô funcional.</p>
                         </div>
                     ,
 

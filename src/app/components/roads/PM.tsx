@@ -5,7 +5,9 @@ export default function PM() {
             title: 'Product Manager',
             content: (
                 <div className="space-y-2 text-sm text-gray-700">
-                    <p>Product Manager é o profissional responsável por <strong>definir a visão e estratégia de um produto digital</strong>, garantindo que ele atenda às necessidades dos usuários e objetivos do negócio. Atua como <strong>ponte entre as áreas técnicas, de design e negócios</strong>.</p>
+                    <p>O papel de <strong>Product Manager</strong> é conectar <strong>usuários, negócio e tecnologia</strong> para entregar produtos que resolvam problemas reais e gerem valor de forma sustentável. Esse profissional define prioridades, interpreta dados, orienta decisões e coordena a evolução do produto ao longo do tempo.</p>
+
+                    <p>Para seguir nessa carreira, é importante desenvolver uma rotina baseada em <strong>pesquisa de usuários</strong>, <strong>definição de estratégia</strong>, <strong>priorização de oportunidades</strong> e <strong>trabalho colaborativo com design e engenharia</strong>. O objetivo é transformar ideias em soluções alinhadas ao mercado e à visão da empresa.</p>
 
                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
                     <ul className="list-disc list-inside">
@@ -28,8 +30,9 @@ export default function PM() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os fundamentos de produto englobam os <strong>conhecimentos essenciais para gerenciar produtos digitais</strong> com eficácia, incluindo conceitos básicos, modelos mentais e frameworks que orientam decisões estratégicas.
+                                Os fundamentos de produto são a base para tomar decisões com mais clareza e impacto. Isso inclui entender <strong>visão, estratégia, ciclo de vida do produto e tipos de solução</strong>, além de como a entrega de valor se conecta com as necessidades do cliente.
                             </p>
+                            <p>Para evoluir nessa área, o ideal é construir uma visão do produto, entender seu contexto de mercado e aprender a priorizar o que gera maior valor. Essa base ajuda a fazer escolhas melhores e a comunicar com mais eficiência entre as áreas.</p>
                         </div>
                     ),
                     children: [
@@ -158,8 +161,9 @@ export default function PM() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                A fase de pesquisa e descoberta é fundamental para <strong>entender profundamente os usuários, suas necessidades, problemas e comportamentos</strong>. É o alicerce para criar produtos que resolvam problemas reais.
+                                A pesquisa e a descoberta ajudam a garantir que o produto esteja resolvendo um problema real, e não apenas um desejo interno da equipe. O PM precisa entender <strong>usuários, contexto, dores e oportunidades de mercado</strong> antes de definir prioridades.
                             </p>
+                            <p>Os passos principais são: <strong>pesquisar com usuários</strong>, <strong>entrevistar e testar hipóteses</strong>, <strong>validar soluções</strong> e <strong>transformar essas informações em decisões de produto</strong>. Esse processo reduz riscos e melhora a qualidade das entregas.</p>
                         </div>
                     ),
                     children: [

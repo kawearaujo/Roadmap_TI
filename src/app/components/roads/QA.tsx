@@ -7,7 +7,8 @@ export default function IA() {
 
             content:
                 <div className="space-y-4 text-md text-zinc-100">
-                    <p>Quality Assurance (QA) é responsável por garantir que produtos e serviços atendam aos requisitos especificados. No desenvolvimento de software, QA envolve testes, automação, identificação de bugs e melhoria contínua de processos.</p>
+                    <p>O papel de <strong>Quality Assurance (QA)</strong> é garantir que o software entregue <strong>qualidade, confiabilidade e alinhamento com as necessidades do cliente</strong>. Nesse contexto, o profissional de QA valida requisitos, identifica falhas, mede riscos e ajuda a melhorar continuamente o processo de desenvolvimento.</p>
+                    <p>Para evoluir nessa carreira, é importante aprender a testar de forma estratégica: <strong>entender o produto</strong>, <strong>planejar cenários</strong>, <strong>executar testes manuais e automatizados</strong> e <strong>comunicar bugs com clareza</strong>. Essa rotina reduz retrabalho e aumenta a confiança nas entregas.</p>
                     <ul className="list-disc list-inside">
                         <li><a className="text-blue-600 underline" href="https://www.guru99.com/software-testing.html" target="_blank">Guru99 - Software Testing</a></li>
                         <li><a className="text-blue-600 underline" href="https://www.ministryoftesting.com/" target="_blank">Ministry of Testing</a></li>
@@ -24,8 +25,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os fundamentos de QA estabelecem a base teórica para garantir qualidade em software. Compreender os tipos de teste, o ciclo de vida do processo de qualidade, as diferenças entre abordagens manuais e automatizadas e as técnicas de design de casos de teste é essencial antes de usar qualquer ferramenta. Profissionais com fundamentos sólidos tomam decisões mais assertivas sobre quando e como testar.
+                                Os fundamentos de QA formam a base para decidir <strong>como, quando e o que testar</strong>. Para isso, é importante compreender os tipos de teste, o ciclo de vida do processo de qualidade e a diferença entre testes manuais e automatizados.
                             </p>
+                            <p>Os passos iniciais são: <strong>aprender a classificar testes</strong>, <strong>entender a estratégia de garantia de qualidade</strong> e <strong>usar técnicas de design para criar casos de teste mais eficientes</strong>. Com uma base sólida, fica mais simples analisar riscos e priorizar validações.</p>
                         </div>,
 
                     children: [
@@ -155,8 +157,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Testes manuais continuam sendo indispensáveis em QA, especialmente para testes exploratórios, de usabilidade e cenários complexos difíceis de automatizar. Ferramentas de gerenciamento de casos de teste como TestRail, Zephyr e Xray organizam e rastreiam a execução dos testes. Jira integra o ciclo de vida de bugs e histórias de usuário com o processo de QA.
+                                O teste manual continua sendo essencial para analisar experiências reais, cenários complexos e verificações que exigem raciocínio humano. Ao mesmo tempo, ferramentas de gestão de casos e rastreio de defeitos ajudam a organizar a execução e a documentação do trabalho.
                             </p>
+                            <p>Para evoluir nessa área, vale aprender a <strong>registrar casos de teste</strong>, <strong>gerenciar defeitos em ferramentas como Jira</strong> e <strong>trabalhar com critérios claros de execução e evidência</strong>. Isso torna o processo mais profissional, organizado e sustentável.</p>
                         </div>,
 
                     children: [
@@ -250,8 +253,9 @@ export default function IA() {
                     content:
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Automação de testes é a habilidade mais demandada em QA moderno. Frameworks como Selenium, Cypress e Playwright permitem simular interações de usuário em browsers de forma programática. TestNG e JUnit estruturam suítes de testes em Java, enquanto Mocha é a referência no ecossistema Node.js. Automação bem implementada aumenta velocidade, cobertura e confiabilidade das entregas.
+                                A automação de testes é uma das habilidades mais valiosas para QA moderno porque acelera a validação de regressões e aumenta a confiança nas entregas. Ferramentas como <strong>Selenium, Cypress e Playwright</strong> permitem simular interações no navegador de forma repetível e eficiente.
                             </p>
+                            <p>O caminho ideal é: <strong>aprender a automatizar cenários de valor</strong>, <strong>estruturar testes em suítes organizadas</strong> e <strong>usar ferramentas de execução para detectar falhas cedo</strong>. Quando bem aplicada, a automação melhora velocidade, cobertura e qualidade do produto.</p>
                         </div>,
 
                     children: [

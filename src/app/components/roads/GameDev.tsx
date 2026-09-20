@@ -7,8 +7,9 @@ export default function IA() {
             content: (
                 <div className="space-y-2 text-sm text-zinc-100">
                     <p>
-                        <strong>Desenvolvimento de jogos (GameDev)</strong> é a área que combina <strong>programação, arte, design e narrativa</strong> para criar experiências interativas. Envolve conhecimento de <strong>engines de jogos, lógica de gameplay, física, animação</strong> e muito mais.
+                        O <strong>desenvolvimento de jogos</strong> combina <strong>programação, arte, design, física e criatividade</strong> para criar experiências interativas, envolventes e funcionais. Nessa área, você aprende a transformar ideias em mecânicas, desafios e mundos jogáveis, usando engines como <strong>Unity</strong> e ferramentas de produção.
                     </p>
+                    <p>Para trilhar esse caminho com consistência, o ideal é seguir uma ordem: <strong>dominar lógica e programação</strong>, <strong>entender matemática e física</strong>, <strong>aprender a usar uma engine</strong> e, por fim, <strong>criar projetos completos com gameplay, UI e otimização</strong>. Essa sequência ajuda a evoluir da base até a produção de jogos reais.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div className="bg-gray-900 rounded-lg border border-zinc-100 dark:border-zinc-700 p-4">
                             <p className="font-semibold text-zinc-100">🎥 Videoaulas Recomendadas:</p>
@@ -36,8 +37,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                Os <strong>fundamentos para o desenvolvimento de jogos</strong> incluem conceitos essenciais de <strong>programação, matemática e design</strong> que formam a base para criar experiências interativas. Dominar esses conceitos é crucial antes de avançar para o desenvolvimento prático.
+                                Antes de criar um jogo, é necessário fortalecer a base. Isso inclui <strong>lógica de programação, matemática aplicada e noções de design</strong>, porque todas as mecânicas e sistemas de jogo dependem desses princípios.
                             </p>
+                            <p>Os passos recomendados aqui são: <strong>resolver problemas com lógica</strong>, <strong>entender movimento, física e escala</strong> e <strong>pensar na experiência do jogador</strong>. Quando essa base está sólida, você passa a criar sistemas de jogo com mais clareza e qualidade.</p>
                         </div>
                     ),
 
@@ -141,8 +143,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                O desenvolvimento de jogos requer o uso de <strong>diversas ferramentas especializadas</strong>, incluindo <strong>engines de jogos, IDEs para programação, ferramentas de controle de versão e softwares para criação de assets</strong>. Conhecer e dominar estas ferramentas aumenta significativamente a produtividade e a qualidade do projeto.
+                                A etapa de ferramentas é essencial para transformar ideias em projetos reais. Você vai usar <strong>engines, IDEs, controle de versão e recursos visuais</strong> para montar, testar e evoluir o jogo com mais eficiência.
                             </p>
+                            <p>O que fazer aqui é simples: <strong>aprender a ferramenta principal da sua área</strong>, <strong>organizar o projeto corretamente</strong> e <strong>praticar um fluxo de trabalho profissional</strong>. Isso reduz retrabalho e melhora a qualidade do desenvolvimento.</p>
                         </div>
                     ),
 
@@ -216,8 +219,9 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                A <strong>programação na Unity</strong> é realizada principalmente com <strong>C#</strong>, uma linguagem orientada a objetos poderosa e versátil. Entender como utilizar os <strong>componentes e APIs da Unity</strong> é essencial para implementar mecânicas de jogo, interações, sistemas de jogo e comportamentos de objetos.
+                                Ao entrar na parte prática da Unity, você passa a construir mecânicas e sistemas de jogo com <strong>C#</strong>. Nessa etapa, a ideia é aprender a criar <strong>componentes, interações e comportamentos de objetos</strong> que respondam ao input do jogador e ao mundo do jogo.
                             </p>
+                            <p>Os próximos passos são: <strong>entender o ciclo de vida dos objetos</strong>, <strong>aplicar lógica em scripts</strong> e <strong>construir sistemas que tragam movimento, feedback e desafio</strong>. Esse é o momento em que suas ideias começam a virar gameplay real.</p>
                         </div>
                     ),
 

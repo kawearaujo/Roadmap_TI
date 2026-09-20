@@ -6,7 +6,9 @@ export default function IA() {
 
             content: (
                 <div className="space-y-2 text-sm text-gray-700">
-                    <p>O desenvolvimento <strong>FullStack</strong> abrange tanto o <strong>front-end (interface do usuário)</strong> quanto o <strong>back-end (servidor, banco de dados, lógica de negócio)</strong>. Um desenvolvedor FullStack é capaz de construir uma aplicação completa, do banco de dados até a interface.</p>
+                    <p>O desenvolvimento <strong>FullStack</strong> reúne as duas partes essenciais de uma aplicação: o <strong>front-end</strong>, que o usuário vê e utiliza, e o <strong>back-end</strong>, que cuida do servidor, do banco de dados e da lógica de negócio. O papel do FullStack é conectar essas camadas para criar uma solução funcional, integrada e sustentável.</p>
+
+                    <p>Para evoluir nessa trajetória, o ideal é seguir uma ordem clara: <strong>aprender os fundamentos web</strong>, <strong>dominar a parte visual</strong>, <strong>entender APIs e banco de dados</strong> e, por fim, <strong>conectar tudo em uma aplicação completa</strong>. Esse caminho ajuda a construir projetos reais com mais autonomia e qualidade.</p>
 
                     <p className="font-semibold text-blue-800">🎥 Videoaulas Recomendadas:</p>
                     <ul className="list-disc list-inside">
@@ -32,9 +34,10 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                <strong>Front-End</strong> é a parte visual de uma aplicação. Envolve tudo que o usuário vê e interage. É composto por <strong>HTML, CSS e JavaScript</strong>, além de frameworks e bibliotecas modernas.
+                                O <strong>front-end</strong> é a camada responsável pela experiência visual e pela interação do usuário. Nessa fase, você vai aprender a estruturar páginas com <strong>HTML</strong>, estilizar com <strong>CSS</strong> e dar comportamento com <strong>JavaScript</strong>.
                             </p>
-                            <p className='font-bold text-red-500'>É necessário estudar os 3 HTML, CSS e JavaScript</p>
+                            <p>Os passos iniciais são: <strong>entender a semântica das páginas</strong>, <strong>dominar layouts responsivos</strong> e <strong>praticar interações dinâmicas</strong>. Com isso, você consegue criar interfaces mais agradáveis, acessíveis e funcionais.</p>
+                            <p className='font-bold text-red-500'>É necessário estudar os 3 HTML, CSS e JavaScript.</p>
                         </div>
                     ),
                     children: [
@@ -136,10 +139,11 @@ export default function IA() {
                     content: (
                         <div className="space-y-4 text-md text-zinc-100">
                             <p>
-                                <strong>Back-End</strong> é a parte do desenvolvimento que lida com a <strong>lógica do servidor, banco de dados e processamento de dados</strong>. É responsável por garantir que tudo funcione corretamente nos bastidores da aplicação.
+                                O <strong>back-end</strong> cuida da parte que o usuário não vê diretamente: regras de negócio, autenticação, processamento, APIs e comunicação com o banco de dados. É a camada que torna a aplicação funcional, segura e capaz de receber e entregar informações corretamente.
                             </p>
-                            <p className='font-bold text-red-500'>Inicialmente é necessário escolher um dos 2: NodeJs ou PHP</p>
-                            <p className='font-bold text-red-500'>Em seguida API e Banco de Dados</p>
+                            <p>Para avançar nessa etapa, comece escolhendo uma tecnologia principal, como <strong>Node.js</strong> ou <strong>PHP</strong>, depois aprenda a construir <strong>APIs</strong> e a modelar <strong>bancos de dados</strong>. Esse conjunto é essencial para transformar a interface em um produto completo.</p>
+                            <p className='font-bold text-red-500'>Inicialmente é necessário escolher um dos 2: NodeJs ou PHP.</p>
+                            <p className='font-bold text-red-500'>Em seguida, estude API e Banco de Dados.</p>
                         </div>
                     ),
                     children: [
