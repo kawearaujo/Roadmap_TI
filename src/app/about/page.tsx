@@ -56,6 +56,14 @@ export default function About() {
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400">Trilhas disponíveis</p>
           <div className="h-px bg-gray-200 mt-2" />
         </div>
+        <div className="max-w-5xl mx-auto px-6 pb-4">
+          <a
+            href="https://roadmap-ti.vercel.app/config"
+            className="inline-block rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            Acessar trilhas
+          </a>
+        </div>
 
         {/* Cards de Áreas */}
         {/* <div className="max-w-5xl mx-auto p-6 grid md:grid-cols-2 gap-5 pb-16">
