@@ -410,6 +410,19 @@ export default function UserPage() {
         {showWelcome && (
           <WelcomeModal userName={userName} area={area} onClose={closeWelcome} />
         )}
+        {!loading && userName.trim() && !showWelcome && (
+          <button
+            type="button"
+            className="fixed top-4 right-4 z-[100] rounded-full bg-blue-600 p-3 text-white shadow-md transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            onClick={() => setShowWelcome(true)}
+            aria-label="Abrir informações de boas-vindas"
+            title="Informações"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-6 w-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.879 7.519a3 3 0 0 1 5.242 1.994c0 1.5-2.25 2.25-3 3.75M12 17.25h.008M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </button>
+        )}
         {!loading && (!userName || userName.trim() === "") ?
           <div className="z-9999 fixed inset-0 bg-black/50 flex items-center justify-center ">
             <div className="bg-white p-6 rounded-lg space-y-4 md:w-[40vw] w-[80vw]">
