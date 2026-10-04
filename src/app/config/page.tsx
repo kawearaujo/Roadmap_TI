@@ -17,16 +17,16 @@ const areas: Areas = {
         <p className="pb-1">Porem existem algumas <i>Frameworks</i> <span className="text-blue-500">(framework fornece uma estrutura para todo o aplicativo.)</span> e Bibliotecas <span className="text-blue-500">(a biblioteca é especializada em uma funcionalidade)</span> baseadas em javascript que unificam trazem maior praticidade assim como segurança.</p>
         <p>Exemplos de Frameworks e Biblioteca:</p>
         <div className="flex py-6 gap-2 justify-center">
-          <div className="border border-blue-500 border-1 p-1">
+          <div className="">
             <p className="text-blue-500">Next Js</p>
           </div>
-          <div className="border border-blue-500 border-1 p-1">
+          <div className="">
             <p className="text-blue-500">React Js</p>
           </div>
-          <div className="border border-blue-500 border-1 p-1">
+          <div className="">
             <p className="text-blue-500">Vue Js</p>
           </div>
-          <div className="border border-blue-500 border-1 p-1">
+          <div className="">
             <p className="text-blue-500">Angular</p>
           </div>
         </div>
