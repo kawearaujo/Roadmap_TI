@@ -5,6 +5,7 @@ import Conq from "@/app/components/conquistas"
 import RoadMap from "@/app/components/road"
 import Db from "@/app/components/dashboard"
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 import { userDataStore } from "@/app/utils/indexedDB"
 import { useUserStore } from "@/app/store/useUserStore"
 
@@ -168,6 +169,7 @@ const WelcomeModal = ({ userName, area, onClose }: { userName: string; area: str
 );
 
 export default function UserPage() {
+  const router = useRouter();
 
   const [modalApagar, setModalApagar] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -209,6 +211,12 @@ export default function UserPage() {
   var teste = "";
   const loadUserData = async () => {
     const userData = await userDataStore.getUserData();
+    if (!userData?.area?.trim()) {
+      router.replace("/");
+      setLoading(false);
+      return;
+    }
+
     if (userData) {
       const areaAchievements = userData.achievementsByArea?.[userData.area] ?? userData.achievements;
       setQConq(areaAchievements);
@@ -397,6 +405,10 @@ export default function UserPage() {
   };
 
   const [ImagemSelecionada, setImagemSelecionada] = useState("");
+
+  if (loading || !area.trim()) {
+    return null;
+  }
 
   return (
     <>
