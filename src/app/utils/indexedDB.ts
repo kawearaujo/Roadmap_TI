@@ -9,6 +9,7 @@ export interface UserData {
   experience: number;
   area: string;
   achievements: number[];
+  achievementsByArea?: Record<string, number[]>;
   roadmap: string[];
 }
 
@@ -35,6 +36,14 @@ function isUserData(value: unknown): value is UserData {
     && typeof data.area === "string"
     && Array.isArray(data.achievements)
     && data.achievements.every((achievement) => typeof achievement === "number" && Number.isFinite(achievement))
+    && (data.achievementsByArea === undefined
+      || (typeof data.achievementsByArea === "object"
+        && data.achievementsByArea !== null
+        && !Array.isArray(data.achievementsByArea)
+        && Object.values(data.achievementsByArea).every((achievements) =>
+          Array.isArray(achievements)
+          && achievements.every((achievement) => typeof achievement === "number" && Number.isFinite(achievement))
+        )))
     && Array.isArray(data.roadmap)
     && data.roadmap.every((step) => typeof step === "string");
 }
@@ -135,6 +144,90 @@ class UserDataStore {
         console.error("Erro ao salvar os dados no IndexedDB");
         reject("Failed to save user data");
       };
+    });
+  }
+
+  async selectArea(area: string): Promise<void> {
+    const userData = await this.getUserData();
+    if (!userData) {
+      return this.saveUserData({
+        id: "user1",
+        name: "",
+        photo: "",
+        welcomeSeen: false,
+        level: 0,
+        experience: 0,
+        area,
+        achievements: [],
+        achievementsByArea: { [area]: [] },
+        roadmap: [],
+      });
+    }
+
+    const achievementsByArea = { ...userData.achievementsByArea };
+    const achievements = achievementsByArea[area] ?? [];
+    achievementsByArea[area] = achievements;
+    await this.saveUserData({
+      ...userData,
+      area,
+      achievements,
+      achievementsByArea,
+      roadmap: [],
+    });
+  }
+
+  async loadAchievementsForArea(area: string): Promise<number[]> {
+    if (!area) {
+      return [];
+    }
+
+    const userData = await this.getUserData();
+    if (!userData) {
+      return [];
+    }
+
+    const achievementsByArea = userData.achievementsByArea ?? {};
+    if (Object.hasOwn(achievementsByArea, area)) {
+      return achievementsByArea[area];
+    }
+
+    const updatedAchievementsByArea = {
+      ...achievementsByArea,
+      [area]: [],
+    };
+    await this.saveUserData({
+      ...userData,
+      achievements: userData.area === area ? [] : userData.achievements,
+      achievementsByArea: updatedAchievementsByArea,
+    });
+    return [];
+  }
+
+  async saveAchievementsForArea(area: string, achievements: number[]): Promise<void> {
+    const userData = await this.getUserData();
+    if (!userData) {
+      return this.saveUserData({
+        id: "user1",
+        name: "",
+        photo: "",
+        welcomeSeen: false,
+        level: 0,
+        experience: 0,
+        area,
+        achievements,
+        achievementsByArea: { [area]: achievements },
+        roadmap: [],
+      });
+    }
+
+    const achievementsByArea = {
+      ...userData.achievementsByArea,
+      [area]: achievements,
+    };
+    await this.saveUserData({
+      ...userData,
+      achievements: userData.area === area ? achievements : userData.achievements,
+      achievementsByArea,
     });
   }
 

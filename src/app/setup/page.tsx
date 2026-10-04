@@ -16,12 +16,7 @@ export default function SetupPage() {
         await userDataStore.saveUserAttribute("name", nome);
     }
     const changeArea = async (area: string) => {
-        // if (!selected) return;
-
-        await userDataStore.saveUserAttribute("area", area);
-        await userDataStore.saveUserAttribute("roadmap", []);
-        await userDataStore.saveUserAttribute("achievements", []);
-
+        await userDataStore.selectArea(area);
     };
 
 

@@ -133,11 +133,8 @@ export default function Config1() {
   }, []);
 
   const confirmChange = async () => {
-
-
-    await userDataStore.saveUserAttribute("area", selectedBranch!);
-    await userDataStore.saveUserAttribute("roadmap", []);
-    await userDataStore.saveUserAttribute("achievements", []);
+    if (!selectedBranch) return;
+    await userDataStore.selectArea(selectedBranch);
 
     setSelectedBranch(null);
     setShowModal(false);
@@ -186,7 +183,7 @@ export default function Config1() {
                   </p>
                 ) :
                   <p className="mb-6 text-gray-700">
-                    Já existe progresso na área de <strong>{areaAtual}</strong>. Deseja substituir por <strong>{selectedBranch}</strong>? (isso apagará seu progresso)
+                    Já existe progresso na área de <strong>{areaAtual}</strong>. Deseja trocar para <strong>{selectedBranch}</strong>? O progresso das atividades da trilha atual será reiniciado, mas suas conquistas ficarão salvas por subárea.
                   </p>
                 }
                 <div className="flex justify-between gap-4">

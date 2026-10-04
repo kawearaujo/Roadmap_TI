@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { useUserStore } from "@/app/store/useUserStore"
 import { userDataStore } from "@/app/utils/indexedDB"
+import { getAchievementsForArea } from "@/app/utils/achievements"
 import { useEffect, useState } from "react";
 
 // const data = [
@@ -47,7 +48,7 @@ export default function Dashboard({ onGoToRoadmap }: { onGoToRoadmap: () => void
     const loadUserData = async () => {
         const userData = await userDataStore.getUserData();
         if (userData) {
-            setQConq(userData.achievements);
+            setQConq(userData.achievementsByArea?.[userData.area] ?? userData.achievements);
             setRoad(userData.roadmap);
             UseArea(userData.area);
 
@@ -68,7 +69,7 @@ export default function Dashboard({ onGoToRoadmap }: { onGoToRoadmap: () => void
     const dataC = [
 
         { day: "Conquistas Concluidas", tarefas: QConq.length },
-        { day: "Conquistas Totais", tarefas: 20 },
+        { day: "Conquistas Totais", tarefas: getAchievementsForArea(area).length },
     ];
 
     return (

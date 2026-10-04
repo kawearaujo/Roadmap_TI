@@ -210,7 +210,8 @@ export default function UserPage() {
   const loadUserData = async () => {
     const userData = await userDataStore.getUserData();
     if (userData) {
-      setQConq(userData.achievements);
+      const areaAchievements = userData.achievementsByArea?.[userData.area] ?? userData.achievements;
+      setQConq(areaAchievements);
       setRoad(userData.roadmap);
       if (userData.name?.trim() && userData.area?.trim() && !userData.welcomeSeen) {
         setShowWelcome(true);
@@ -221,18 +222,18 @@ export default function UserPage() {
         setLevel(userData.level);
         setExperience(userData.experience);
         setArea(userData.area);
-        setQConquistas(userData.achievements);
+        setQConquistas(areaAchievements);
         setRoadmap(userData.roadmap);
-        if (userData.achievements !== qConquistas) {
-          setQConquistas(userData.achievements);
+        if (areaAchievements !== qConquistas) {
+          setQConquistas(areaAchievements);
         }
       }
       else {
 
         if (userData.roadmap != roadmap)
           setRoadmap(userData.roadmap);
-        if (userData.achievements != qConquistas)
-          setQConquistas(userData.achievements);
+        if (areaAchievements != qConquistas)
+          setQConquistas(areaAchievements);
 
       }
     }
@@ -388,6 +389,8 @@ export default function UserPage() {
   const handleDeleteProgress = async () => {
     await userDataStore.saveUserAttribute("roadmap", [])
     await userDataStore.saveUserAttribute("achievements", [])
+    await userDataStore.saveUserAttribute("achievementsByArea", {})
+    setQConq([]);
     setShowDeleteConfirmation(false);
     setModalApagar(false);
     setActivePage("inicio");
