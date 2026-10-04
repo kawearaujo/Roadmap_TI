@@ -439,8 +439,9 @@ export default function UserPage() {
               </div>
               <div className="space-x-4">
                 <button
-                  className="cursor-pointer bg-green-400 text-white p-2 rounded-md hover:bg-green-500"
+                  className="cursor-pointer bg-green-400 text-white p-2 rounded-md hover:bg-green-500 disabled:cursor-not-allowed disabled:bg-gray-400 disabled:hover:bg-gray-400"
                   onClick={handleNameChange}
+                  disabled={!newUserName.trim() || !ImagemSelecionada}
                 >
                   Confirmar
                 </button>
